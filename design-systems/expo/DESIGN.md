@@ -1,9 +1,9 @@
-# Design System Inspired by Expo
+# Expo
 
-> Category: Developer Tools
+> Category: 开发者工具
 > React Native platform. Dark theme, tight letter-spacing, code-centric.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 Expo's interface is a luminous, confidence-radiating developer platform built on the premise that tools for building apps should feel as polished as the apps themselves. The entire experience lives on a bright, airy canvas — a cool-tinted off-white (`#f0f0f3`) that gives the page a subtle technological coolness without the starkness of pure white. This is a site that breathes: enormous vertical spacing between sections creates a gallery-like pace where each feature gets its own "room."
 
@@ -11,7 +11,7 @@ The design language is decisively monochromatic — pure black (`#000000`) headl
 
 What makes Expo distinctive is its pill-shaped geometry. Buttons, tabs, video containers, and even images use generously rounded or fully pill-shaped corners (24px–9999px), creating an organic, approachable feel that contradicts the typical sharp-edged developer tool aesthetic. Combined with tight letter-spacing on massive headlines (-1.6px to -3px at 64px), the result is a design that's simultaneously premium and friendly — like an Apple product page reimagined for developers.
 
-**Key Characteristics:**
+**核心特征：**
 - Luminous cool-white canvas (`#f0f0f3`) with gallery-like vertical spacing
 - Strictly monochromatic: pure black headlines, cool blue-gray body text, no decorative color
 - Pill-shaped geometry everywhere — buttons, tabs, containers, images (24px–9999px radius)
@@ -20,25 +20,25 @@ What makes Expo distinctive is its pill-shaped geometry. Buttons, tabs, video co
 - Whisper-soft shadows that barely lift elements from the surface
 - Product screenshots as the only source of color in the interface
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
-### Primary
+### 主色
 - **Expo Black** (`#000000`): The absolute anchor — used for primary headlines, CTA buttons, and the brand identity. Pure black on cool white creates maximum contrast without feeling aggressive.
 - **Near Black** (`#1c2024`): The primary text color for body content — a barely perceptible blue-black that's softer than pure #000 for extended reading.
 
-### Secondary & Accent
+### 辅助色与强调色
 - **Link Cobalt** (`#0d74ce`): The standard link color — a trustworthy, saturated blue that signals interactivity without competing with the monochrome hierarchy.
 - **Legal Blue** (`#476cff`): A brighter, more saturated blue for legal/footer links — slightly more attention-grabbing than Link Cobalt.
 - **Widget Sky** (`#47c2ff`): A light, friendly cyan-blue for widget branding elements — the brightest accent in the system.
 - **Preview Purple** (`#8145b5`): A rich violet used for "preview" or beta feature indicators — creating clear visual distinction from standard content.
 
-### Surface & Background
+### 表面与背景色
 - **Cloud Gray** (`#f0f0f3`): The primary page background — a cool off-white with the faintest blue-violet tint. Not warm, not sterile — precisely technological.
 - **Pure White** (`#ffffff`): Card surfaces, button backgrounds, and elevated content containers. Creates a clear "lifted" distinction from Cloud Gray.
 - **Widget Dark** (`#1a1a1a`): Dark surface for dark-theme widgets and overlay elements.
 - **Banner Dark** (`#171717`): The darkest surface variant, used for promotional banners and high-contrast containers.
 
-### Neutrals & Text
+### 中性色与文字色
 - **Slate Gray** (`#60646c`): The workhorse secondary text color (305 instances). A cool blue-gray that's authoritative without being heavy.
 - **Mid Slate** (`#555860`): Slightly darker than Slate, used for emphasized secondary text.
 - **Silver** (`#b0b4ba`): Tertiary text, placeholders, and de-emphasized metadata. Comfortably readable but clearly receded.
@@ -47,24 +47,24 @@ What makes Expo distinctive is its pill-shaped geometry. Buttons, tabs, video co
 - **Dark Slate** (`#363a3f`): Borders on dark surfaces, switch tracks, and emphasized containment.
 - **Charcoal** (`#333333`): Dark mode switch backgrounds and deep secondary surfaces.
 
-### Semantic & Accent
+### 语义色与强调色
 - **Warning Amber** (`#ab6400`): A warm, deep amber for warning states — deliberately not bright yellow, conveying seriousness.
 - **Destructive Rose** (`#eb8e90`): A soft pink-coral for disabled destructive actions — gentler than typical red, reducing alarm fatigue.
 - **Border Lavender** (`#e0e1e6`): Standard card/container borders — a cool lavender-gray that's visible without being heavy.
 - **Input Border** (`#d9d9e0`): Button and form element borders — slightly warmer/darker than card borders for interactive elements.
 - **Dark Focus Ring** (`#2547d0`): Deep blue for keyboard focus indicators in dark theme contexts.
 
-### Gradient System
+### 渐变体系
 - The design is notably **gradient-free** in the interface layer. Visual richness comes from product screenshots, the React universe illustration, and careful shadow layering rather than color gradients. This absence IS the design decision — gradients would undermine the clinical precision.
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Family
+### 字体家族
 - **Primary**: `Inter`, with fallbacks: `-apple-system, system-ui`
 - **Monospace**: `JetBrains Mono`, with fallback: `ui-monospace`
 - **System Fallback**: `system-ui, Segoe UI, Roboto, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji`
 
-### Hierarchy
+### 字体层级
 
 | Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
 |------|------|------|--------|-------------|----------------|-------|
@@ -79,15 +79,15 @@ What makes Expo distinctive is its pill-shaped geometry. Buttons, tabs, video co
 | Code Caption | JetBrains Mono | 14px (0.88rem) | 400–600 | 1.40 | normal | Code snippets, technical labels |
 | Code Small | JetBrains Mono | 12px (0.75rem) | 400 | 1.60 | normal | Uppercase tech tags |
 
-### Principles
+### 原则
 - **One typeface, full expression**: Inter is the only sans-serif, used from weight 400 (regular) through 900 (black). This gives the design a unified voice while still achieving dramatic contrast between whisper-light body text and thundering display headlines.
 - **Extreme negative tracking at scale**: Headlines at 64px use -1.6px to -3px letter-spacing, creating ultra-dense text blocks that feel like logotypes. This aggressive compression is the signature typographic move.
 - **Weight as hierarchy**: 700–900 for display, 600 for headings, 500 for emphasis, 400 for body. The jumps are decisive — no ambiguous in-between weights.
 - **Consistent 1.40 body line-height**: Nearly all body and UI text shares 1.40 line-height, creating a rhythmic vertical consistency.
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
 **Primary (White on border)**
 - Background: Pure White (`#ffffff`)
@@ -110,7 +110,7 @@ What makes Expo distinctive is its pill-shaped geometry. Buttons, tabs, video co
 - No border (black IS the border)
 - The maximum-emphasis CTA — reserved for primary conversion actions
 
-### Cards & Containers
+### 卡片与容器
 - Background: Pure White (`#ffffff`) — clearly lifted from Cloud Gray page
 - Border: thin solid Border Lavender (`1px solid #e0e1e6`) for standard cards
 - Radius: comfortably rounded (8px) for standard cards; generously rounded (16–24px) for featured containers
@@ -118,7 +118,7 @@ What makes Expo distinctive is its pill-shaped geometry. Buttons, tabs, video co
 - Shadow Level 2: Standard (`rgba(0,0,0,0.1) 0px 10px 20px, rgba(0,0,0,0.05) 0px 3px 6px`) — clear floating elevation
 - Hover: likely subtle shadow deepening or background shift
 
-### Inputs & Forms
+### 输入框与表单
 - Background: Pure White (`#ffffff`)
 - Text: Near Black (`#1c2024`)
 - Border: thin solid Input Border (`1px solid #d9d9e0`)
@@ -126,7 +126,7 @@ What makes Expo distinctive is its pill-shaped geometry. Buttons, tabs, video co
 - Radius: subtly rounded (6px)
 - Focus: blue ring shadow via CSS custom property
 
-### Navigation
+### 导航
 - Sticky top nav on transparent/blurred background
 - Logo: Expo wordmark in black
 - Links: Near Black (`#1c2024`) or Slate Gray (`#60646c`) at 14–16px Inter weight 500
@@ -134,14 +134,14 @@ What makes Expo distinctive is its pill-shaped geometry. Buttons, tabs, video co
 - GitHub star badge as social proof
 - Status indicator ("All Systems Operational") with green dot
 
-### Image Treatment
+### 图片处理
 - Product screenshots and device mockups are the visual heroes
 - Generously rounded corners (24px) on video and image containers
 - Screenshots shown in realistic device frames
 - Dark UI screenshots provide contrast against the light canvas
 - Full-bleed within rounded containers
 
-### Distinctive Components
+### 特色组件
 
 **Universe React Logo**
 - Animated/illustrated React logo as the visual centerpiece
@@ -158,9 +158,9 @@ What makes Expo distinctive is its pill-shaped geometry. Buttons, tabs, video co
 - Green dot + text — compact trust signal
 - Pill-shaped (36px radius)
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
+### 间距体系
 - Base unit: 8px
 - Scale: 1px, 2px, 4px, 8px, 12px, 16px, 24px, 32px, 40px, 48px, 64px, 80px, 96px, 144px
 - Button padding: 0px 12px (unusually compact — height driven by line-height)
@@ -168,19 +168,19 @@ What makes Expo distinctive is its pill-shaped geometry. Buttons, tabs, video co
 - Section vertical spacing: enormous (estimated 96–144px between major sections)
 - Component gap: 16–24px between sibling elements
 
-### Grid & Container
+### 栅格与容器
 - Max container width: approximately 1200–1400px, centered
 - Hero: centered single-column with massive breathing room
 - Feature sections: alternating layouts (image left/right, full-width showcases)
 - Card grids: 2–3 column for feature highlights
 - Full-width sections with contained inner content
 
-### Whitespace Philosophy
+### 留白哲学
 - **Gallery-like pacing**: Each section feels like its own exhibit, surrounded by vast empty space. This creates a premium, unhurried browsing experience.
 - **Breathing room is the design**: The generous whitespace IS the primary design element — it communicates confidence, quality, and that each feature deserves individual attention.
 - **Content islands**: Sections float as isolated "islands" in the white space, connected by scrolling rather than visual continuation.
 
-### Border Radius Scale
+### 圆角尺度
 - Nearly squared (4px): Small inline elements, tags
 - Subtly rounded (6px): Buttons, form inputs, combo boxes — the functional interactive radius
 - Comfortably rounded (8px): Standard content cards, containers
@@ -189,7 +189,7 @@ What makes Expo distinctive is its pill-shaped geometry. Buttons, tabs, video co
 - Highly rounded (32–36px): Hero CTAs, status badges, nav buttons
 - Pill-shaped (9999px): Primary action buttons, tags, avatars — maximum friendliness
 
-## 6. Depth & Elevation
+## 6. 层深与阴影
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
@@ -201,9 +201,9 @@ What makes Expo distinctive is its pill-shaped geometry. Buttons, tabs, video co
 
 **Shadow Philosophy**: Expo uses shadows as gentle whispers rather than architectural statements. The primary depth mechanism is **background color contrast** — white cards floating on Cloud Gray — rather than shadow casting. When shadows appear, they're soft, diffused, and directional (downward), creating the feeling of paper hovering millimeters above a desk.
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 
-### Do
+### 推荐
 - Use Cloud Gray (`#f0f0f3`) as the page background and Pure White (`#ffffff`) for elevated cards — the two-tone light system is essential
 - Keep display headlines at extreme negative letter-spacing (-1.6px to -3px at 64px) for the signature compressed look
 - Use pill-shaped (9999px) radius for primary CTA buttons — the organic shape is core to the identity
@@ -213,7 +213,7 @@ What makes Expo distinctive is its pill-shaped geometry. Buttons, tabs, video co
 - Use product screenshots as the primary visual content — the interface stays monochrome, the products bring color
 - Apply Inter at the full weight range (400–900) — weight contrast IS the hierarchy
 
-### Don't
+### 禁忌
 - Don't introduce decorative colors into the interface chrome — the monochromatic palette is intentional
 - Don't use sharp corners (border-radius < 6px) on interactive elements — the pill/rounded geometry is the signature
 - Don't reduce section spacing below 64px — the breathing room is the design
@@ -224,9 +224,9 @@ What makes Expo distinctive is its pill-shaped geometry. Buttons, tabs, video co
 - Don't add gradients to the interface — visual richness comes from content, not decoration
 - Don't use saturated colors outside of semantic contexts — the palette is strictly grayscale + functional blue
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
+### 断点
 | Name | Width | Key Changes |
 |------|-------|-------------|
 | Mobile | <640px | Single column, hamburger nav, stacked cards, hero text scales to ~36px |
@@ -235,13 +235,13 @@ What makes Expo distinctive is its pill-shaped geometry. Buttons, tabs, video co
 
 *Only one explicit breakpoint detected (640px), suggesting a fluid, container-query or min()/clamp()-based responsive system rather than fixed breakpoint snapping.*
 
-### Touch Targets
+### 触摸目标
 - Buttons use generous radius (24–36px) creating large, finger-friendly surfaces
 - Navigation links spaced with adequate gap
 - Status badge sized for touch (36px radius)
 - Minimum recommended: 44x44px
 
-### Collapsing Strategy
+### 折叠策略
 - **Navigation**: Full horizontal nav with CTA collapses to hamburger on mobile
 - **Feature sections**: Multi-column → stacked single column
 - **Hero text**: 64px → ~36px progressive scaling
@@ -249,15 +249,15 @@ What makes Expo distinctive is its pill-shaped geometry. Buttons, tabs, video co
 - **Cards**: Side-by-side → vertical stacking
 - **Spacing**: Reduces proportionally but maintains generous rhythm
 
-### Image Behavior
+### 图片行为
 - Product screenshots scale proportionally
 - Device mockups may simplify or show fewer devices on mobile
 - Rounded corners maintained at all sizes
 - Lazy loading for below-fold content
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
+### 色彩速查表
 - Primary CTA / Headlines: "Expo Black (#000000)"
 - Page Background: "Cloud Gray (#f0f0f3)"
 - Card Surface: "Pure White (#ffffff)"
@@ -267,14 +267,14 @@ What makes Expo distinctive is its pill-shaped geometry. Buttons, tabs, video co
 - Links: "Link Cobalt (#0d74ce)"
 - Tertiary Text: "Silver (#b0b4ba)"
 
-### Example Component Prompts
+### 组件提示示例
 - "Create a hero section on Cloud Gray (#f0f0f3) with a massive headline at 64px Inter weight 700, line-height 1.10, letter-spacing -3px. Text in Expo Black (#000000). Below, add a subtitle in Slate Gray (#60646c) at 18px. Place a black pill-shaped CTA button (9999px radius) beneath."
 - "Design a feature card on Pure White (#ffffff) with a 1px solid Border Lavender (#e0e1e6) border and comfortably rounded corners (8px). Title in Near Black (#1c2024) at 20px Inter weight 600, description in Slate Gray (#60646c) at 16px. Add a whisper shadow (rgba(0,0,0,0.08) 0px 3px 6px)."
 - "Build a navigation bar with Expo logo on the left, text links in Near Black (#1c2024) at 14px Inter weight 500, and a black pill CTA button on the right. Background: transparent with blur backdrop. Bottom border: 1px solid Border Lavender (#e0e1e6)."
 - "Create a code block using JetBrains Mono at 14px on a Pure White surface with Border Lavender border and 8px radius. Code in Near Black, keywords in Link Cobalt (#0d74ce)."
 - "Design a status badge pill (9999px radius) with a green dot and 'All Systems Operational' text in Inter 12px weight 500. Background: Pure White, border: 1px solid Input Border (#d9d9e0)."
 
-### Iteration Guide
+### 迭代指南
 1. Focus on ONE component at a time
 2. Reference specific color names and hex codes — "use Slate Gray (#60646c)" not "make it gray"
 3. Use radius values deliberately — 6px for buttons, 8px for cards, 24px for images, 9999px for pills

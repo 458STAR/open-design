@@ -150,10 +150,41 @@ export const AGENT_DEFS = [
     // as a hint. Users can supply other ids via the custom-model input.
     fallbackModels: [
       DEFAULT_MODEL_OPTION,
-      { id: 'gpt-5-codex', label: 'gpt-5-codex' },
-      { id: 'gpt-5', label: 'gpt-5' },
-      { id: 'o3', label: 'o3' },
+      // GPT-5.5 系列
+      { id: 'gpt-5.5', label: 'GPT-5.5' },
+      { id: 'gpt-5.5-pro', label: 'GPT-5.5 Pro' },
+      // GPT-5.4 系列
+      { id: 'gpt-5.4', label: 'GPT-5.4' },
+      { id: 'gpt-5.4-pro', label: 'GPT-5.4 Pro' },
+      { id: 'gpt-5.4-mini', label: 'GPT-5.4 Mini' },
+      { id: 'gpt-5.4-nano', label: 'GPT-5.4 Nano' },
+      // GPT-5.3 / 5.2 / 5.1
+      { id: 'gpt-5.3-codex', label: 'GPT-5.3 Codex' },
+      { id: 'gpt-5.2', label: 'GPT-5.2' },
+      { id: 'gpt-5.2-pro', label: 'GPT-5.2 Pro' },
+      { id: 'gpt-5.2-codex', label: 'GPT-5.2 Codex' },
+      { id: 'gpt-5.1', label: 'GPT-5.1' },
+      { id: 'gpt-5.1-codex', label: 'GPT-5.1 Codex' },
+      { id: 'gpt-5.1-codex-max', label: 'GPT-5.1 Codex Max' },
+      { id: 'gpt-5.1-codex-mini', label: 'GPT-5.1 Codex Mini' },
+      // GPT-5 系列
+      { id: 'gpt-5', label: 'GPT-5' },
+      { id: 'gpt-5-pro', label: 'GPT-5 Pro' },
+      { id: 'gpt-5-codex', label: 'GPT-5 Codex' },
+      { id: 'gpt-5-mini', label: 'GPT-5 Mini' },
+      { id: 'gpt-5-nano', label: 'GPT-5 Nano' },
+      // GPT-4.1 系列
+      { id: 'gpt-4.1', label: 'GPT-4.1' },
+      { id: 'gpt-4.1-mini', label: 'GPT-4.1 Mini' },
+      { id: 'gpt-4.1-nano', label: 'GPT-4.1 Nano' },
+      // GPT-4o
+      { id: 'gpt-4o', label: 'GPT-4o' },
+      { id: 'gpt-4o-mini', label: 'GPT-4o Mini' },
+      // o 系列推理模型
       { id: 'o4-mini', label: 'o4-mini' },
+      { id: 'o3', label: 'o3' },
+      { id: 'o3-mini', label: 'o3-mini' },
+      { id: 'o1', label: 'o1' },
     ],
     reasoningOptions: [
       { id: 'default', label: 'Default' },

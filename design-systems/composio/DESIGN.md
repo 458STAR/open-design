@@ -1,9 +1,9 @@
-# Design System Inspired by Composio
+# Composio
 
-> Category: Backend & Data
+> Category: 后端与数据
 > Tool integration platform. Modern dark with colorful integration icons.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 Composio's interface is a nocturnal command center — a dense, developer-focused darkness punctuated by electric cyan and deep cobalt signals. The entire experience is built on an almost-pure-black canvas (`#0f0f0f`) where content floats within barely-visible containment borders, creating the feeling of a high-tech control panel rather than a traditional marketing page. It's a site that whispers authority to developers who live in dark terminals.
 
@@ -11,7 +11,7 @@ The visual language leans heavily into the aesthetic of code editors and termina
 
 What makes Composio distinctive is its tension between extreme minimalism and strategic bursts of luminous color. The site never shouts — headings use tight line-heights (0.87) that compress text into dense, authoritative blocks. Color is rationed like a rare resource: white text for primary content, semi-transparent white (`rgba(255,255,255,0.5-0.6)`) for secondary, and brand blue (`#0007cd`) or electric cyan (`#00ffff`) reserved exclusively for interactive moments and accent glows.
 
-**Key Characteristics:**
+**核心特征：**
 - Pitch-black canvas with near-invisible white-border containment (4-12% opacity)
 - Dual-font identity: geometric sans-serif (abcDiatype) for content, monospace (JetBrains Mono) for technical credibility
 - Ultra-tight heading line-heights (0.87-1.0) creating compressed, impactful text blocks
@@ -20,29 +20,29 @@ What makes Composio distinctive is its tension between extreme minimalism and st
 - Monochrome hierarchy with color used only at the highest-signal moments
 - Developer-terminal aesthetic that bridges marketing and documentation
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
-### Primary
+### 主色
 - **Composio Cobalt** (`#0007cd`): The core brand color — a deep, saturated blue used sparingly for high-priority interactive elements and brand moments. It anchors the identity with quiet intensity.
 
-### Secondary & Accent
+### 辅助色与强调色
 - **Electric Cyan** (`#00ffff`): The attention-grabbing accent — used at low opacity (`rgba(0,255,255,0.12)`) for glowing button backgrounds and card highlights. At full saturation, it serves as the energetic counterpoint to the dark canvas.
 - **Signal Blue** (`#0089ff` / `rgb(0,137,255)`): Used for select button borders and interactive focus states, bridging the gap between Cobalt and Cyan.
 - **Ocean Blue** (`#0096ff` / `rgb(0,150,255)`): Accent border color on CTA buttons, slightly warmer than Signal Blue.
 
-### Surface & Background
+### 表面与背景色
 - **Void Black** (`#0f0f0f`): The primary page background — not pure black, but a hair warmer, reducing eye strain on dark displays.
 - **Pure Black** (`#000000`): Used for card interiors and deep-nested containers, creating a subtle depth distinction from the page background.
 - **Charcoal** (`#2c2c2c` / `rgb(44,44,44)`): Used for secondary button borders and divider lines on dark surfaces.
 
-### Neutrals & Text
+### 中性色与文字色
 - **Pure White** (`#ffffff`): Primary heading and high-emphasis text color on dark surfaces.
 - **Muted Smoke** (`#444444`): De-emphasized body text, metadata, and tertiary content.
 - **Ghost White** (`rgba(255,255,255,0.6)`): Secondary body text and link labels — visible but deliberately receded.
 - **Whisper White** (`rgba(255,255,255,0.5)`): Tertiary button text and placeholder content.
 - **Phantom White** (`rgba(255,255,255,0.2)`): Subtle button backgrounds and deeply receded UI chrome.
 
-### Semantic & Accent
+### 语义色与强调色
 - **Border Mist 12** (`rgba(255,255,255,0.12)`): Highest-opacity border treatment — used for prominent card edges and content separators.
 - **Border Mist 10** (`rgba(255,255,255,0.10)`): Standard container borders on dark surfaces.
 - **Border Mist 08** (`rgba(255,255,255,0.08)`): Subtle section dividers and secondary card edges.
@@ -50,19 +50,19 @@ What makes Composio distinctive is its tension between extreme minimalism and st
 - **Border Mist 04** (`rgba(255,255,255,0.04)`): The faintest border — used for atmospheric separation only.
 - **Light Border** (`#e0e0e0` / `rgb(224,224,224)`): Reserved for light-surface contexts (rare on this site).
 
-### Gradient System
+### 渐变体系
 - **Cyan Glow**: Radial gradients using `#00ffff` at very low opacity, creating bioluminescent halos behind cards and feature sections.
 - **Blue-to-Black Fade**: Linear gradients from Composio Cobalt (`#0007cd`) fading into Void Black (`#0f0f0f`), used in hero backgrounds and section transitions.
 - **White Fog**: Bottom-of-page gradient transitioning from dark to a diffused white/gray, creating an atmospheric "horizon line" effect near the footer.
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Family
+### 字体家族
 - **Primary**: `abcDiatype`, with fallbacks: `abcDiatype Fallback, ui-sans-serif, system-ui, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji`
 - **Monospace**: `JetBrains Mono`, with fallbacks: `JetBrains Mono Fallback, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New`
 - **System Monospace** (fallback): `Menlo`, `monospace` for smallest inline code
 
-### Hierarchy
+### 字体层级
 
 | Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
 |------|------|------|--------|-------------|----------------|-------|
@@ -86,16 +86,16 @@ What makes Composio distinctive is its tension between extreme minimalism and st
 | Code Micro | JetBrains Mono | 11px (0.69rem) | 400 | 1.33 | 0.55px | Tiny uppercase code tags |
 | Code Nano | JetBrains Mono | 9-10px | 400 | 1.33 | 0.45-0.5px | Smallest monospace text |
 
-### Principles
+### 原则
 - **Compression creates authority**: Heading line-heights are drastically tight (0.87-1.0), making large text feel dense and commanding rather than airy and decorative.
 - **Dual personality**: abcDiatype carries the marketing voice — geometric, precise, friendly. JetBrains Mono carries the technical voice — credible, functional, familiar to developers.
 - **Weight restraint**: Almost everything is weight 400 (regular). Weight 500 (medium) is reserved for small labels, badges, and select card titles. Weight 700 (bold) appears only in microscopic system-monospace contexts.
 - **Negative letter-spacing on code**: JetBrains Mono uses negative letter-spacing (-0.28px to -0.98px) for dense, compact code blocks that feel like a real IDE.
 - **Uppercase is earned**: The `uppercase` + `letter-spacing` treatment is reserved exclusively for tiny overline labels and technical tags — never for headings.
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
 **Primary CTA (White Fill)**
 - Background: Pure White (`#ffffff`)
@@ -133,7 +133,7 @@ What makes Composio distinctive is its tension between extreme minimalism and st
 - No visible border
 - Used for deeply de-emphasized actions
 
-### Cards & Containers
+### 卡片与容器
 - Background: Pure Black (`#000000`) or transparent
 - Border: white at very low opacity, ranging from Border Mist 04 (`rgba(255,255,255,0.04)`) to Border Mist 12 (`rgba(255,255,255,0.12)`) depending on prominence
 - Radius: barely rounded corners (2px for inline elements, 4px for content cards)
@@ -141,14 +141,14 @@ What makes Composio distinctive is its tension between extreme minimalism and st
 - Elevation shadow: deeper containers use soft diffuse shadow (`rgba(0,0,0,0.5) 0px 8px 32px`)
 - Hover behavior: likely subtle border opacity increase or faint glow effect
 
-### Inputs & Forms
+### 输入框与表单
 - No explicit input token data extracted — inputs likely follow the dark-surface pattern with:
   - Background: transparent or Pure Black
   - Border: Border Mist 10 (`rgba(255,255,255,0.10)`)
   - Focus: border shifts to Signal Blue (`#0089ff`) or Electric Cyan
   - Text: Pure White with Ghost White placeholder
 
-### Navigation
+### 导航
 - Sticky top nav bar on dark/black background
 - Logo (white SVG): Composio wordmark on the left
 - Nav links: Pure White (`#ffffff`) at standard body size (16px, abcDiatype)
@@ -156,14 +156,14 @@ What makes Composio distinctive is its tension between extreme minimalism and st
 - Mobile: collapses to hamburger menu, single-column layout
 - Subtle bottom border on nav (Border Mist 06-08)
 
-### Image Treatment
+### 图片处理
 - Dark-themed product screenshots and UI mockups dominate
 - Images sit within bordered containers matching the card system
 - Blue/cyan gradient glows behind or beneath feature images
 - No visible border-radius on images beyond container rounding (4px)
 - Full-bleed within their card containers
 
-### Distinctive Components
+### 特色组件
 
 **Stats/Metrics Display**
 - Large monospace numbers (JetBrains Mono) — "10k+" style
@@ -184,33 +184,33 @@ What makes Composio distinctive is its tension between extreme minimalism and st
 - Used as a section divider/brand statement
 - Stark white on black
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
+### 间距体系
 - Base unit: 8px
 - Scale: 1px, 2px, 4px, 6px, 8px, 10px, 12px, 14px, 16px, 18px, 20px, 24px, 30px, 32px, 40px
 - Component padding: typically 10px (buttons) to 24px (CTA buttons horizontal)
 - Section padding: generous vertical spacing (estimated 80-120px between major sections)
 - Card internal padding: approximately 24-32px
 
-### Grid & Container
+### 栅格与容器
 - Max container width: approximately 1200px, centered
 - Content sections use single-column or 2-3 column grids for feature cards
 - Hero: centered single-column with maximum impact
 - Feature sections: asymmetric layouts mixing text blocks with product screenshots
 
-### Whitespace Philosophy
+### 留白哲学
 - **Breathing room between sections**: Large vertical gaps create distinct "chapters" in the page scroll.
 - **Dense within components**: Cards and text blocks are internally compact (tight line-heights, minimal internal padding), creating focused information nodes.
 - **Contrast-driven separation**: Rather than relying solely on whitespace, Composio uses border opacity differences and subtle background shifts to delineate content zones.
 
-### Border Radius Scale
+### 圆角尺度
 - Nearly squared (2px): Inline code spans, small tags, pre blocks — the sharpest treatment, conveying technical precision
 - Subtly rounded (4px): Content cards, images, standard containers — the workhorse radius
 - Pill-shaped (37px): Select buttons and badges — creates a softer, more approachable feel for key CTAs
 - Full round (9999px+): Circular elements, avatar-like containers, decorative dots
 
-## 6. Depth & Elevation
+## 6. 层深与阴影
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
@@ -222,14 +222,14 @@ What makes Composio distinctive is its tension between extreme minimalism and st
 
 **Shadow Philosophy**: Composio uses shadows sparingly and with deliberate contrast. The hard-offset brutalist shadow is the signature — it breaks the sleek darkness with a raw, almost retro-computing feel. The soft diffuse shadow is reserved for truly floating elements. Most depth is communicated through border opacity gradations rather than shadows.
 
-### Decorative Depth
+### 装饰性层深
 - **Cyan Glow Halos**: Radial gradient halos using Electric Cyan at low opacity behind feature cards and images. Creates a "screen glow" effect as if the UI elements are emitting light.
 - **Blue-Black Gradient Washes**: Linear gradients from Composio Cobalt to Void Black used as section backgrounds, adding subtle color temperature shifts.
 - **White Fog Horizon**: A gradient from dark to diffused white/gray at the bottom of the page, creating an atmospheric "dawn" effect before the footer.
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 
-### Do
+### 推荐
 - Use Void Black (`#0f0f0f`) as the primary page background — never pure white for main surfaces
 - Keep heading line-heights ultra-tight (0.87-1.0) for compressed, authoritative text blocks
 - Use white-opacity borders (4-12%) for containment — they're more important than shadows here
@@ -240,7 +240,7 @@ What makes Composio distinctive is its tension between extreme minimalism and st
 - Layer opacity-based borders to create subtle depth without shadows
 - Use uppercase + letter-spacing only for tiny overline labels (12px or smaller)
 
-### Don't
+### 禁忌
 - Don't use bright backgrounds or light surfaces as primary containers
 - Don't apply heavy shadows everywhere — depth comes from border opacity, not box-shadow
 - Don't use Composio Cobalt (`#0007cd`) as a text color — it's too dark on dark and too saturated on light
@@ -252,9 +252,9 @@ What makes Composio distinctive is its tension between extreme minimalism and st
 - Don't use decorative serif or handwritten fonts — the entire identity is geometric sans + monospace
 - Don't skip the monospace font for technical content — JetBrains Mono is not decorative, it's a credibility signal
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
+### 断点
 | Name | Width | Key Changes |
 |------|-------|-------------|
 | Mobile | <768px | Single column, hamburger nav, full-width cards, reduced section padding, hero text scales down to ~28-40px |
@@ -262,12 +262,12 @@ What makes Composio distinctive is its tension between extreme minimalism and st
 | Desktop | 1024-1440px | Full multi-column layout, expanded nav with all links visible, large hero typography (64px) |
 | Large Desktop | >1440px | Max-width container centered, generous horizontal margins |
 
-### Touch Targets
+### 触摸目标
 - Minimum touch target: 44x44px for all interactive elements
 - Buttons use comfortable padding (8px 24px minimum) ensuring adequate touch area
 - Nav links spaced with sufficient gap for thumb navigation
 
-### Collapsing Strategy
+### 折叠策略
 - **Navigation**: Full horizontal nav on desktop collapses to hamburger on mobile
 - **Feature grids**: 3-column → 2-column → single-column stacking
 - **Hero text**: 64px → 40px → 28px progressive scaling
@@ -275,15 +275,15 @@ What makes Composio distinctive is its tension between extreme minimalism and st
 - **Cards**: Stack vertically on mobile with full-width treatment
 - **Code blocks**: Horizontal scroll on smaller viewports rather than wrapping
 
-### Image Behavior
+### 图片行为
 - Product screenshots scale proportionally within their containers
 - Dark-themed images maintain contrast on the dark background at all sizes
 - Gradient glow effects scale with container size
 - No visible art direction changes between breakpoints — same crops, proportional scaling
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
+### 色彩速查表
 - Primary CTA: "Pure White (#ffffff)"
 - Page Background: "Void Black (#0f0f0f)"
 - Brand Accent: "Composio Cobalt (#0007cd)"
@@ -293,14 +293,14 @@ What makes Composio distinctive is its tension between extreme minimalism and st
 - Card Border: "Border Mist 10 (rgba(255,255,255,0.10))"
 - Button Border: "Signal Blue (#0089ff)"
 
-### Example Component Prompts
+### 组件提示示例
 - "Create a feature card with a near-black background (#000000), barely visible white border at 10% opacity, subtly rounded corners (4px), and a hard-offset shadow (4px right, 4px down, 15% black). Use Pure White for the title in abcDiatype at 24px weight 500, and Ghost White (60% opacity) for the description at 16px."
 - "Design a primary CTA button with a solid white background, near-black text, comfortable padding (8px vertical, 24px horizontal), and subtly rounded corners. Place it next to a secondary button with transparent background, Signal Blue border, and matching padding."
 - "Build a hero section on Void Black (#0f0f0f) with a massive heading at 64px, line-height 0.87, in abcDiatype. Center the text. Add a subtle blue-to-black gradient glow behind the content. Include a white CTA button and a cyan-accented secondary button below."
 - "Create a code snippet display using JetBrains Mono at 14px with -0.28px letter-spacing on a black background. Add a Border Mist 10 border (rgba(255,255,255,0.10)) and 4px radius. Show syntax-highlighted content with white and cyan text."
 - "Design a navigation bar on Void Black with the Composio wordmark in white on the left, 4-5 nav links in white abcDiatype at 16px, and a white-fill CTA button on the right. Add a Border Mist 06 bottom border."
 
-### Iteration Guide
+### 迭代指南
 When refining existing screens generated with this design system:
 1. Focus on ONE component at a time
 2. Reference specific color names and hex codes from this document — "use Ghost White (rgba(255,255,255,0.6))" not "make it lighter"

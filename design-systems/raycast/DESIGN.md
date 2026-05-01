@@ -1,9 +1,9 @@
-# Design System Inspired by Raycast
+# Raycast
 
-> Category: Developer Tools
+> Category: 开发者工具
 > Productivity launcher. Sleek dark chrome, vibrant gradient accents.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 Raycast's marketing site feels like the dark interior of a precision instrument — a Swiss watch case carved from obsidian. The background isn't just dark, it's an almost-black blue-tint (`#07080a`) that creates a sense of being inside a macOS native application rather than a website. Every surface, every border, every shadow is calibrated to evoke the feeling of a high-performance desktop utility: fast, minimal, trustworthy.
 
@@ -11,7 +11,7 @@ The signature move is the layered shadow system borrowed from macOS window chrom
 
 Inter is used everywhere — headings, body, buttons, captions — with extensive OpenType features (`calt`, `kern`, `liga`, `ss03`) creating a consistent, readable typographic voice. The positive letter-spacing (0.2px–0.4px on body text) is unusual for a dark UI and gives the text an airy, breathable quality that counterbalances the dense, dark surfaces. GeistMono appears for code elements, reinforcing the developer-tool identity.
 
-**Key Characteristics:**
+**核心特征：**
 - Near-black blue-tinted background (`#07080a`) — not pure black, subtly blue-shifted
 - macOS-native shadow system with multi-layer inset highlights simulating physical depth
 - Raycast Red (`#FF6363`) as a punctuation color — hero stripes, not pervasive
@@ -20,21 +20,21 @@ Inter is used everywhere — headings, body, buttons, captions — with extensiv
 - Subtle rgba white borders (0.06–0.1 opacity) for containment on dark surfaces
 - Keyboard shortcut styling with gradient key caps and heavy shadows
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
-### Primary
+### 主色
 - **Near-Black Blue** (`#07080a`): Primary page background — the foundational void with a subtle blue-cold undertone
 - **Pure White** (`#ffffff`): Primary heading text, high-emphasis elements
 - **Raycast Red** (`#FF6363` / `hsl(0, 100%, 69%)`): Brand accent — hero stripes, danger states, critical highlights
 
-### Secondary & Accent
+### 辅助色与强调色
 - **Raycast Blue** (`hsl(202, 100%, 67%)` / ~`#55b3ff`): Interactive accent — links, focus states, selected items
 - **Raycast Green** (`hsl(151, 59%, 59%)` / ~`#5fc992`): Success states, positive indicators
 - **Raycast Yellow** (`hsl(43, 100%, 60%)` / ~`#ffbc33`): Warning accents, highlights
 - **Blue Transparent** (`hsla(202, 100%, 67%, 0.15)`): Blue tint overlay for interactive surfaces
 - **Red Transparent** (`hsla(0, 100%, 69%, 0.15)`): Red tint overlay for danger/error surfaces
 
-### Surface & Background
+### 表面与背景色
 - **Deep Background** (`#07080a`): Page canvas, the darkest surface
 - **Surface 100** (`#101111`): Elevated surface, card backgrounds
 - **Key Start** (`#121212`): Keyboard key gradient start
@@ -42,37 +42,37 @@ Inter is used everywhere — headings, body, buttons, captions — with extensiv
 - **Card Surface** (`#1b1c1e`): Badge backgrounds, tag fills, elevated containers
 - **Button Foreground** (`#18191a`): Dark surface for button text on light backgrounds
 
-### Neutrals & Text
+### 中性色与文字色
 - **Near White** (`#f9f9f9` / `hsl(240, 11%, 96%)`): Primary body text, high-emphasis content
 - **Light Gray** (`#cecece` / `#cdcdce`): Secondary body text, descriptions
 - **Silver** (`#c0c0c0`): Tertiary text, subdued labels
 - **Medium Gray** (`#9c9c9d`): Link default color, secondary navigation
 - **Dim Gray** (`#6a6b6c`): Disabled text, low-emphasis labels
 - **Dark Gray** (`#434345`): Muted borders, inactive navigation links
-- **Border** (`hsl(195, 5%, 15%)` / ~`#252829`): Standard border color for cards and dividers
+- **边框色** (`hsl(195, 5%, 15%)` / ~`#252829`): Standard border color for cards and dividers
 - **Dark Border** (`#2f3031`): Separator lines, table borders
 
-### Semantic & Accent
+### 语义色与强调色
 - **Error Red** (`hsl(0, 100%, 69%)`): Error states, destructive actions
 - **Success Green** (`hsl(151, 59%, 59%)`): Success confirmations, positive states
 - **Warning Yellow** (`hsl(43, 100%, 60%)`): Warnings, attention-needed states
 - **Info Blue** (`hsl(202, 100%, 67%)`): Informational highlights, links
 
-### Gradient System
+### 渐变体系
 - **Keyboard Key Gradient**: Linear gradient from `#121212` (top) to `#0d0d0d` (bottom) — simulates physical key depth
 - **Warm Glow**: `rgba(215, 201, 175, 0.05)` radial spread — subtle warm ambient glow behind featured elements
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Family
+### 字体家族
 - **Primary**: `Inter` — humanist sans-serif, used everywhere. Fallbacks: `Inter Fallback`, system sans-serif
 - **System**: `SF Pro Text` — Apple system font for select macOS-native UI elements. Fallbacks: `SF Pro Icons`, `Inter`, `Inter Fallback`
 - **Monospace**: `GeistMono` — Vercel's monospace font for code elements. Fallbacks: `ui-monospace`, `SFMono-Regular`, `Roboto Mono`, `Menlo`, `Monaco`
 - **OpenType features**: `calt`, `kern`, `liga`, `ss03` enabled globally; `ss02`, `ss08` on display text; `liga` disabled (`"liga" 0`) on hero headings
 
-### Hierarchy
+### 字体层级
 
-| Role | Size | Weight | Line Height | Letter Spacing | Notes |
+| 角色 | 尺寸 | 字重 | 行高 | 字间距 | 备注 |
 |------|------|--------|-------------|----------------|-------|
 | Display Hero | 64px | 600 | 1.10 | 0px | OpenType: liga 0, ss02, ss08 |
 | Section Display | 56px | 400 | 1.17 | 0.2px | OpenType: calt, kern, liga, ss03 |
@@ -91,41 +91,41 @@ Inter is used everywhere — headings, body, buttons, captions — with extensiv
 | Code | 14px (GeistMono) | 500 | 1.60 | 0.3px | Code blocks, technical content |
 | Code Small | 12px (GeistMono) | 400 | 1.60 | 0.2px | Inline code, terminal output |
 
-### Principles
+### 原则
 - **Positive tracking on dark**: Unlike most dark UIs that use tight or neutral letter-spacing, Raycast applies +0.2px to +0.4px — creating an airy, readable feel that compensates for the dark background
 - **Weight 500 as baseline**: Most body text uses medium weight (500), not regular (400) — subtle extra heft improves legibility on dark surfaces
 - **Display restraint**: Hero text at 64px/600 is confident but not oversized — Raycast avoids typographic spectacle in favor of functional elegance
 - **OpenType everywhere**: `ss03` (stylistic set 3) is enabled globally across Inter, giving the typeface a slightly more geometric, tool-like quality
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 - **Primary Pill**: Transparent background, white text, pill shape (86px radius), multi-layer inset shadow (`rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset`). Hover: opacity 0.6
 - **Secondary Button**: Transparent background, white text, 6px radius, `1px solid rgba(255, 255, 255, 0.1)` border, subtle drop shadow (`rgba(0, 0, 0, 0.03) 0px 7px 3px`). Hover: opacity 0.6
 - **Ghost Button**: No background or border, gray text (`#6a6b6c`), 86px radius, same inset shadow. Hover: opacity 0.6, text brightens to white
 - **CTA (Download)**: Semi-transparent white background (`hsla(0, 0%, 100%, 0.815)`), dark text (`#18191a`), pill shape. Hover: full white background (`hsl(0, 0%, 100%)`)
 - **Transition**: All buttons use opacity transition for hover rather than background-color change — a signature Raycast interaction pattern
 
-### Cards & Containers
+### 卡片与容器
 - **Standard Card**: `#101111` surface, `1px solid rgba(255, 255, 255, 0.06)` border, 12px–16px border-radius
 - **Elevated Card**: Ring shadow `rgb(27, 28, 30) 0px 0px 0px 1px` outer + `rgb(7, 8, 10) 0px 0px 0px 1px inset` inner — creates a double-ring containment
 - **Feature Card**: 16px–20px border-radius, subtle warm glow (`rgba(215, 201, 175, 0.05) 0px 0px 20px 5px`) behind hero elements
 - **Hover**: Cards brighten slightly via border opacity increase or subtle shadow enhancement
 
-### Inputs & Forms
+### 输入框与表单
 - Dark input fields with `#07080a` background, `1px solid rgba(255, 255, 255, 0.08)` border, 8px border-radius
 - Focus state: Border brightens, blue glow (`hsla(202, 100%, 67%, 0.15)`) ring appears
 - Text: `#f9f9f9` input color, `#6a6b6c` placeholder
 - Labels: `#9c9c9d` at 14px weight 500
 
-### Navigation
+### 导航
 - **Top nav**: Dark background blending with page, white text links at 16px weight 500
 - **Nav links**: Gray text (`#9c9c9d`) → white on hover, underline decoration on hover
 - **CTA button**: Semi-transparent white pill at nav end
 - **Mobile**: Collapses to hamburger, maintains dark theme
 - **Sticky**: Nav fixed at top with subtle border separator
 
-### Image Treatment
+### 图片处理
 - **Product screenshots**: macOS window chrome style — rounded corners (12px), deep shadows simulating floating windows
 - **Full-bleed sections**: Dark screenshots blend seamlessly into the dark background
 - **Hero illustration**: Diagonal stripe pattern in Raycast Red — abstract, geometric, brand-defining
@@ -139,26 +139,26 @@ Inter is used everywhere — headings, body, buttons, captions — with extensiv
 - **Neutral badge**: `#1b1c1e` background, white text, 6px radius, 14px font at weight 500, `0px 6px` padding
 - Compact, pill-like treatment for categorization
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
+### 间距体系
 - **Base unit**: 8px
 - **Scale**: 1px, 2px, 3px, 4px, 8px, 10px, 12px, 16px, 20px, 24px, 32px, 40px
 - **Section padding**: 80px–120px vertical between major sections
 - **Card padding**: 16px–32px internal spacing
 - **Component gaps**: 8px–16px between related elements
 
-### Grid & Container
+### 栅格与容器
 - **Max width**: ~1200px container (breakpoint at 1204px), centered
 - **Column patterns**: Single-column hero, 2–3 column feature grids, full-width showcase sections
 - **App showcase**: Product UI presented in centered window frames
 
-### Whitespace Philosophy
+### 留白哲学
 - **Dramatic negative space**: Sections float in vast dark void, creating cinematic pacing between features
 - **Dense product, sparse marketing**: The product UI screenshots are information-dense, but the surrounding marketing copy uses minimal text with generous spacing
 - **Vertical rhythm**: Consistent 24px–32px gaps between elements within sections
 
-### Border Radius Scale
+### 圆角尺度
 - **2px–3px**: Micro-elements, code spans, tiny indicators
 - **4px–5px**: Keyboard keys, small interactive elements
 - **6px**: Buttons, badges, tags — the workhorse radius
@@ -169,7 +169,7 @@ Inter is used everywhere — headings, body, buttons, captions — with extensiv
 - **20px**: Hero cards, prominent containers
 - **86px+**: Pill buttons, nav CTAs — full pill shape
 
-## 6. Depth & Elevation
+## 6. 层深与阴影
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
@@ -187,14 +187,14 @@ Raycast's shadow system is the most macOS-native on the web. Multi-layer shadows
 - **Inset bottom darks** (`rgba(0, 0, 0, 0.2)`) simulating shadow underneath
 - The effect is physical: elements feel like glass or brushed metal, not flat rectangles
 
-### Decorative Depth
+### 装饰性层深
 - **Warm glow**: `rgba(215, 201, 175, 0.05) 0px 0px 20px 5px` behind featured elements — a subtle warm aura on the cold dark canvas
 - **Blue info glow**: `rgba(0, 153, 255, 0.15)` for interactive state emphasis
 - **Red danger glow**: `rgba(255, 99, 99, 0.15)` for error/destructive state emphasis
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 
-### Do
+### 推荐
 - Use `#07080a` (not pure black) as the background — the blue-cold tint is essential to the Raycast feel
 - Apply positive letter-spacing (+0.2px) on body text — this is deliberately different from most dark UIs
 - Use multi-layer shadows with inset highlights for interactive elements — the macOS-native depth is signature
@@ -205,7 +205,7 @@ Raycast's shadow system is the most macOS-native on the web. Multi-layer shadows
 - Enable OpenType features `calt`, `kern`, `liga`, `ss03` on all Inter text
 - Use opacity transitions (hover: opacity 0.6) for button interactions, not color changes
 
-### Don't
+### 禁忌
 - Use pure black (`#000000`) as the background — the blue tint differentiates Raycast from generic dark themes
 - Apply negative letter-spacing on body text — Raycast deliberately uses positive spacing for readability
 - Use Raycast Blue as the primary accent for everything — blue is for interactive/info, red is the brand color
@@ -215,9 +215,9 @@ Raycast's shadow system is the most macOS-native on the web. Multi-layer shadows
 - Apply heavy drop shadows without inset companions — shadows always come in pairs (outer + inset)
 - Use decorative elements, gradients, or colorful backgrounds — the dark void is the stage, content is the performer
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
+### 断点
 | Name | Width | Key Changes |
 |------|-------|-------------|
 | Mobile | <600px | Single column, stacked cards, hamburger nav, hero text reduces to ~40px |
@@ -226,27 +226,27 @@ Raycast's shadow system is the most macOS-native on the web. Multi-layer shadows
 | Desktop | 1024px–1200px | Full layout, all nav links visible, 64px hero display |
 | Large Desktop | >1200px | Max-width container centered, generous side margins |
 
-### Touch Targets
+### 触摸目标
 - Pill buttons: 86px radius with 20px padding — well above 44px minimum
 - Secondary buttons: 8px padding minimum, but border provides visual target expansion
 - Nav links: 16px text with surrounding padding for accessible touch targets
 
-### Collapsing Strategy
+### 折叠策略
 - **Navigation**: Full horizontal nav → hamburger at mobile with slide-out menu
 - **Hero**: 64px display → 48px → 36px across breakpoints
 - **Feature grids**: 3-column → 2-column → single-column stack
 - **Product screenshots**: Scale within containers, maintaining macOS window chrome proportions
 - **Keyboard shortcut displays**: Simplify or hide on mobile where keyboard shortcuts are irrelevant
 
-### Image Behavior
+### 图片行为
 - Product screenshots scale responsively within fixed-ratio containers
 - Hero diagonal stripe pattern scales proportionally
 - macOS window chrome rounded corners maintained at all sizes
 - No lazy-loading artifacts — images are critical to the product narrative
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
+### 色彩速查表
 - Primary Background: Near-Black Blue (`#07080a`)
 - Primary Text: Near White (`#f9f9f9`)
 - Brand Accent: Raycast Red (`#FF6363`)
@@ -255,14 +255,14 @@ Raycast's shadow system is the most macOS-native on the web. Multi-layer shadows
 - Card Surface: Surface 100 (`#101111`)
 - Border: Dark Border (`hsl(195, 5%, 15%)` / ~`#252829`)
 
-### Example Component Prompts
+### 组件提示示例
 - "Create a hero section on #07080a background with 64px Inter heading (weight 600, line-height 1.1), near-white text (#f9f9f9), and a semi-transparent white pill CTA button (hsla(0,0%,100%,0.815), 86px radius, dark text #18191a)"
 - "Design a feature card with #101111 background, 1px solid rgba(255,255,255,0.06) border, 16px border-radius, double-ring shadow (rgb(27,28,30) 0px 0px 0px 1px outer), 22px Inter heading, and #9c9c9d body text"
 - "Build a navigation bar on dark background (#07080a), Inter links at 16px weight 500 in #9c9c9d, hover to white, and a translucent white pill button at the right end"
 - "Create a keyboard shortcut display with key caps using gradient background (#121212→#0d0d0d), 5-layer shadow for physical depth, 4px radius, Inter 12px weight 600 text"
 - "Design an alert card with #101111 surface, Raycast Red (#FF6363) left border accent, translucent red glow (hsla(0,100%,69%,0.15)), white heading, and #cecece description text"
 
-### Iteration Guide
+### 迭代指南
 When refining existing screens generated with this design system:
 1. Check the background is `#07080a` not pure black — the blue tint is critical
 2. Verify letter-spacing is positive (+0.2px) on body text — negative spacing breaks the Raycast aesthetic

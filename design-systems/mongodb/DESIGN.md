@@ -1,9 +1,9 @@
-# Design System Inspired by MongoDB
+# MongoDB
 
-> Category: Backend & Data
+> Category: 后端与数据
 > Document database. Green leaf branding, developer documentation focus.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 MongoDB's website is a deep-forest-meets-terminal experience — a design system rooted in the darkest teal-black (`#001e2b`) that evokes both the density of a database and the depth of a forest canopy. Against this near-black canvas, a striking neon green (`#00ed64`) pulses as the brand accent — bright enough to feel electric, organic enough to feel alive. This isn't the cold neon of cyberpunk; it's the bioluminescent green of something growing in the dark.
 
@@ -11,7 +11,7 @@ The typography system is architecturally ambitious: MongoDB Value Serif for mass
 
 What makes MongoDB distinctive is its dual-mode design: a dark hero/feature section world (`#001e2b` with neon green accents) and a light content world (white with teal-gray borders `#b8c4c2`). The transition between these modes creates dramatic contrast. The shadow system uses teal-tinted dark shadows (`rgba(0, 30, 43, 0.12)`) that maintain the forest-dark atmosphere even on light surfaces. Buttons use pill shapes (100px–999px radius) with MongoDB Green borders (`#00684a`), and the entire component system references the LeafyGreen design system.
 
-**Key Characteristics:**
+**核心特征：**
 - Deep teal-black backgrounds (`#001e2b`) — forest-dark, not space-dark
 - Neon MongoDB Green (`#00ed64`) as the singular brand accent — electric and organic
 - MongoDB Value Serif for hero headlines — editorial authority at tech scale
@@ -22,7 +22,7 @@ What makes MongoDB distinctive is its dual-mode design: a dark hero/feature sect
 - Pill buttons (100px radius) with green borders (`#00684a`)
 - Link Blue (`#006cfa`) and hover transition to `#3860be`
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
 ### Primary Brand
 - **Forest Black** (`#001e2b`): Primary dark background — the deepest teal-black
@@ -49,15 +49,15 @@ What makes MongoDB distinctive is its dual-mode design: a dark hero/feature sect
 - **Standard Shadow** (`rgba(0, 0, 0, 0.15) 0px 3px 20px`): General elevation
 - **Subtle Shadow** (`rgba(0, 0, 0, 0.1) 0px 2px 4px`): Light card lift
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Families
+### 字体家族
 - **Display Serif**: `MongoDB Value Serif` — editorial hero headlines
 - **Body / UI**: `Euclid Circular A` — geometric sans-serif workhorse
 - **Code / Labels**: `Source Code Pro` — monospace with uppercase label treatments
 - **Fallbacks**: `Akzidenz-Grotesk Std` (with CJK: Noto Sans KR/SC/JP), `Times`, `Arial`, `system-ui`
 
-### Hierarchy
+### 字体层级
 
 | Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
 |------|------|------|--------|-------------|----------------|-------|
@@ -78,15 +78,15 @@ What makes MongoDB distinctive is its dual-mode design: a dark hero/feature sect
 | Code Label | Source Code Pro | 14px (0.88rem) | 400–500 | 1.14 (tight) | 1px–2px | `text-transform: uppercase` |
 | Code Micro | Source Code Pro | 9px (0.56rem) | 600 | 2.67 (relaxed) | 2.5px | `text-transform: uppercase` |
 
-### Principles
+### 原则
 - **Serif for authority**: MongoDB Value Serif at hero scale creates an editorial presence unusual in tech — it communicates that MongoDB is an institution, not a startup.
 - **Weight 300 as body default**: Euclid Circular A uses light (300) for body text, creating an airy reading experience that contrasts with the dense, dark backgrounds.
 - **Wide-tracked monospace labels**: Source Code Pro uppercase at 1px–3px letter-spacing creates technical signposts that feel like database field labels — systematic, structured, classified.
 - **Four-weight range**: 300 (light body) → 400 (standard) → 500 (UI/nav) → 700 (bold CTA) — a wider range than most systems, enabling fine-grained hierarchy.
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
 **Primary Green (Dark Surface)**
 - Background: `#00684a` (muted MongoDB green)
@@ -111,32 +111,32 @@ What makes MongoDB distinctive is its dual-mode design: a dark hero/feature sect
 - Radius: 4px–8px
 - Hover: background tint
 
-### Cards & Containers
+### 卡片与容器
 - Light mode: white background with `1px solid #b8c4c2` border
 - Dark mode: `#001e2b` or `#1c2d38` background with `1px solid #3d4f58`
 - Radius: 16px (standard), 24px (medium), 48px (large/hero)
 - Shadow: `rgba(0,30,43,0.12) 0px 26px 44px` (forest-tinted)
 - Image containers: 30px–32px radius
 
-### Inputs & Forms
+### 输入框与表单
 - Textarea: text `#e8edeb`, padding 12px 12px 12px 8px
 - Borders: `1px solid #b8c4c2` on light, `1px solid #3d4f58` on dark
 - Input radius: 4px
 
-### Navigation
+### 导航
 - Dark header on forest-black background
 - Euclid Circular A 16px weight 500 for nav links
 - MongoDB logo (leaf icon + wordmark) left-aligned
 - Green CTA pill buttons right-aligned
 - Mega-menu dropdowns with product categories
 
-### Image Treatment
+### 图片处理
 - Dashboard screenshots on dark backgrounds
 - Green-accented UI elements in screenshots
 - 30px–32px radius on image containers
 - Full-width dark sections for product showcases
 
-### Distinctive Components
+### 特色组件
 
 **Neon Green Accent Underlines**
 - `0px 2px 2px 0px solid #00ed64` — bottom + right border creating accent underlines
@@ -148,25 +148,25 @@ What makes MongoDB distinctive is its dual-mode design: a dark hero/feature sect
 - Used as section category markers above headings
 - Creates a "database field label" aesthetic
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
+### 间距体系
 - Base unit: 8px
 - Scale: 1px, 4px, 7px, 8px, 10px, 12px, 14px, 15px, 16px, 18px, 20px, 24px, 32px
 
-### Grid & Container
+### 栅格与容器
 - Max content width centered
 - Dark hero section with contained content
 - Light content sections below
 - Card grids: 2–3 columns
 - Full-width dark footer
 
-### Whitespace Philosophy
+### 留白哲学
 - **Dramatic mode transitions**: The shift from dark teal sections to white content creates built-in visual breathing through contrast, not just space.
 - **Generous dark sections**: Dark hero and feature areas use extra vertical padding (80px+) to let the forest-dark background breathe.
 - **Compact light sections**: White content areas are denser, with tighter card grids and less vertical spacing.
 
-### Border Radius Scale
+### 圆角尺度
 - Minimal (1px–2px): Small spans, badges
 - Subtle (4px): Inputs, small buttons
 - Standard (8px): Cards, links
@@ -178,7 +178,7 @@ What makes MongoDB distinctive is its dual-mode design: a dark hero/feature sect
 - Pill (100px–999px): Buttons, navigation pills
 - Full (9999px): Maximum pill
 
-## 6. Depth & Elevation
+## 6. 层深与阴影
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
@@ -190,9 +190,9 @@ What makes MongoDB distinctive is its dual-mode design: a dark hero/feature sect
 
 **Shadow Philosophy**: MongoDB's shadow system is unique in that the primary elevation shadow uses `rgba(0, 30, 43, 0.12)` — a teal-tinted shadow that carries the forest-dark brand color into the depth system. This means even on white surfaces, shadows feel like they belong to the MongoDB color world rather than being generic neutral black.
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 
-### Do
+### 推荐
 - Use `#001e2b` (forest-black) for dark sections — not pure black
 - Apply MongoDB Green (`#00ed64`) sparingly for maximum electric impact
 - Use MongoDB Value Serif ONLY for hero/display headings — Euclid Circular A for everything else
@@ -202,7 +202,7 @@ What makes MongoDB distinctive is its dual-mode design: a dark hero/feature sect
 - Use weight 300 for body text — the light weight is the readable voice
 - Apply pill radius (100px) to primary action buttons
 
-### Don't
+### 禁忌
 - Don't use pure black (`#000000`) for dark backgrounds — always use teal-black (`#001e2b`)
 - Don't use MongoDB Green (`#00ed64`) on backgrounds — it's an accent for text, underlines, and small highlights
 - Don't use standard gray shadows — always use teal-tinted (`rgba(0,30,43,...)`)
@@ -212,9 +212,9 @@ What makes MongoDB distinctive is its dual-mode design: a dark hero/feature sect
 - Don't use warm colors — the palette is strictly cool (teal, green, blue)
 - Don't forget the green accent underlines — they're the signature decorative element
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
+### 断点
 | Name | Width | Key Changes |
 |------|-------|-------------|
 | Mobile Small | <425px | Tight single column |
@@ -224,26 +224,26 @@ What makes MongoDB distinctive is its dual-mode design: a dark hero/feature sect
 | Large Desktop | 1280–1440px | Expanded layout |
 | Ultra-wide | >1440px | Maximum width, generous margins |
 
-### Touch Targets
+### 触摸目标
 - Pill buttons with generous padding
 - Navigation links at 16px with adequate spacing
 - Card surfaces as full-area touch targets
 
-### Collapsing Strategy
+### 折叠策略
 - Hero: MongoDB Value Serif 96px → 64px → scales further
 - Navigation: horizontal mega-menu → hamburger
 - Feature cards: multi-column → stacked
 - Dark/light sections maintain their mode at all sizes
 - Source Code Pro labels maintain uppercase treatment
 
-### Image Behavior
+### 图片行为
 - Dashboard screenshots scale proportionally
 - Dark section backgrounds maintained full-width
 - Image radius maintained across breakpoints
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
+### 色彩速查表
 - Dark background: Forest Black (`#001e2b`)
 - Brand accent: MongoDB Green (`#00ed64`)
 - Functional green: Dark Green (`#00684a`)
@@ -253,14 +253,14 @@ What makes MongoDB distinctive is its dual-mode design: a dark hero/feature sect
 - Border light: Silver Teal (`#b8c4c2`)
 - Border dark: Teal Gray (`#3d4f58`)
 
-### Example Component Prompts
+### 组件提示示例
 - "Create a hero on forest-black (#001e2b) background. Headline at 96px MongoDB Value Serif weight 400, line-height 1.20, white text with 'potential' highlighted in MongoDB Green (#00ed64). Subtitle at 18px Euclid Circular A weight 400. Green pill CTA (#00684a, 100px radius). Neon green gradient glow behind product screenshot."
 - "Design a card on white background: 1px solid #b8c4c2 border, 16px radius, shadow rgba(0,30,43,0.12) 0px 26px 44px. Title at 24px Euclid Circular A weight 500. Body at 16px weight 300. Source Code Pro 14px uppercase label above title with 2px letter-spacing."
 - "Build a dark section: #001e2b background, 1px solid #3d4f58 border on cards. White text. MongoDB Green (#00ed64) accent underlines on headings using bottom-border 2px solid."
 - "Create technical label: Source Code Pro 14px, text-transform uppercase, letter-spacing 2px, weight 500, #00ed64 color on dark background."
 - "Design a pill button: #1c2d38 background, 1px solid #3d4f58 border, 100px radius, #5c6c75 text. Hover: #1eaedb background, white text, translateX(5px)."
 
-### Iteration Guide
+### 迭代指南
 1. Start with the mode decision: dark (#001e2b) for hero/features, white for content
 2. MongoDB Green (#00ed64) is electric — use once per section for maximum impact
 3. Serif headlines (MongoDB Value Serif) create the editorial authority — never use for body

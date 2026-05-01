@@ -1,9 +1,9 @@
-# Design System Inspired by Nike
+# Nike
 
-> Category: E-Commerce & Retail
+> Category: 电商与零售
 > Athletic retail. Monochrome UI, massive uppercase type, full-bleed photography.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 Nike.com is a kinetic retail cathedral — a site that channels the explosive energy of sport into a digital shopping experience. The design operates on a principle of radical simplicity: strip everything back to black, white, and grey so that athletic photography and product color can dominate without competition. The result feels less like a website and more like a sports editorial laid out with the precision of a luxury magazine. Every pixel of real estate is either selling product or driving toward product.
 
@@ -11,7 +11,7 @@ The "Podium CDS" (Nike's internal Core Design System) establishes an aggressivel
 
 The typography system is the other half of Nike's visual identity. Massive uppercase headlines in Nike Futura ND — a custom condensed Futura variant with impossibly tight line-height (0.90) — punch through hero imagery like a typographic shockwave. Below the headlines, the workhorse Helvetica Now family handles everything from navigation to product descriptions with Swiss-precision clarity. This split between expressive display type and functional body type mirrors Nike's brand duality: inspiration meets execution.
 
-**Key Characteristics:**
+**核心特征：**
 - Monochromatic UI (black/white/grey) that lets product photography be the only color source
 - Massive uppercase display typography (96px, line-height 0.90) that punches through hero images
 - Full-bleed photography with no border radius — imagery fills every available edge
@@ -20,14 +20,14 @@ The typography system is the other half of Nike's visual identity. Massive upper
 - Category-driven shopping architecture with large navigational image cards
 - Shadow-free, border-minimal elevation model — surface differentiation through grey shifts only
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
-### Primary
+### 主色
 
 - **Nike Black** (`#111111`): The foundation — primary text, button backgrounds, nav text, hero overlays. Deliberately not pure black (#000000), creating a fractionally softer reading experience
 - **Nike White** (`#FFFFFF`): Primary page canvas, button text on dark, card surfaces, nav bar background
 
-### Surface & Background
+### 表面与背景色
 
 - **Snow** (`#FAFAFA`): Lightest surface, near-white subtle differentiation (--podium-cds-color-grey-50)
 - **Light Gray** (`#F5F5F5`): Secondary background, search input fill, image placeholder, loading skeleton (--podium-cds-color-grey-100)
@@ -36,7 +36,7 @@ The typography system is the other half of Nike's visual identity. Massive upper
 - **Deep Charcoal** (`#1F1F21`): Inverse primary background, darkest non-black surface (--podium-cds-color-grey-900)
 - **Dark Hover** (`#39393B`): Hover state on dark backgrounds (--podium-cds-color-grey-700)
 
-### Neutrals & Text
+### 中性色与文字色
 
 - **Primary Text** (`#111111`): Main body text, headings, nav links (--podium-cds-color-text-primary)
 - **Secondary Text** (`#707072`): Descriptive copy, metadata, timestamps, price labels (--podium-cds-color-text-secondary)
@@ -47,7 +47,7 @@ The typography system is the other half of Nike's visual identity. Massive upper
 - **Border Disabled** (`#CACACB`): Inactive border state
 - **Border Active** (`#111111`): Active/focused border, matching primary text
 
-### Semantic & Accent
+### 语义色与强调色
 
 - **Nike Red** (`#D30005`): Critical errors, sale badges, urgent notifications (--podium-cds-color-red-600)
 - **Bright Red** (`#EE0005`): Red-500, slightly lighter red for emphasis
@@ -73,13 +73,13 @@ Each color ramp runs 50–900 for expressive use in campaigns and product pages:
 - **Purple**: `#E4E1FC` → `#6E0FF6` → `#1C0060`
 - **Pink**: `#FFE1F3` → `#ED1AA0` → `#4C012D`
 
-### Gradient System
+### 渐变体系
 
 Nike avoids UI gradients. When gradients appear, they are photographic — applied to product hero backgrounds (e.g., a red shoe on a red-to-deeper-red gradient). The design system itself is flat-color only.
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Family
+### 字体家族
 
 **Display:** Nike Futura ND (custom condensed Futura variant exclusive to Nike)
 - Fallbacks: Helvetica Now Text Medium, Helvetica, Arial
@@ -100,9 +100,9 @@ Nike avoids UI gradients. When gradients appear, they are photographic — appli
 
 **Arabic:** Neue Frutiger Arabic — locale-specific alternative
 
-### Hierarchy
+### 字体层级
 
-| Role | Size | Weight | Line Height | Letter Spacing | Notes |
+| 角色 | 尺寸 | 字重 | 行高 | 字间距 | 备注 |
 |------|------|--------|-------------|----------------|-------|
 | Display | 96px | 500 | 0.90 | — | Nike Futura ND, uppercase, hero headlines |
 | Heading 1 | 32px | 500 | 1.20 | — | Helvetica Now Display Medium, section titles |
@@ -118,13 +118,13 @@ Nike avoids UI gradients. When gradients appear, they are photographic — appli
 | Small | 12px | 500 | 1.50 | — | Helvetica Now Text Medium, timestamps |
 | Tiny | 12px | 400 | 1.50 | — | Helvetica Now Text, legal text |
 
-### Principles
+### 原则
 
 Nike's typography is a study in tension. The display layer — Nike Futura ND at 96px with a devastating 0.90 line-height — is engineered to feel like a stadium scoreboard: massive, condensed, uppercase, impossible to ignore. It transforms headlines into battle cries. Below the display layer, Helvetica Now provides a clinical counterpoint: Swiss-precision legibility with generous 1.75 line-height for comfortable product browsing. Weight 500 (Medium) dominates throughout the body text, giving Nike's prose a slight assertiveness without the heaviness of bold — every sentence reads like a confident recommendation, not a shout.
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
 **Primary**
 - Background: Nike Black (`#111111`)
@@ -160,7 +160,7 @@ Nike's typography is a study in tension. The display layer — Nike Futura ND at
 - Padding: 6px
 - Hover: Grey-500 background
 
-### Cards & Containers
+### 卡片与容器
 
 - Background: White (`#FFFFFF`) — no visible card boundary in most cases
 - Border radius: 0px for product image cards (edge-to-edge imagery), 20px for interactive containers
@@ -170,7 +170,7 @@ Nike's typography is a study in tension. The display layer — Nike Futura ND at
 - Category cards: full-bleed photography with text overlay on dark gradient
 - Transition: opacity 200ms ease for image swap on hover
 
-### Inputs & Forms
+### 输入框与表单
 
 - Background: Grey-100 (`#F5F5F5`)
 - Border: 1px solid `#CACACB` when visible, or borderless on search
@@ -181,7 +181,7 @@ Nike's typography is a study in tension. The display layer — Nike Futura ND at
 - Placeholder: Grey-500 (`#707072`)
 - Transition: border-color 200ms ease
 
-### Navigation
+### 导航
 
 - Background: White (`#FFFFFF`), sticky
 - Height: ~60px desktop
@@ -192,7 +192,7 @@ Nike's typography is a study in tension. The display layer — Nike Futura ND at
 - Mobile: hamburger menu, full-screen overlay
 - Top banner: promotional message bar with dark background (#111111) and white text
 
-### Image Treatment
+### 图片处理
 
 - Hero images: full-bleed, no border radius, edge-to-edge
 - Product grid: square (1:1) or 4:3 aspect ratio, no border radius
@@ -208,9 +208,9 @@ Nike's typography is a study in tension. The display layer — Nike Futura ND at
 - Centered text, 12px/500 Helvetica Now Text Medium
 - Used for shipping promotions, member benefits, sale announcements
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
+### 间距体系
 
 Base unit: 4px (primary grid is 8px multiples)
 
@@ -227,7 +227,7 @@ Base unit: 4px (primary grid is 8px multiples)
 | space-9 | 64px | Hero section padding |
 | space-10 | 80px | Large section spacing |
 
-### Grid & Container
+### 栅格与容器
 
 - Max container width: 1920px
 - Standard content width: ~1440px with horizontal padding
@@ -236,11 +236,11 @@ Base unit: 4px (primary grid is 8px multiples)
 - Grid gap: 4-12px between product cards (intentionally tight)
 - Horizontal padding: 48px desktop, 24px tablet, 16px mobile
 
-### Whitespace Philosophy
+### 留白哲学
 
 Nike's whitespace strategy is deliberately aggressive — not in the luxurious, breathing way of a fashion brand, but in a compressed, high-density way that fills every pixel with either content or intentional absence. Product grids use minimal gaps (4-12px) to create a sense of abundance and choice. Section breaks are generous (48-80px) to separate shopping contexts. The overall effect is a store that feels packed with product while remaining navigable — like a well-organized athletic superstore.
 
-### Border Radius Scale
+### 圆角尺度
 
 | Value | Context |
 |-------|---------|
@@ -252,7 +252,7 @@ Nike's whitespace strategy is deliberately aggressive — not in the luxurious, 
 | 30px | Buttons, tags, filters (full pill) |
 | 50% | Circular icon buttons, avatar placeholders |
 
-## 6. Depth & Elevation
+## 6. 层深与阴影
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
@@ -263,15 +263,15 @@ Nike's whitespace strategy is deliberately aggressive — not in the luxurious, 
 
 Nike's elevation philosophy is radically flat. There are no card shadows, no hover lifts, no floating elements. Depth is communicated exclusively through color — dark sections recede, light sections advance, grey shifts indicate state changes. This flatness reinforces the athletic, no-nonsense brand personality: no visual frills, just direct communication. The only "shadow" in the entire system is a 1px inset divider line and the accessibility-required focus ring.
 
-### Decorative Depth
+### 装饰性层深
 
 - **Hero photography overlays**: Dark gradient scrims over full-bleed photography for text readability
 - **Product background gradients**: Colored backgrounds behind hero product shots (e.g., red shoe on red gradient)
 - **Banner bars**: Solid dark (#111111) promotional strips at page top
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 
-### Do
+### 推荐
 
 - Use Nike Black (#111111) for all primary text — never pure #000000
 - Keep buttons pill-shaped (30px radius) and limited to primary/secondary variants
@@ -283,7 +283,7 @@ Nike's elevation philosophy is radically flat. There are no card shadows, no hov
 - Reserve color exclusively for semantic meaning (red=error, green=success, blue=link)
 - Use weight 500 (Medium) for all interactive text elements
 
-### Don't
+### 禁忌
 
 - Don't add shadows to cards — Nike's elevation model is entirely flat
 - Don't use border radius on product imagery — only UI elements get rounded corners
@@ -296,9 +296,9 @@ Nike's elevation philosophy is radically flat. There are no card shadows, no hov
 - Don't add decorative dividers — the 1px inset is the only divider pattern
 - Don't soften the contrast — Nike's design deliberately pushes black-on-white to maximum
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
+### 断点
 
 | Name | Width | Key Changes |
 |------|-------|-------------|
@@ -309,14 +309,14 @@ Nike's elevation philosophy is radically flat. There are no card shadows, no hov
 | Desktop | 1024-1440px | Full layout, expanded nav, 3-column grids, 48px padding |
 | Large Desktop | >1440px | Max-width container centered, increased margins, hero images full-bleed |
 
-### Touch Targets
+### 触摸目标
 
 - Minimum touch target: 44x44px (WCAG AAA)
 - Mobile nav icons: 48x48px touch area
 - Product cards: full surface is tappable
 - Filter pills: minimum 36px height with 12px padding
 
-### Collapsing Strategy
+### 折叠策略
 
 - **Navigation**: Full category links → hamburger menu below 960px; search, favorites, cart icons remain visible
 - **Product grids**: 3-col → 2-col at 960px → 1-col at 640px
@@ -325,7 +325,7 @@ Nike's elevation philosophy is radically flat. There are no card shadows, no hov
 - **Section padding**: 80px → 48px → 32px → 24px as viewport narrows
 - **Promotional banner**: text wraps or truncates, maintains dark background
 
-### Image Behavior
+### 图片行为
 
 - Responsive images via Nike CDN (`c.static-nike.com`) with width parameters
 - Product images: srcset with multiple resolutions (w_320, w_640, w_960, w_1920)
@@ -333,9 +333,9 @@ Nike's elevation philosophy is radically flat. There are no card shadows, no hov
 - Lazy loading: native loading="lazy", grey-100 placeholder during load
 - Art direction: hero crops change between desktop and mobile compositions
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
+### 色彩速查表
 
 - Primary CTA: Nike Black (`#111111`)
 - Background: White (`#FFFFFF`)
@@ -346,7 +346,7 @@ Nike's elevation philosophy is radically flat. There are no card shadows, no hov
 - Error: Nike Red (`#D30005`)
 - Link: Link Blue (`#1151FF`)
 
-### Example Component Prompts
+### 组件提示示例
 
 - "Create a product hero section with full-bleed edge-to-edge photography, no border radius, a dark gradient overlay for text, and a massive uppercase 96px/500 headline in Nike Futura style with 0.90 line-height and a Nike Black (#111111) pill button (30px radius)"
 - "Design a 3-column product card grid with square images (no border radius), 4px gap between cards, product name in 16px/500 Nike Black (#111111), price in 14px/500, and secondary text in Grey-500 (#707072)"
@@ -354,7 +354,7 @@ Nike's elevation philosophy is radically flat. There are no card shadows, no hov
 - "Create a promotional banner strip with #111111 background, white 12px/500 centered text, and 8px vertical padding — full width, no border radius"
 - "Design a secondary outlined button with transparent background, 1.5px #CACACB border, 30px pill radius, 16px/500 #111111 text, hover border darkening to #707072"
 
-### Iteration Guide
+### 迭代指南
 
 When refining existing screens generated with this design system:
 1. Focus on ONE component at a time

@@ -1,9 +1,9 @@
-# Design System Inspired by Airbnb
+# Airbnb
 
-> Category: E-Commerce & Retail
+> Category: 电商与零售
 > Travel marketplace. Warm coral accent, photography-driven, rounded UI.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 Airbnb's 2026 design feels like a travel magazine that happens to be an app — pristine white canvases give way to full-bleed photography, and the interface itself disappears so the listings can breathe. The signature Rausch coral-pink (`#ff385c`) is used sparingly but unmistakably: search CTA, active tab indicator, primary action button, the occasional price or wishlist heart. Everything else is a disciplined grayscale, with `#222222` carrying almost every line of text.
 
@@ -11,7 +11,7 @@ What makes the system unmistakably Airbnb is how much *faith* it places in conte
 
 The newest surface is the **Experiences** product line — same chrome, but richer card density, more photography, and a center-anchored booking panel with sticky right-rail pricing. Listing detail pages (both rooms and experiences) follow a tight template: full-bleed hero image grid → overlapping rounded booking card (sticky on scroll) → amenities → reviews (Guest Favorite awards use a big centered `4.81` rating with a laurel-wreath lockup) → map → host profile → disclosures. The rhythm is consistent whether you're booking a room or a yacht tour.
 
-**Key Characteristics:**
+**核心特征：**
 - Rausch coral-pink (`#ff385c`) as a single-accent brand color, used only for primary CTAs and the search button
 - Full-bleed photography at 4:3 / 16:9 with gentle corner rounding (14–20px) as the primary visual vocabulary
 - 3D rendered category icons paired with typographic tabs — the one place the system allows illustration
@@ -22,35 +22,35 @@ The newest surface is the **Experiences** product line — same chrome, but rich
 - Sticky booking panel with a price → dates → guests stack, pinned to the right rail on desktop, transforming to a bottom-anchored "Reserve" bar on mobile
 - Sticky bottom mobile navigation (Explore / Wishlists / Log in) with an active-state Rausch tint
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
-### Primary
+### 主色
 - **Rausch** (`#ff385c`): The brand's signature coral-pink. CSS variable `--palette-bg-primary-core`. Used for: primary "Reserve" button, search submit button, active tab underline, wishlist heart fill, pricing emphasis. The single highest-visibility color on every page.
 
-### Secondary & Accent
+### 辅助色与强调色
 - **Deep Rausch** (`#e00b41`): A more saturated variant. CSS variable `--palette-bg-tertiary-core`. Used for pressed/active button states and gradient terminal stops.
 - **Plus Magenta** (`#92174d`): CSS variable `--palette-bg-primary-plus`. The brand color for the Airbnb Plus product tier — a higher-end curated-listing offering.
 - **Luxe Purple** (`#460479`): CSS variable `--palette-bg-primary-luxe`. The brand color for the Airbnb Luxe product tier — villa/estate-level rentals.
 - **Info Blue** (`#428bff`): CSS variable `--palette-text-legal`. Used for legal/informational links (terms, privacy, disclosures) — the only non-monochrome link color in the system.
 
-### Surface & Background
+### 表面与背景色
 - **Canvas White** (`#ffffff`): The default page background. Every card, every container, every detail page starts here.
 - **Soft Cloud** (`#f7f7f7`): Subtle subsurface tint used on footer backgrounds, map-view wrappers, and "everything else" sections that want to step back from the primary white.
 - **Hairline Gray** (`#dddddd`): Ubiquitous 1px border color — separates cards, amenity rows, review panels, footer columns. The workhorse of the layout system.
 
-### Neutrals & Text
+### 中性色与文字色
 - **Ink Black** (`#222222`): CSS variable `--palette-text-primary`. The system's near-black. Every heading, every body paragraph, every nav label, every price. Used for ~90% of all text on a page.
 - **Charcoal** (`#3f3f3f`): CSS variable `--palette-text-focused`. Used in focused-state input text and one-step-down emphasis copy.
 - **Ash Gray** (`#6a6a6a`): CSS variable `--palette-bg-tertiary-hover`. Secondary labels, "Cottage rentals" subtitle-style copy under city names, muted footer links.
 - **Mute Gray** (`#929292`): CSS variable `--palette-text-link-disabled`. Disabled buttons and low-priority metadata.
 - **Stone Gray** (`#c1c1c1`): Tertiary dividers, icon strokes, placeholder avatars.
 
-### Semantic & Accent
+### 语义色与强调色
 - **Error Red** (`#c13515`): CSS variable `--palette-text-primary-error`. Form validation errors, destructive-action warnings.
 - **Deep Error** (`#b32505`): CSS variable `--palette-text-secondary-error-hover`. Pressed/active variants of error states.
 - **Translucent Black** (`rgba(0, 0, 0, 0.24)`): CSS variable `--palette-text-material-disabled`. Disabled material-style labels.
 
-### Gradient System
+### 渐变体系
 Airbnb's brand gradient appears sparingly, typically only on the wordmark and the search-button branded moment:
 
 ```
@@ -59,18 +59,18 @@ linear-gradient(90deg, #ff385c 0%, #e00b41 50%, #92174d 100%)
 
 This coral → magenta sweep is the "branded moment" — never used as a full surface, only as a narrow pill fill or logo treatment.
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Family
+### 字体家族
 - **Airbnb Cereal VF** (primary and only): The proprietary variable-weight sans-serif that carries the entire system. Fallbacks (in order): `Circular, -apple-system, system-ui, Roboto, Helvetica Neue, sans-serif`.
 
 Weights observed in the extracted tokens: 500, 600, 700. No 400-regular — the system's "body" weight is 500, which gives every block of text a subtle extra density that reads as confident and deliberate.
 
 OpenType features: `salt` (stylistic alternates) is used on the compact 11px and 14px 600-weight labels — likely for tighter numerals and special-character shaping. No ligature or fractional-numeral features observed.
 
-### Hierarchy
+### 字体层级
 
-| Role | Size | Weight | Line Height | Letter Spacing | Notes |
+| 角色 | 尺寸 | 字重 | 行高 | 字间距 | 备注 |
 |------|------|--------|-------------|----------------|-------|
 | Section Heading | 28px / 1.75rem | 700 | 1.43 | 0 | "Inspiration for future getaways" — page-level headings |
 | Subsection Heading | 22px / 1.38rem | 500 | 1.18 | -0.44px | "What this place offers", "Meet the hosts" — content dividers |
@@ -89,7 +89,7 @@ OpenType features: `salt` (stylistic alternates) is used on the compact 11px and
 | Badge Uppercase | 11px / 0.69rem | 600 | 1.18 | 0 | `salt` feature — compact category/status badges |
 | Superscript | 8px / 0.50rem | 700 | 1.25 | 0.32px | Uppercase — price footnotes, decimal tails |
 
-### Principles
+### 原则
 - **One family, many weights.** Airbnb Cereal VF handles everything from 8px legal to 28px page headings — the visual identity comes from the family itself, not from typeface mixing.
 - **500 is the new 400.** The system's "regular" weight is 500, giving every paragraph a slightly more confident texture than the web default.
 - **Negative tracking on display type only.** Headings 20px+ compress tracking by -0.18 to -0.44px to feel chiseled; body sizes stay at 0 tracking for readability.
@@ -99,9 +99,9 @@ OpenType features: `salt` (stylistic alternates) is used on the compact 11px and
 ### Note on Font Substitutes
 Airbnb Cereal VF is proprietary. The closest open-source substitute is **Circular Std** (still commercial) or **Inter** (free, Google Fonts) with letter-spacing reduced by -0.01em at display sizes. For strict brand fidelity, the documented fallback chain (`Circular, -apple-system, system-ui`) renders acceptably on macOS/iOS where `system-ui` resolves to San Francisco, which has similar proportions.
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
 **Primary CTA** ("Reserve", "Search", "Add dates")
 - Background: Rausch `#ff385c`
@@ -137,7 +137,7 @@ Airbnb Cereal VF is proprietary. The closest open-source substitute is **Circula
 - Active state: 2px Ink Black underline beneath the label
 - Paired with a 36–48px 3D-rendered illustrated icon above the label
 
-### Cards & Containers
+### 卡片与容器
 
 **Listing Card** (homepage grid, search results)
 - Background: `#ffffff`
@@ -167,7 +167,7 @@ Airbnb Cereal VF is proprietary. The closest open-source substitute is **Circula
 - Padding: 0 (relies on grid gaps)
 - Content: 40px circular avatar + 16px 600-weight name + 14px 400 Ash Gray date on one row, then 14px 500 body paragraph below
 
-### Inputs & Forms
+### 输入框与表单
 
 **Search Bar** (primary home page)
 - Background: `#ffffff`
@@ -190,7 +190,7 @@ Airbnb Cereal VF is proprietary. The closest open-source substitute is **Circula
 - Selected range: Ink Black `#222222` background with white numerals
 - Start/end anchors: larger filled circles; middle dates use Soft Cloud `#f7f7f7` tint
 
-### Navigation
+### 导航
 
 **Top Nav (Desktop)**
 - Height: ~80px
@@ -210,7 +210,7 @@ Airbnb Cereal VF is proprietary. The closest open-source substitute is **Circula
 - Height: 56px
 - Border-bottom: 1px solid Hairline Gray
 
-### Image Treatment
+### 图片处理
 
 - **Primary aspect ratios**: 4:3 for homepage listing grids, 16:9 for experience hero photography, 1:1 for avatars
 - **Radius**: 14px on listing-grid images, 20px on detail-page hero photo frames, `50%` on avatars
@@ -254,9 +254,9 @@ Airbnb Cereal VF is proprietary. The closest open-source substitute is **Circula
 - Each column: icon at the top, 16px 600 heading, 14px 500 Ash Gray body, "Show more" link in Ink Black underline
 - Separator: 1px Hairline Gray top and bottom borders on the overall strip
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
+### 间距体系
 - **Base unit**: 8px
 - **Extracted scale**: 2, 3, 4, 5.5, 6, 8, 10, 11, 12, 15, 16, 18.5, 22, 24, 32px — fine-grained with a handful of off-grid values used for pixel-perfect icon alignment
 - **Section padding**: ~48–64px top/bottom on desktop, 24–32px on mobile
@@ -264,16 +264,16 @@ Airbnb Cereal VF is proprietary. The closest open-source substitute is **Circula
 - **Gutter between listing cards**: 24px desktop, 16px mobile
 - **Between stacked text rows**: 4–8px (very tight — reinforces the "dense information" feel of travel listings)
 
-### Grid & Container
+### 栅格与容器
 - **Max content width**: 1760–1920px on ultra-wide (Airbnb lets the grid breathe farther than most sites); 1280px on most detail pages
 - **Homepage listing grid**: 6 columns at ≥1760px, 5 at ≥1440px, 4 at ≥1128px, 3 at ≥800px, 2 at ≥550px, 1 below
 - **Detail page**: 2-column asymmetric — main content ~58%, sticky booking panel ~36% on the right, ~6% gutter
 - **Footer**: 3-column Support / Hosting / Airbnb
 
-### Whitespace Philosophy
+### 留白哲学
 Airbnb is densely informative but never cramped. Whitespace is used to *group* — listing cards have 24px of gutter so each photograph reads as a distinct object, but the metadata under each card uses 4–8px gaps so the price/city/date feels like a single unit. The detail-page booking panel has 24px internal padding, but rows within (date picker, guest selector, CTA) are stacked at 12px — the boundary between the card and the page does more separation work than the content within.
 
-### Border Radius Scale
+### 圆角尺度
 | Radius | Use |
 |--------|-----|
 | 4px | Inline anchor tags, tag chips |
@@ -283,7 +283,7 @@ Airbnb is densely informative but never cramped. Whitespace is used to *group* �
 | 32px | Search bar pill, extra-large containers |
 | 50% | All circular icon buttons, all avatars, wishlist hearts — the system's signature round geometry |
 
-## 6. Depth & Elevation
+## 6. 层深与阴影
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
@@ -295,14 +295,14 @@ Airbnb is densely informative but never cramped. Whitespace is used to *group* �
 
 Shadow philosophy: Airbnb uses **stacked layered shadows** rather than a single drop. The three-layer booking-panel shadow reads as one cohesive lift but is actually three separate shadows at different opacity/blur values — creating subtle anti-aliasing at the shadow's perimeter that feels premium without being heavy.
 
-### Decorative Depth
+### 装饰性层深
 - **Photography as depth**: the system relies heavily on full-bleed photography to create visual depth; shadows and gradients are used sparingly so the photographs do the heavy lifting
 - **Laurel wreath lockup**: the Guest Favorite award uses two SVG laurel illustrations that give the otherwise-flat rating number a ceremonial, trophy-like presence
 - **3D rendered category icons**: Homes/Experiences/Services icons have their own soft internal lighting and subtle cast shadows baked into the artwork — the only place the brand allows "dimensional" illustration
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 
-### Do
+### 推荐
 - Reserve Rausch `#ff385c` for primary actions and the active-tab indicator — never dilute it with decorative uses.
 - Let photography breathe — 4:3 crops with 14–20px rounded corners, no overlaid text, no gradient scrims.
 - Use Ink Black `#222222` for every text layer below Rausch — this is the system's near-black, never true `#000000`.
@@ -312,7 +312,7 @@ Shadow philosophy: Airbnb uses **stacked layered shadows** rather than a single 
 - Treat the booking panel as sticky on desktop, collapsing to a bottom-anchored reserve bar on mobile.
 - Use 4–8px spacing within metadata groups and 24px between cards — information density is intentional.
 
-### Don't
+### 禁忌
 - Don't introduce secondary accent colors outside the Rausch / Plus Magenta / Luxe Purple product-tier palette.
 - Don't place text inside photographs — captions always sit below the image, never overlaid.
 - Don't use all-caps labels except the single 8px superscript role.
@@ -322,9 +322,9 @@ Shadow philosophy: Airbnb uses **stacked layered shadows** rather than a single 
 - Don't use the 400-regular font weight — Airbnb Cereal's body weight is 500.
 - Don't override Airbnb Cereal VF with a different display face — the system is intentionally single-family.
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
+### 断点
 
 Airbnb declares ~60 breakpoints (design-time artifact from their component library), but the meaningful layout shifts happen at a much smaller set:
 
@@ -339,10 +339,10 @@ Airbnb declares ~60 breakpoints (design-time artifact from their component libra
 | Mobile | 375–549px | 1-column stacked layout, bottom-fixed tab bar appears (Explore / Wishlists / Log in) |
 | Small mobile | <375px | Edge padding tightens to 16px; category-picker icons shrink to ~28px |
 
-### Touch Targets
+### 触摸目标
 All interactive elements meet or exceed 44×44px. The circular icon button family is specifically sized 32–44px with 8–12px extended hit-area padding. The Rausch primary Reserve button is ~48px tall. The tri-tab category picker's hit area is the full label-plus-icon rectangle (typically ~64×80px per tab).
 
-### Collapsing Strategy
+### 折叠策略
 - **Nav**: Top nav keeps Airbnb wordmark + tri-tab picker on tablet and above; on mobile the picker slides just below the search pill, and the globe/avatar controls move to a bottom-anchored tab bar.
 - **Search bar**: Three-segment pill (Where / When / Who) with a Rausch circular submit button on desktop; collapses to a single-row "Start your search" pill on mobile, tapping which opens a full-screen search sheet.
 - **Booking panel**: Sticky right-rail on ≥1128px; inline within the main content column between 800–1127px; bottom-fixed "Reserve" pill on <800px.
@@ -350,15 +350,15 @@ All interactive elements meet or exceed 44×44px. The circular icon button famil
 - **Detail-page image grid**: Five-image layout (1 large + 4 small) on desktop; becomes a swipeable full-bleed carousel on mobile with page-dot indicators.
 - **Footer**: 3-column layout collapses to stacked single-column at <800px.
 
-### Image Behavior
+### 图片行为
 - `loading="lazy"` universal, with blurred `im_w=` URL-parameterized preview thumbs served first
 - Responsive images use Airbnb's `muscache.com` CDN with `im_w` query parameter for width-based delivery (`im_w=240`, `im_w=720`, `im_w=1200`, `im_w=2400`)
 - No art-direction crops — the same image is scaled up/down across breakpoints
 - Carousels auto-advance photo height to maintain a consistent 4:3 ratio regardless of source aspect
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
+### 色彩速查表
 - Primary CTA: "Rausch (#ff385c)"
 - Page background: "Canvas White (#ffffff)"
 - Subsurface: "Soft Cloud (#f7f7f7)"
@@ -370,14 +370,14 @@ All interactive elements meet or exceed 44×44px. The circular icon button famil
 - Luxe tier accent: "Luxe Purple (#460479)"
 - Plus tier accent: "Plus Magenta (#92174d)"
 
-### Example Component Prompts
+### 组件提示示例
 - "Create a primary Reserve button: Rausch (#ff385c) background, white Airbnb Cereal 500-weight label at 16px, 14px × 24px padding, 8px border-radius, no shadow. On active/pressed add `transform: scale(0.92)` with a 2px Ink Black focus ring (`0 0 0 2px #222222`)."
 - "Build a listing card with a 4:3 full-bleed photograph at 14px border-radius, no container shadow; below the image stack three text rows with 4px gaps: city name at 16px 600 Ink Black, rental type at 14px 500 Ash Gray (#6a6a6a), and price range in 16px 500 Ink Black with a 14px `per night` suffix."
 - "Design a sticky booking panel: white background, 14px border-radius, 1px Hairline Gray (#dddddd) border, 3-layer elevation shadow (`rgba(0,0,0,0.02) 0 0 0 1px, rgba(0,0,0,0.04) 0 2px 6px 0, rgba(0,0,0,0.1) 0 4px 8px 0`), 24px padding, 370px width, pinned 120px below viewport top on desktop. Contents: price headline, date picker, guest dropdown, Rausch primary CTA, and a 12px Ash Gray `You won't be charged yet` disclaimer."
 - "Create a tri-tab category picker: three equal-width tabs labeled Homes, Experiences, Services; each tab has a ~48px 3D-rendered illustrated icon (house, balloon, bell) above a 16px 500 Ink Black label; active tab gets a 2px Ink Black underline; add a small 12px 700 white `NEW` pill on a dark navy background to the top-right of the Experiences and Services icons."
 - "Render the Guest Favorite award lockup: a centered rating number at 52px 700-weight Ink Black, flanked left and right by hand-drawn SVG laurel wreaths at ~48px tall; below, a 12px 700 uppercase `GUEST FAVORITE` label with 0.32px tracking; sub-label at 14px 500 Ash Gray; full-width block sitting directly on white canvas with no container border."
 
-### Iteration Guide
+### 迭代指南
 When refining existing screens generated with this design system:
 1. Focus on ONE component at a time.
 2. Reference specific color names and hex codes from this document (e.g., "Ink Black #222222", not "dark gray").

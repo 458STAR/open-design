@@ -38,17 +38,20 @@ const LS_KEY = 'open-design:locale';
 // First-run default is English. We honor an explicit user pick saved to
 // localStorage but never auto-detect from `navigator.language`, so the
 // initial experience is consistent and predictable.
+const DEFAULT_LOCALE: Locale = 'zh-CN';
+
 function detectInitialLocale(): Locale {
-  if (typeof window === 'undefined') return 'en';
+  if (typeof window === 'undefined') return DEFAULT_LOCALE;
   try {
     const stored = window.localStorage.getItem(LS_KEY);
     if (stored && (LOCALES as string[]).includes(stored)) {
       return stored as Locale;
     }
+    window.localStorage.setItem(LS_KEY, DEFAULT_LOCALE);
   } catch {
     /* ignore */
   }
-  return 'en';
+  return DEFAULT_LOCALE;
 }
 
 interface I18nContextValue {
@@ -112,10 +115,10 @@ export function useI18n(): I18nContextValue {
     // mounted (e.g. an isolated test). This keeps the API safe to call
     // without requiring every callsite to wrap in a provider.
     return {
-      locale: 'en',
+      locale: 'zh-CN',
       setLocale: () => { },
       t: (key, vars) => {
-        const raw = en[key] ?? key;
+        const raw = zhCN[key] ?? en[key] ?? key;
         if (!vars) return raw;
         return raw.replace(/\{(\w+)\}/g, (_, n: string) => {
           const v = vars[n];

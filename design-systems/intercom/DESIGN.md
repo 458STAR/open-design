@@ -1,9 +1,9 @@
-# Design System Inspired by Intercom
+# Intercom
 
-> Category: Productivity & SaaS
+> Category: 效率工具与 SaaS
 > Customer messaging. Friendly blue palette, conversational UI patterns.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 Intercom's website is a warm, confident customer service platform that communicates "AI-first helpdesk" through a clean, editorial design language. The page operates on a warm off-white canvas (`#faf9f6`) with off-black (`#111111`) text, creating an intimate, magazine-like reading experience. The signature Fin Orange (`#ff5600`) — named after Intercom's AI agent — serves as the singular vibrant accent against the warm neutral palette.
 
@@ -11,7 +11,7 @@ The typography uses Saans — a custom geometric sans-serif with aggressive nega
 
 What distinguishes Intercom is its remarkably sharp geometry — 4px border-radius on buttons creates near-rectangular interactive elements that feel industrial and precise, contrasting with the warm surface colors. Button hover states use `scale(1.1)` expansion, creating a physical "growing" interaction. The border system uses warm oat tones (`#dedbd6`) and oklab-based opacity values for sophisticated color management.
 
-**Key Characteristics:**
+**核心特征：**
 - Warm off-white canvas (`#faf9f6`) with oat-toned borders (`#dedbd6`)
 - Saans font with extreme negative tracking (-2.4px at 80px) and 1.00 line-height
 - Fin Orange (`#ff5600`) as singular brand accent
@@ -21,9 +21,9 @@ What distinguishes Intercom is its remarkably sharp geometry — 4px border-radi
 - Rich multi-color report palette (blue, green, red, pink, lime, orange)
 - oklab color values for sophisticated opacity management
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
-### Primary
+### 主色
 - **Off Black** (`#111111`): `--color-off-black`, primary text, button backgrounds
 - **Pure White** (`#ffffff`): `--wsc-color-content-primary`, primary surface
 - **Warm Cream** (`#faf9f6`): Button backgrounds, card surfaces
@@ -47,15 +47,15 @@ What distinguishes Intercom is its remarkably sharp geometry — 4px border-radi
 - **Oat Border** (`#dedbd6`): Warm border color
 - **Warm Sand** (`#d3cec6`): Light warm neutral
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Families
+### 字体家族
 - **Primary**: `Saans`, fallbacks: `Saans Fallback, ui-sans-serif, system-ui`
 - **Serif**: `Serrif`, fallbacks: `Serrif Fallback, ui-serif, Georgia`
 - **Monospace**: `SaansMono`, fallbacks: `SaansMono Fallback, ui-monospace`
 - **UI**: `MediumLL` / `LLMedium`, fallbacks: `system-ui, -apple-system`
 
-### Hierarchy
+### 字体层级
 
 | Role | Font | Size | Weight | Line Height | Letter Spacing |
 |------|------|------|--------|-------------|----------------|
@@ -73,9 +73,9 @@ What distinguishes Intercom is its remarkably sharp geometry — 4px border-radi
 | Serif Body | Serrif | 16px | 300 | 1.40 | -0.16px |
 | Mono Label | SaansMono | 12px | 400–500 | 1.00–1.30 | 0.6px–1.2px uppercase |
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
 **Primary Dark**
 - Background: `#111111`
@@ -98,52 +98,52 @@ What distinguishes Intercom is its remarkably sharp geometry — 4px border-radi
 - Padding: 16px
 - Border: `1px solid oklab(... / 0.1)`
 
-### Cards & Containers
+### 卡片与容器
 - Background: `#faf9f6` (warm cream)
 - Border: `1px solid #dedbd6` (warm oat)
 - Radius: 8px
 - No visible shadows
 
-### Navigation
+### 导航
 - Saans 16px for links
 - Off-black text on white
 - Small 4px–6px radius buttons
 - Orange Fin accent for AI features
 
-## 5. Layout Principles
+## 5. 布局原则
 
 ### Spacing: 8px, 10px, 12px, 14px, 16px, 20px, 24px, 32px, 40px, 48px, 60px, 64px, 80px, 96px
 ### Border Radius: 4px (buttons), 6px (nav items), 8px (cards, containers)
 
-## 6. Depth & Elevation
+## 6. 层深与阴影
 Minimal shadows. Depth through warm border colors and surface tints.
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 
-### Do
+### 推荐
 - Use Saans with 1.00 line-height and negative tracking on all headings
 - Apply 4px radius on buttons — sharp geometry is the identity
 - Use Fin Orange (#ff5600) for AI/brand accent only
 - Apply scale(1.1) hover on buttons
 - Use warm neutrals (#faf9f6, #dedbd6)
 
-### Don't
+### 禁忌
 - Don't round buttons beyond 4px
 - Don't use Fin Orange decoratively
 - Don't use cool gray borders — always warm oat tones
 - Don't skip the negative tracking on headings
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 Breakpoints: 425px, 530px, 600px, 640px, 768px, 896px
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
+### 色彩速查表
 - Text: Off Black (`#111111`)
 - Background: Warm Cream (`#faf9f6`)
 - Accent: Fin Orange (`#ff5600`)
 - Border: Oat (`#dedbd6`)
 - Muted: `#7b7b78`
 
-### Example Component Prompts
+### 组件提示示例
 - "Create hero: warm cream (#faf9f6) background. Saans 80px weight 400, line-height 1.00, letter-spacing -2.4px, #111111. Dark button (#111111, 4px radius). Hover: scale(1.1), white bg."

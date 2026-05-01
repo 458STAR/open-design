@@ -1,9 +1,9 @@
-# Design System Inspired by Mistral AI
+# Mistral AI
 
-> Category: AI & LLM
+> Category: AI 与大模型
 > Open-weight LLM provider. French-engineered minimalism, purple-toned.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 Mistral AI's interface is a sun-drenched landscape rendered in code — a warm, bold, unapologetically European design that trades the typical blue-screen AI aesthetic for golden amber, burnt orange, and the feeling of late-afternoon light in southern France. Every surface glows with warmth: backgrounds fade from pale cream to deep amber, shadows carry golden undertones (`rgba(127, 99, 21, ...)`), and the brand's signature orange (`#fa520f`) burns through the page like a signal fire.
 
@@ -11,7 +11,7 @@ The design language is maximalist in its warmth but minimalist in its structure.
 
 What makes Mistral distinctive is the complete commitment to a warm color temperature. The signature "block" identity — a gradient system flowing from bright yellow (`#ffd900`) through amber (`#ffa110`) to burnt orange (`#fa520f`) — creates a visual identity that's immediately recognizable. Even the shadows are warm, using amber-tinted blacks instead of cool grays. Combined with dramatic landscape photography in golden tones, the design feels less like a tech company and more like a European luxury brand that happens to build language models.
 
-**Key Characteristics:**
+**核心特征：**
 - Golden-amber color universe: every tone from pale cream (#fffaeb) to burnt orange (#fa520f)
 - Massive display typography (82px) with aggressive negative letter-spacing (-2.05px)
 - Warm golden shadow system using amber-tinted rgba values
@@ -21,14 +21,14 @@ What makes Mistral distinctive is the complete commitment to a warm color temper
 - Near-zero border-radius — sharp, architectural geometry
 - French-European confidence: bold, warm, declarative
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
-### Primary
+### 主色
 - **Mistral Orange** (`#fa520f`): The core brand color — a vivid, saturated orange-red that anchors the entire identity. Used for primary emphasis, the brand block, and the highest-signal moments.
 - **Mistral Flame** (`#fb6424`): A slightly warmer, lighter variant of the brand orange used for secondary brand moments and hover states.
 - **Block Orange** (`#ff8105`): A pure orange used in the gradient block system — warmer and less red than Mistral Orange.
 
-### Secondary & Accent
+### 辅助色与强调色
 - **Sunshine 900** (`#ff8a00`): Deep golden amber — the darkest sunshine tone, used for strong accent moments.
 - **Sunshine 700** (`#ffa110`): Warm amber-gold — the core sunshine accent for backgrounds and interactive elements.
 - **Sunshine 500** (`#ffb83e`): Medium golden — balanced warmth for mid-level emphasis.
@@ -36,33 +36,33 @@ What makes Mistral distinctive is the complete commitment to a warm color temper
 - **Block Gold** (`#ffe295`): Pale gold — soft background accents and gentle warmth.
 - **Bright Yellow** (`#ffd900`): The brightest tone in the gradient — used at the "top" of the block identity.
 
-### Surface & Background
+### 表面与背景色
 - **Warm Ivory** (`#fffaeb`): The lightest page background — barely tinted with warmth, the foundation canvas.
 - **Cream** (`#fff0c2`): The primary warm surface and secondary button background — noticeably golden.
 - **Pure White** (`#ffffff`): Used for maximum contrast elements and popover surfaces.
 - **Mistral Black** (`#1f1f1f`): The primary dark surface for buttons, text, and dark sections.
 - **Accent Orange** (defined as `hsl(17, 96%, 52%)`): The functional accent color for interactive states.
 
-### Neutrals & Text
+### 中性色与文字色
 - **Mistral Black** (`#1f1f1f`): Primary text color and dark button backgrounds — a near-black that's warmer than pure #000.
 - **Black Tint** (defined as `hsl(0, 0%, 24%)`): A medium dark gray for secondary text on light backgrounds.
 - **Pure White** (`#ffffff`): Text on dark surfaces and CTA labels.
 
-### Semantic & Accent
+### 语义色与强调色
 - **Input Border** (defined as `hsl(240, 5.9%, 90%)`): A cool-tinted light gray for form borders — one of the few cool tones in the system.
 - **White Overlay** (`oklab(1, 0, 0 / 0.088–0.1)`): Semi-transparent white for frosted glass effects and button overlays.
 
-### Gradient System
+### 渐变体系
 - **Mistral Block Gradient**: The signature identity — a multi-step gradient flowing through Yellow (`#ffd900`) → Gold (`#ffe295`) → Amber (`#ffa110`) → Orange (`#ff8105`) → Flame (`#fb6424`) → Mistral Orange (`#fa520f`). This gradient appears in the logo blocks, section backgrounds, and decorative elements.
 - **Golden Landscape Wash**: Photography and backgrounds use warm amber overlays creating a consistent golden temperature across the page.
 - **Warm Shadow Cascade**: Multi-layered golden shadows that build depth with amber-tinted transparency rather than gray.
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Family
+### 字体家族
 - **Primary**: Likely a custom font (Font Source detected) with `Arial` as fallback, and extended stack: `ui-sans-serif, system-ui, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji`
 
-### Hierarchy
+### 字体层级
 
 | Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
 |------|------|------|--------|-------------|----------------|-------|
@@ -76,16 +76,16 @@ What makes Mistral distinctive is the complete commitment to a warm color temper
 | Button Uppercase | Arial (custom) | 16px (1rem) | 400 | 1.50 | normal | Uppercase CTA labels |
 | Caption / Link | Arial (custom) | 14px (0.88rem) | 400 | 1.43 | normal | Metadata, secondary links |
 
-### Principles
+### 原则
 - **Single weight, maximum impact**: The entire system uses weight 400 (regular) — even at 82px. This creates a surprisingly elegant effect where the size alone carries authority without needing bold weight.
 - **Ultra-tight at scale**: Line-heights of 0.95–1.00 at display sizes create text blocks where ascenders nearly touch descenders from the line above — creating dense, poster-like composition.
 - **Aggressive tracking on display**: -2.05px letter-spacing at 82px compresses the hero text into a monolithic block.
 - **Uppercase as emphasis**: Strategic `text-transform: uppercase` on button labels and section markers creates a formal, European signage quality.
 - **No weight variation**: Unlike most systems that use 300–700 weight range, Mistral uses 400 everywhere. Hierarchy comes from size and color, never weight.
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
 **Cream Surface**
 - Background: Cream (`#fff0c2`)
@@ -113,33 +113,33 @@ What makes Mistral distinctive is the complete commitment to a warm color temper
 - Minimal styling — text link as button
 - For tertiary navigation actions
 
-### Cards & Containers
+### 卡片与容器
 - Background: Warm Ivory (`#fffaeb`), Cream (`#fff0c2`), or Pure White
 - Border: minimal to none — containers defined by background color
 - Radius: near-zero — sharp, architectural corners
 - Shadow: warm golden multi-layer (`rgba(127, 99, 21, 0.12) -8px 16px 39px, rgba(127, 99, 21, 0.1) -33px 64px 72px, rgba(127, 99, 21, 0.06) -73px 144px 97px, ...`) — a dramatic, cascading warm shadow
 - Distinctive: the golden shadow creates a "golden hour" lighting effect
 
-### Inputs & Forms
+### 输入框与表单
 - Border: `hsl(240, 5.9%, 90%)` — the sole cool-toned element
 - Focus: accent color ring
 - Minimal styling consistent with sparse aesthetic
 
-### Navigation
+### 导航
 - Transparent nav overlaying the warm hero
 - Logo: Mistral "M" wordmark
 - Links: Dark text (white on dark sections)
 - CTA: Dark solid button or cream surface button
 - Minimal, wide-spaced layout
 
-### Image Treatment
+### 图片处理
 - Dramatic landscape photography in warm golden tones
 - The winding road through golden hills — a recurring visual motif
 - The Mistral "M" rendered at large scale on golden backgrounds
 - Warm color grading on all photography
 - Full-bleed sections with photography
 
-### Distinctive Components
+### 特色组件
 
 **Mistral Block Identity**
 - A row of colored blocks forming the gradient: yellow → amber → orange → burnt orange
@@ -155,30 +155,30 @@ What makes Mistral distinctive is the complete commitment to a warm color temper
 - Footer transitions from warm amber to dark through a dramatic gradient
 - Creates a "sunset" effect as the page ends
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
+### 间距体系
 - Base unit: 8px
 - Scale: 2px, 4px, 8px, 10px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px, 80px, 98px, 100px
 - Button padding: 12px or 8px 0px (compact)
 - Section vertical spacing: very generous (80px–100px)
 
-### Grid & Container
+### 栅格与容器
 - Max container width: approximately 1280px, centered
 - Hero: full-width with massive typography overlaying warm backgrounds
 - Feature sections: wide-format layouts with dramatic imagery
 - Card grids: 2–3 column layouts
 
-### Whitespace Philosophy
+### 留白哲学
 - **Bold declarations**: Huge headlines surrounded by generous whitespace create billboard-like impact — each statement gets its own breathing space.
 - **Warm void**: Empty space itself feels warm because the backgrounds are tinted ivory/cream rather than pure white.
 - **Photography as space-filler**: Large landscape images serve double duty as content and decorative whitespace.
 
-### Border Radius Scale
+### 圆角尺度
 - Near-zero: The dominant radius — sharp, architectural corners on most elements
 - This extreme sharpness contrasts with the warmth of the colors, creating a tension between soft color and hard geometry.
 
-## 6. Depth & Elevation
+## 6. 层深与阴影
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
@@ -187,9 +187,9 @@ What makes Mistral distinctive is the complete commitment to a warm color temper
 
 **Shadow Philosophy**: Mistral uses a single but extraordinarily complex shadow — **five cascading layers** of amber-tinted shadow (`rgba(127, 99, 21, ...)`) that build from a close 16px offset to a distant 400px offset. The result is a rich, warm, "golden hour" lighting effect that makes elevated elements look like they're bathed in afternoon sunlight. This is the most distinctive shadow system in any major AI brand.
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 
-### Do
+### 推荐
 - Use the warm color spectrum exclusively: ivory, cream, amber, gold, orange
 - Keep display typography at 82px+ with -2.05px letter-spacing for hero sections
 - Use the Mistral block gradient (yellow → amber → orange) for brand moments
@@ -200,7 +200,7 @@ What makes Mistral distinctive is the complete commitment to a warm color temper
 - Apply uppercase on button labels and section markers for European formality
 - Use warm landscape photography with golden color grading
 
-### Don't
+### 禁忌
 - Don't introduce cool colors (blue, green, purple) — the palette is exclusively warm
 - Don't use bold (700+) weight — 400 is the only weight
 - Don't round corners — the sharp geometry is intentional
@@ -211,9 +211,9 @@ What makes Mistral distinctive is the complete commitment to a warm color temper
 - Don't add gradients outside the warm spectrum — no blue-to-purple, no cool transitions
 - Don't use generic gray for text — even neutrals should be warm-tinted
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
+### 断点
 | Name | Width | Key Changes |
 |------|-------|-------------|
 | Mobile | <640px | Single column, stacked everything, hero text reduces to ~32px |
@@ -221,27 +221,27 @@ What makes Mistral distinctive is the complete commitment to a warm color temper
 | Small Desktop | 768–1024px | 2-column layouts begin |
 | Desktop | 1024–1280px | Full layout with maximum typography scale |
 
-### Touch Targets
+### 触摸目标
 - Buttons use generous padding (12px minimum)
 - Navigation elements adequately spaced
 - Cards serve as large touch targets
 
-### Collapsing Strategy
+### 折叠策略
 - **Navigation**: Collapses to hamburger on mobile
 - **Hero text**: 82px → 56px → 48px → 32px progressive scaling
 - **Feature sections**: Multi-column → stacked
 - **Photography**: Scales proportionally, may crop on mobile
 - **Block identity**: Scales down proportionally
 
-### Image Behavior
+### 图片行为
 - Landscape photography scales proportionally
 - Warm color grading maintained at all sizes
 - Block gradient elements resize fluidly
 - No art direction changes — same warm composition at all sizes
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
+### 色彩速查表
 - Brand Orange: "Mistral Orange (#fa520f)"
 - Page Background: "Warm Ivory (#fffaeb)"
 - Warm Surface: "Cream (#fff0c2)"
@@ -250,13 +250,13 @@ What makes Mistral distinctive is the complete commitment to a warm color temper
 - Bright Gold: "Bright Yellow (#ffd900)"
 - Text on Dark: "Pure White (#ffffff)"
 
-### Example Component Prompts
+### 组件提示示例
 - "Create a hero section on Warm Ivory (#fffaeb) with a massive headline at 82px Arial weight 400, line-height 1.0, letter-spacing -2.05px. Mistral Black (#1f1f1f) text. Add a dark solid CTA button (#1f1f1f bg, white text, 12px padding, sharp corners) and a cream secondary button (#fff0c2 bg)."
 - "Design a feature card on Cream (#fff0c2) with sharp corners (no border-radius). Apply the golden shadow system: rgba(127, 99, 21, 0.12) -8px 16px 39px as the primary layer. Title at 32px weight 400, body at 16px."
 - "Build the Mistral block identity: a row of colored blocks from Bright Yellow (#ffd900) through Sunshine 700 (#ffa110) to Mistral Orange (#fa520f). Sharp corners, no gaps."
 - "Create a dark footer section on Mistral Black (#1f1f1f) with Pure White (#ffffff) text. Footer links at 14px. Add a warm gradient from Sunshine 700 (#ffa110) at the top fading to Mistral Black."
 
-### Iteration Guide
+### 迭代指南
 1. Keep the warm temperature — "shift toward amber" not "shift toward gray"
 2. Use size for hierarchy — 82px → 56px → 48px → 32px → 24px → 16px
 3. Never add border-radius — sharp corners only

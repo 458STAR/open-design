@@ -1,9 +1,9 @@
-# Design System Inspired by Linear
+# Linear
 
-> Category: Productivity & SaaS
+> Category: 效率工具与 SaaS
 > Project management. Ultra-minimal, precise, purple accent.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 Linear's website is a masterclass in dark-mode-first product design — a near-black canvas (`#08090a`) where content emerges from darkness like starlight. The overall impression is one of extreme precision engineering: every element exists in a carefully calibrated hierarchy of luminance, from barely-visible borders (`rgba(255,255,255,0.05)`) to soft, luminous text (`#f7f8f8`). This is not a dark theme applied to a light design — it is darkness as the native medium, where information density is managed through subtle gradations of white opacity rather than color variation.
 
@@ -11,7 +11,7 @@ The typography system is built entirely on Inter Variable with OpenType features
 
 The color system is almost entirely achromatic — dark backgrounds with white/gray text — punctuated by a single brand accent: Linear's signature indigo-violet (`#5e6ad2` for backgrounds, `#7170ff` for interactive accents). This accent color is used sparingly and intentionally, appearing only on CTAs, active states, and brand elements. The border system uses ultra-thin, semi-transparent white borders (`rgba(255,255,255,0.05)` to `rgba(255,255,255,0.08)`) that create structure without visual noise, like wireframes drawn in moonlight.
 
-**Key Characteristics:**
+**核心特征：**
 - Dark-mode-native: `#08090a` marketing background, `#0f1011` panel background, `#191a1b` elevated surfaces
 - Inter Variable with `"cv01", "ss03"` globally — geometric alternates for a cleaner aesthetic
 - Signature weight 510 (between regular and medium) for most UI text
@@ -23,7 +23,7 @@ The color system is almost entirely achromatic — dark backgrounds with white/g
 - Radix UI primitives as the component foundation (6 detected primitives)
 - Success green (`#27a644`, `#10b981`) used only for status indicators
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
 ### Background Surfaces
 - **Marketing Black** (`#010102` / `#08090a`): The deepest background — the canvas for hero sections and marketing pages. Near-pure black with an imperceptible blue-cool undertone.
@@ -66,14 +66,14 @@ The color system is almost entirely achromatic — dark backgrounds with white/g
 ### Overlay
 - **Overlay Primary** (`rgba(0,0,0,0.85)`): Modal/dialog backdrop — extremely dark for focus isolation.
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Family
+### 字体家族
 - **Primary**: `Inter Variable`, with fallbacks: `SF Pro Display, -apple-system, system-ui, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue`
 - **Monospace**: `Berkeley Mono`, with fallbacks: `ui-monospace, SF Mono, Menlo`
 - **OpenType Features**: `"cv01", "ss03"` enabled globally — cv01 provides an alternate lowercase 'a' (single-story), ss03 adjusts specific letterforms for a cleaner geometric appearance.
 
-### Hierarchy
+### 字体层级
 
 | Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
 |------|------|------|--------|-------------|----------------|-------|
@@ -105,15 +105,15 @@ The color system is almost entirely achromatic — dark backgrounds with white/g
 | Mono Caption | Berkeley Mono | 13px (0.81rem) | 400 | 1.50 | normal | Code labels |
 | Mono Label | Berkeley Mono | 12px (0.75rem) | 400 | 1.40 | normal | Code metadata, sometimes uppercase |
 
-### Principles
+### 原则
 - **510 is the signature weight**: Linear uses Inter Variable's 510 weight (between regular 400 and medium 500) as its default emphasis weight. This creates a subtly bolded feel without the heaviness of traditional medium or semibold.
 - **Compression at scale**: Display sizes use progressively tighter letter-spacing — -1.584px at 72px, -1.408px at 64px, -1.056px at 48px, -0.704px at 32px. Below 24px, spacing relaxes toward normal.
 - **OpenType as identity**: `"cv01", "ss03"` aren't decorative — they transform Inter into Linear's distinctive typeface, giving it a more geometric, purposeful character.
 - **Three-tier weight system**: 400 (reading), 510 (emphasis/UI), 590 (strong emphasis). The 300 weight appears only in deliberately de-emphasized contexts.
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
 **Ghost Button (Default)**
 - Background: `rgba(255,255,255,0.02)`
@@ -164,14 +164,14 @@ The color system is almost entirely achromatic — dark backgrounds with white/g
 - Font: 12px weight 510
 - Use: Toolbar actions, quick-access controls
 
-### Cards & Containers
+### 卡片与容器
 - Background: `rgba(255,255,255,0.02)` to `rgba(255,255,255,0.05)` (never solid — always translucent)
 - Border: `1px solid rgba(255,255,255,0.08)` (standard) or `1px solid rgba(255,255,255,0.05)` (subtle)
 - Radius: 8px (standard), 12px (featured), 22px (large panels)
 - Shadow: `rgba(0,0,0,0.2) 0px 0px 0px 1px` or layered multi-shadow stacks
 - Hover: subtle background opacity increase
 
-### Inputs & Forms
+### 输入框与表单
 
 **Text Area**
 - Background: `rgba(255,255,255,0.02)`
@@ -218,7 +218,7 @@ The color system is almost entirely achromatic — dark backgrounds with white/g
 - Font: 10px weight 510
 - Use: Inline labels, version tags
 
-### Navigation
+### 导航
 - Dark sticky header on near-black background
 - Linear logomark left-aligned (SVG icon)
 - Links: Inter Variable 13–14px weight 510, `#d0d6e0` text
@@ -227,33 +227,33 @@ The color system is almost entirely achromatic — dark backgrounds with white/g
 - Mobile: hamburger collapse
 - Search: command palette trigger (`/` or `Cmd+K`)
 
-### Image Treatment
+### 图片处理
 - Product screenshots on dark backgrounds with subtle border (`rgba(255,255,255,0.08)`)
 - Top-rounded images: `12px 12px 0px 0px` radius
 - Dashboard/issue previews dominate feature sections
 - Subtle shadow beneath screenshots: `rgba(0,0,0,0.4) 0px 2px 4px`
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
+### 间距体系
 - Base unit: 8px
 - Scale: 1px, 4px, 7px, 8px, 11px, 12px, 16px, 19px, 20px, 22px, 24px, 28px, 32px, 35px
 - The 7px and 11px values suggest micro-adjustments for optical alignment
 - Primary rhythm: 8px, 16px, 24px, 32px (standard 8px grid)
 
-### Grid & Container
+### 栅格与容器
 - Max content width: approximately 1200px
 - Hero: centered single-column with generous vertical padding
 - Feature sections: 2–3 column grids for feature cards
-- Full-width dark sections with internal max-width constraints
+- Full-width dark sections with internal 最大宽度 constraints
 - Changelog: single-column timeline layout
 
-### Whitespace Philosophy
+### 留白哲学
 - **Darkness as space**: On Linear's dark canvas, empty space isn't white — it's absence. The near-black background IS the whitespace, and content emerges from it.
 - **Compressed headlines, expanded surroundings**: Display text at 72px with -1.584px tracking is dense and compressed, but sits within vast dark padding. The contrast between typographic density and spatial generosity creates tension.
 - **Section isolation**: Each feature section is separated by generous vertical padding (80px+) with no visible dividers — the dark background provides natural separation.
 
-### Border Radius Scale
+### 圆角尺度
 - Micro (2px): Inline badges, toolbar buttons, subtle tags
 - Standard (4px): Small containers, list items
 - Comfortable (6px): Buttons, inputs, functional elements
@@ -263,7 +263,7 @@ The color system is almost entirely achromatic — dark backgrounds with white/g
 - Full Pill (9999px): Chips, filter pills, status tags
 - Circle (50%): Icon buttons, avatars, status dots
 
-## 6. Depth & Elevation
+## 6. 层深与阴影
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
@@ -278,9 +278,9 @@ The color system is almost entirely achromatic — dark backgrounds with white/g
 
 **Shadow Philosophy**: On dark surfaces, traditional shadows (dark on dark) are nearly invisible. Linear solves this by using semi-transparent white borders as the primary depth indicator. Elevation isn't communicated through shadow darkness but through background luminance steps — each level slightly increases the white opacity of the surface background (`0.02` → `0.04` → `0.05`), creating a subtle stacking effect. The inset shadow technique (`rgba(0,0,0,0.2) 0px 0px 12px 0px inset`) creates a unique "sunken" effect for recessed panels, adding dimensional depth that traditional dark themes lack.
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 
-### Do
+### 推荐
 - Use Inter Variable with `"cv01", "ss03"` on ALL text — these features are fundamental to Linear's typeface identity
 - Use weight 510 as your default emphasis weight — it's Linear's signature between-weight
 - Apply aggressive negative letter-spacing at display sizes (-1.584px at 72px, -1.056px at 48px)
@@ -291,7 +291,7 @@ The color system is almost entirely achromatic — dark backgrounds with white/g
 - Use `#f7f8f8` for primary text — not pure `#ffffff`, which would be too harsh
 - Apply the luminance stacking model: deeper = darker bg, elevated = slightly lighter bg
 
-### Don't
+### 禁忌
 - Don't use pure white (`#ffffff`) as primary text — `#f7f8f8` prevents eye strain
 - Don't use solid colored backgrounds for buttons — transparency is the system (rgba white at 0.02–0.05)
 - Don't apply the brand indigo decoratively — it's reserved for interactive/CTA elements only
@@ -302,9 +302,9 @@ The color system is almost entirely achromatic — dark backgrounds with white/g
 - Don't introduce warm colors into the UI chrome — the palette is cool gray with blue-violet accent only
 - Don't use drop shadows for elevation on dark surfaces — use background luminance stepping instead
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
+### 断点
 | Name | Width | Key Changes |
 |------|-------|-------------|
 | Mobile Small | <600px | Single column, compact padding |
@@ -314,14 +314,14 @@ The color system is almost entirely achromatic — dark backgrounds with white/g
 | Desktop | 1024–1280px | Standard desktop, full navigation |
 | Large Desktop | >1280px | Full layout, generous margins |
 
-### Touch Targets
+### 触摸目标
 - Buttons use comfortable padding with 6px radius minimum
 - Navigation links at 13–14px with adequate spacing
 - Pill tags have 10px horizontal padding for touch accessibility
 - Icon buttons at 50% radius ensure circular, easy-to-tap targets
 - Search trigger is prominently placed with generous hit area
 
-### Collapsing Strategy
+### 折叠策略
 - Hero: 72px → 48px → 32px display text, tracking adjusts proportionally
 - Navigation: horizontal links + CTAs → hamburger menu at 768px
 - Feature cards: 3-column → 2-column → single column stacked
@@ -330,15 +330,15 @@ The color system is almost entirely achromatic — dark backgrounds with white/g
 - Footer: multi-column → stacked single column
 - Section spacing: 80px+ → 48px on mobile
 
-### Image Behavior
+### 图片行为
 - Dashboard screenshots maintain border treatment at all sizes
 - Hero visuals simplify on mobile (fewer floating UI elements)
 - Product screenshots use responsive sizing with consistent radius
 - Dark background ensures screenshots blend naturally at any viewport
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
+### 色彩速查表
 - Primary CTA: Brand Indigo (`#5e6ad2`)
 - Page Background: Marketing Black (`#08090a`)
 - Panel Background: Panel Dark (`#0f1011`)
@@ -353,14 +353,14 @@ The color system is almost entirely achromatic — dark backgrounds with white/g
 - Border (subtle): `rgba(255,255,255,0.05)`
 - Focus ring: Multi-layer shadow stack
 
-### Example Component Prompts
+### 组件提示示例
 - "Create a hero section on `#08090a` background. Headline at 48px Inter Variable weight 510, line-height 1.00, letter-spacing -1.056px, color `#f7f8f8`, font-feature-settings `'cv01', 'ss03'`. Subtitle at 18px weight 400, line-height 1.60, color `#8a8f98`. Brand CTA button (`#5e6ad2`, 6px radius, 8px 16px padding) and ghost button (`rgba(255,255,255,0.02)` bg, `1px solid rgba(255,255,255,0.08)` border, 6px radius)."
 - "Design a card on dark background: `rgba(255,255,255,0.02)` background, `1px solid rgba(255,255,255,0.08)` border, 8px radius. Title at 20px Inter Variable weight 590, letter-spacing -0.24px, color `#f7f8f8`. Body at 15px weight 400, color `#8a8f98`, letter-spacing -0.165px."
 - "Build a pill badge: transparent background, `#d0d6e0` text, 9999px radius, 0px 10px padding, `1px solid #23252a` border, 12px Inter Variable weight 510."
 - "Create navigation: dark sticky header on `#0f1011`. Inter Variable 13px weight 510 for links, `#d0d6e0` text. Brand indigo CTA `#5e6ad2` right-aligned with 6px radius. Bottom border: `1px solid rgba(255,255,255,0.05)`."
 - "Design a command palette: `#191a1b` background, `1px solid rgba(255,255,255,0.08)` border, 12px radius, multi-layer shadow stack. Input at 16px Inter Variable weight 400, `#f7f8f8` text. Results list with 13px weight 510 labels in `#d0d6e0` and 12px metadata in `#62666d`."
 
-### Iteration Guide
+### 迭代指南
 1. Always set font-feature-settings `"cv01", "ss03"` on all Inter text — this is non-negotiable for Linear's look
 2. Letter-spacing scales with font size: -1.584px at 72px, -1.056px at 48px, -0.704px at 32px, normal below 16px
 3. Three weights: 400 (read), 510 (emphasize/navigate), 590 (announce)

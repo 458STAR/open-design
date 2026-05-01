@@ -1,9 +1,9 @@
-# Design System Inspired by Figma
+# Figma
 
-> Category: Design & Creative
+> Category: 设计与创意
 > Collaborative design tool. Vibrant multi-color, playful yet professional.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 Figma's interface is the design tool that designed itself — a masterclass in typographic sophistication where a custom variable font (figmaSans) modulates between razor-thin (weight 320) and bold (weight 700) with stops at unusual intermediates (330, 340, 450, 480, 540) that most type systems never explore. This granular weight control gives every text element a precisely calibrated visual weight, creating hierarchy through micro-differences rather than the blunt instrument of "regular vs bold."
 
@@ -11,7 +11,7 @@ The page presents a fascinating duality: the interface chrome is strictly black-
 
 What makes Figma distinctive beyond the variable font is its circle-and-pill geometry. Buttons use 50px radius (pill) or 50% (perfect circle for icon buttons), creating an organic, tool-palette-like feel. The dashed-outline focus indicator (`dashed 2px`) is a deliberate design choice that echoes selection handles in the Figma editor itself — the website's UI language references the product's UI language.
 
-**Key Characteristics:**
+**核心特征：**
 - Custom variable font (figmaSans) with unusual weight stops: 320, 330, 340, 450, 480, 540, 700
 - Strictly black-and-white interface chrome — color exists only in product content
 - figmaMono for uppercase technical labels with wide letter-spacing
@@ -21,30 +21,30 @@ What makes Figma distinctive beyond the variable font is its circle-and-pill geo
 - OpenType `"kern"` feature enabled globally
 - Negative letter-spacing throughout — even body text at -0.14px to -0.26px
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
-### Primary
+### 主色
 - **Pure Black** (`#000000`): All text, all solid buttons, all borders. The sole "color" of the interface.
 - **Pure White** (`#ffffff`): All backgrounds, white buttons, text on dark surfaces. The other half of the binary.
 
 *Note: Figma's marketing site uses ONLY these two colors for its interface layer. All vibrant colors appear exclusively in product screenshots, hero gradients, and embedded content.*
 
-### Surface & Background
+### 表面与背景色
 - **Pure White** (`#ffffff`): Primary page background and card surfaces.
 - **Glass Black** (`rgba(0, 0, 0, 0.08)`): Subtle dark overlay for secondary circular buttons and glass effects.
 - **Glass White** (`rgba(255, 255, 255, 0.16)`): Frosted glass overlay for buttons on dark/colored surfaces.
 
-### Gradient System
+### 渐变体系
 - **Hero Gradient**: A vibrant multi-stop gradient using electric green, bright yellow, deep purple, and hot pink. This gradient is the visual signature of the hero section — it represents the creative possibilities of the tool.
 - **Product Section Gradients**: Individual product areas (Design, Dev Mode, Prototyping) may use distinct color themes in their showcases.
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Family
+### 字体家族
 - **Primary**: `figmaSans`, with fallbacks: `figmaSans Fallback, SF Pro Display, system-ui, helvetica`
 - **Monospace / Labels**: `figmaMono`, with fallbacks: `figmaMono Fallback, SF Mono, menlo`
 
-### Hierarchy
+### 字体层级
 
 | Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
 |------|------|------|--------|-------------|----------------|-------|
@@ -59,16 +59,16 @@ What makes Figma distinctive beyond the variable font is its circle-and-pill geo
 | Mono Label | figmaMono | 18px (1.13rem) | 400 | 1.30 (tight) | 0.54px | Uppercase section labels |
 | Mono Small | figmaMono | 12px (0.75rem) | 400 | 1.00 (tight) | 0.6px | Uppercase tiny tags |
 
-### Principles
+### 原则
 - **Variable font precision**: figmaSans uses weights that most systems never touch — 320, 330, 340, 450, 480, 540. This creates hierarchy through subtle weight differences rather than dramatic jumps. The difference between 330 and 340 is nearly imperceptible but structurally significant.
 - **Light as the base**: Most body text uses 320–340 (lighter than typical 400 "regular"), creating an ethereal, airy reading experience that matches the design-tool aesthetic.
 - **Kern everywhere**: Every text element enables OpenType `"kern"` feature — kerning is not optional, it's structural.
 - **Negative tracking by default**: Even body text uses -0.1px to -0.26px letter-spacing, creating universally tight text. Display text compresses further to -0.96px and -1.72px.
 - **Mono for structure**: figmaMono in uppercase with positive letter-spacing (0.54px–0.6px) creates technical signpost labels.
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
 **Black Solid (Pill)**
 - Background: Pure Black (`#000000`)
@@ -99,14 +99,14 @@ What makes Figma distinctive beyond the variable font is its circle-and-pill geo
 - Focus: dashed 2px outline
 - Secondary action on dark/colored surfaces
 
-### Cards & Containers
+### 卡片与容器
 - Background: Pure White
 - Border: none or minimal
 - Radius: 6px (small containers), 8px (images, cards, dialogs)
 - Shadow: subtle to medium elevation effects
 - Product screenshots as card content
 
-### Navigation
+### 导航
 - Clean horizontal nav on white
 - Logo: Figma wordmark in black
 - Product tabs: pill-shaped (50px) tab navigation
@@ -114,7 +114,7 @@ What makes Figma distinctive beyond the variable font is its circle-and-pill geo
 - CTA: Black pill button
 - Hover: text color via CSS variable
 
-### Distinctive Components
+### 特色组件
 
 **Product Tab Bar**
 - Horizontal pill-shaped tabs (50px radius)
@@ -131,31 +131,31 @@ What makes Figma distinctive beyond the variable font is its circle-and-pill geo
 - References the selection handles in the Figma editor
 - A meta-design choice connecting website and product
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
+### 间距体系
 - Base unit: 8px
 - Scale: 1px, 2px, 4px, 4.5px, 8px, 10px, 12px, 16px, 18px, 24px, 32px, 40px, 46px, 48px, 50px
 
-### Grid & Container
+### 栅格与容器
 - Max container width: up to 1920px
 - Hero: full-width gradient with centered content
 - Product sections: alternating showcases
 - Footer: dark full-width section
 - Responsive from 559px to 1920px
 
-### Whitespace Philosophy
+### 留白哲学
 - **Gallery-like pacing**: Generous spacing lets each product section breathe as its own exhibit.
 - **Color sections as visual breathing**: The gradient hero and product showcases provide chromatic relief between the monochrome interface sections.
 
-### Border Radius Scale
+### 圆角尺度
 - Minimal (2px): Small link elements
 - Subtle (6px): Small containers, dividers
 - Comfortable (8px): Cards, images, dialogs
 - Pill (50px): Tab buttons, CTAs
 - Circle (50%): Icon buttons, circular elements
 
-## 6. Depth & Elevation
+## 6. 层深与阴影
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
@@ -165,9 +165,9 @@ What makes Figma distinctive beyond the variable font is its circle-and-pill geo
 
 **Shadow Philosophy**: Figma uses shadows sparingly. The primary depth mechanisms are **background contrast** (white content on colorful/dark sections) and the inherent dimensionality of the product screenshots themselves.
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 
-### Do
+### 推荐
 - Use figmaSans with precise variable weights (320–540) — the granular weight control IS the design
 - Keep the interface strictly black-and-white — color comes from product content only
 - Use pill (50px) and circular (50%) geometry for all interactive elements
@@ -176,7 +176,7 @@ What makes Figma distinctive beyond the variable font is its circle-and-pill geo
 - Use figmaMono in uppercase with positive letter-spacing for labels
 - Apply negative letter-spacing throughout (-0.1px to -1.72px)
 
-### Don't
+### 禁忌
 - Don't add interface colors — the monochrome palette is absolute
 - Don't use standard font weights (400, 500, 600, 700) — use the variable font's unique stops (320, 330, 340, 450, 480, 540)
 - Don't use sharp corners on buttons — pill and circular geometry only
@@ -184,9 +184,9 @@ What makes Figma distinctive beyond the variable font is its circle-and-pill geo
 - Don't increase body font weight above 450 — the light-weight aesthetic is core
 - Don't use positive letter-spacing on body text — it's always negative
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
+### 断点
 | Name | Width | Key Changes |
 |------|-------|-------------|
 | Small Mobile | <560px | Compact layout, stacked |
@@ -196,26 +196,26 @@ What makes Figma distinctive beyond the variable font is its circle-and-pill geo
 | Large Desktop | 1280–1440px | Expanded |
 | Ultra-wide | 1440–1920px | Maximum width |
 
-### Collapsing Strategy
+### 折叠策略
 - Hero text: 86px → 64px → 48px
 - Product tabs: horizontal scroll on mobile
 - Feature sections: stacked single column
 - Footer: multi-column → stacked
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
+### 色彩速查表
 - Everything: "Pure Black (#000000)" and "Pure White (#ffffff)"
 - Glass Dark: "rgba(0, 0, 0, 0.08)"
 - Glass Light: "rgba(255, 255, 255, 0.16)"
 
-### Example Component Prompts
+### 组件提示示例
 - "Create a hero on a vibrant multi-color gradient (green, yellow, purple, pink). Headline at 86px figmaSans weight 400, line-height 1.0, letter-spacing -1.72px. White text. White pill CTA button (50px radius, 8px 18px padding)."
 - "Design a product tab bar with pill-shaped buttons (50px radius). Active: Black bg, white text. Inactive: transparent, black text. figmaSans at 20px weight 480."
 - "Build a section label: figmaMono 18px, uppercase, letter-spacing 0.54px, black text. Kern enabled."
 - "Create body text at 20px figmaSans weight 330, line-height 1.40, letter-spacing -0.14px. Pure Black on white."
 
-### Iteration Guide
+### 迭代指南
 1. Use variable font weight stops precisely: 320, 330, 340, 450, 480, 540, 700
 2. Interface is always black + white — never add colors to chrome
 3. Dashed focus outlines, not solid

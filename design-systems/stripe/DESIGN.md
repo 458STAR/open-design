@@ -1,9 +1,9 @@
-# Design System Inspired by Stripe
+# Stripe
 
-> Category: Fintech & Crypto
+> Category: 金融科技与加密
 > Payment infrastructure. Signature purple gradients, weight-300 elegance.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 Stripe's website is the gold standard of fintech design -- a system that manages to feel simultaneously technical and luxurious, precise and warm. The page opens on a clean white canvas (`#ffffff`) with deep navy headings (`#061b31`) and a signature purple (`#533afd`) that functions as both brand anchor and interactive accent. This isn't the cold, clinical purple of enterprise software; it's a rich, saturated violet that reads as confident and premium. The overall impression is of a financial institution redesigned by a world-class type foundry.
 
@@ -11,7 +11,7 @@ The custom `sohne-var` variable font is the defining element of Stripe's visual 
 
 What truly distinguishes Stripe is its shadow system. Rather than the flat or single-layer approach of most sites, Stripe uses multi-layer, blue-tinted shadows: the signature `rgba(50,50,93,0.25)` combined with `rgba(0,0,0,0.1)` creates shadows with a cool, almost atmospheric depth -- like elements are floating in a twilight sky. The blue-gray undertone of the primary shadow color (50,50,93) ties directly to the navy-purple brand palette, making even elevation feel on-brand.
 
-**Key Characteristics:**
+**核心特征：**
 - sohne-var with OpenType `"ss01"` on all text -- a custom stylistic set that defines the brand's letterforms
 - Weight 300 as the signature headline weight -- light, confident, anti-convention
 - Negative letter-spacing at display sizes (-1.4px at 56px, progressive relaxation downward)
@@ -21,9 +21,9 @@ What truly distinguishes Stripe is its shadow system. Rather than the flat or si
 - Ruby (`#ea2261`) and magenta (`#f96bee`) accents for gradient and decorative elements
 - `SourceCodePro` as the monospace companion for code and technical labels
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
-### Primary
+### 主色
 - **Stripe Purple** (`#533afd`): Primary brand color, CTA backgrounds, link text, interactive highlights. A saturated blue-violet that anchors the entire system.
 - **Deep Navy** (`#061b31`): `--hds-color-heading-solid`. Primary heading color. Not black, not gray -- a very dark blue that adds warmth and depth to text.
 - **Pure White** (`#ffffff`): Page background, card surfaces, button text on dark backgrounds.
@@ -66,14 +66,14 @@ What truly distinguishes Stripe is its shadow system. Rather than the flat or si
 - **Shadow Ambient** (`rgba(23,23,23,0.08)`): Soft ambient shadow for subtle elevation.
 - **Shadow Soft** (`rgba(23,23,23,0.06)`): Minimal ambient shadow for light lift.
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Family
+### 字体家族
 - **Primary**: `sohne-var`, with fallback: `SF Pro Display`
 - **Monospace**: `SourceCodePro`, with fallback: `SFMono-Regular`
 - **OpenType Features**: `"ss01"` enabled globally on all sohne-var text; `"tnum"` for tabular numbers on financial data and captions.
 
-### Hierarchy
+### 字体层级
 
 | Role | Font | Size | Weight | Line Height | Letter Spacing | Features | Notes |
 |------|------|------|--------|-------------|----------------|----------|-------|
@@ -98,16 +98,16 @@ What truly distinguishes Stripe is its shadow system. Rather than the flat or si
 | Code Label | SourceCodePro | 12px (0.75rem) | 500 | 2.00 (relaxed) | normal | uppercase | Technical labels |
 | Code Micro | SourceCodePro | 9px (0.56rem) | 500 | 1.00 (tight) | normal | ss01 | Tiny code annotations |
 
-### Principles
+### 原则
 - **Light weight as signature**: Weight 300 at display sizes is Stripe's most distinctive typographic choice. Where others use 600-700 to command attention, Stripe uses lightness as luxury -- the text is so confident it doesn't need weight to be authoritative.
 - **ss01 everywhere**: The `"ss01"` stylistic set is non-negotiable. It modifies specific glyphs (likely alternate `a`, `g`, `l` forms) to create a more geometric, contemporary feel across all sohne-var text.
 - **Two OpenType modes**: `"ss01"` for display/body text, `"tnum"` for tabular numerals in financial data. These never overlap -- a number in a paragraph uses ss01, a number in a data table uses tnum.
 - **Progressive tracking**: Letter-spacing tightens proportionally with size: -1.4px at 56px, -0.96px at 48px, -0.64px at 32px, -0.26px at 26px, normal at 16px and below.
 - **Two-weight simplicity**: Primarily 300 (body and headings) and 400 (UI/buttons). No bold (700) in the primary font -- SourceCodePro uses 500/700 for code contrast.
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
 **Primary Purple**
 - Background: `#533afd`
@@ -144,7 +144,7 @@ What truly distinguishes Stripe is its shadow system. Rather than the flat or si
 - Outline: `1px solid rgb(212,222,233)`
 - Use: Disabled or muted actions
 
-### Cards & Containers
+### 卡片与容器
 - Background: `#ffffff`
 - Border: `1px solid #e5edf5` (standard) or `1px solid #061b31` (dark accent)
 - Radius: 4px (tight), 5px (standard), 6px (comfortable), 8px (featured)
@@ -169,7 +169,7 @@ What truly distinguishes Stripe is its shadow system. Rather than the flat or si
 - Border: `1px solid rgba(21,190,83,0.4)`
 - Font: 10px weight 300
 
-### Inputs & Forms
+### 输入框与表单
 - Border: `1px solid #e5edf5`
 - Radius: 4px
 - Focus: `1px solid #533afd` or purple ring
@@ -177,7 +177,7 @@ What truly distinguishes Stripe is its shadow system. Rather than the flat or si
 - Text: `#061b31`
 - Placeholder: `#64748d`
 
-### Navigation
+### 导航
 - Clean horizontal nav on white, sticky with blur backdrop
 - Brand logotype left-aligned
 - Links: sohne-var 14px weight 400, `#061b31` text with `"ss01"`
@@ -194,26 +194,26 @@ What truly distinguishes Stripe is its shadow system. Rather than the flat or si
 - Ruby-to-magenta gradients (`#ea2261` to `#f96bee`) for hero decorations
 - Brand dark sections use `#1c1e54` backgrounds with white text
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
+### 间距体系
 - Base unit: 8px
 - Scale: 1px, 2px, 4px, 6px, 8px, 10px, 11px, 12px, 14px, 16px, 18px, 20px
 - Notable: The scale is dense at the small end (every 2px from 4-12), reflecting Stripe's precision-oriented UI for financial data
 
-### Grid & Container
+### 栅格与容器
 - Max content width: approximately 1080px
 - Hero: centered single-column with generous padding, lightweight headlines
 - Feature sections: 2-3 column grids for feature cards
 - Full-width dark sections with `#1c1e54` background for brand immersion
 - Code/dashboard previews as contained cards with blue-tinted shadows
 
-### Whitespace Philosophy
+### 留白哲学
 - **Precision spacing**: Unlike the vast emptiness of minimalist systems, Stripe uses measured, purposeful whitespace. Every gap is a deliberate typographic choice.
 - **Dense data, generous chrome**: Financial data displays (tables, charts) are tightly packed, but the UI chrome around them is generously spaced. This creates a sense of controlled density -- like a well-organized spreadsheet in a beautiful frame.
 - **Section rhythm**: White sections alternate with dark brand sections (`#1c1e54`), creating a dramatic light/dark cadence that prevents monotony without introducing arbitrary color.
 
-### Border Radius Scale
+### 圆角尺度
 - Micro (1px): Fine-grained elements, subtle rounding
 - Standard (4px): Buttons, inputs, badges, cards -- the workhorse
 - Comfortable (5px): Standard card containers
@@ -221,7 +221,7 @@ What truly distinguishes Stripe is its shadow system. Rather than the flat or si
 - Large (8px): Featured cards, hero elements
 - Compound: `0px 0px 6px 6px` for bottom-rounded containers (tab panels, dropdown footers)
 
-## 6. Depth & Elevation
+## 6. 层深与阴影
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
@@ -234,14 +234,14 @@ What truly distinguishes Stripe is its shadow system. Rather than the flat or si
 
 **Shadow Philosophy**: Stripe's shadow system is built on a principle of chromatic depth. Where most design systems use neutral gray or black shadows, Stripe's primary shadow color (`rgba(50,50,93,0.25)`) is a deep blue-gray that echoes the brand's navy palette. This creates shadows that don't just add depth -- they add brand atmosphere. The multi-layer approach pairs this blue-tinted shadow with a pure black secondary layer (`rgba(0,0,0,0.1)`) at a different offset, creating a parallax-like depth where the branded shadow sits farther from the element and the neutral shadow sits closer. The negative spread values (-30px, -18px) ensure shadows don't extend beyond the element's footprint horizontally, keeping elevation vertical and controlled.
 
-### Decorative Depth
+### 装饰性层深
 - Dark brand sections (`#1c1e54`) create immersive depth through background color contrast
 - Gradient overlays with ruby-to-magenta transitions for hero decorations
 - Shadow color `rgba(0,55,112,0.08)` (`--hds-color-shadow-sm-top`) for top-edge shadows on sticky elements
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 
-### Do
+### 推荐
 - Use sohne-var with `"ss01"` on every text element -- the stylistic set IS the brand
 - Use weight 300 for all headlines and body text -- lightness is the signature
 - Apply blue-tinted shadows (`rgba(50,50,93,0.25)`) for all elevated elements
@@ -251,7 +251,7 @@ What truly distinguishes Stripe is its shadow system. Rather than the flat or si
 - Layer shadows: blue-tinted far + neutral close for depth parallax
 - Use `#533afd` purple as the primary interactive/CTA color
 
-### Don't
+### 禁忌
 - Don't use weight 600-700 for sohne-var headlines -- weight 300 is the brand voice
 - Don't use large border-radius (12px+, pill shapes) on cards or buttons -- Stripe is conservative
 - Don't use neutral gray shadows -- always tint with blue (`rgba(50,50,93,...)`)
@@ -261,9 +261,9 @@ What truly distinguishes Stripe is its shadow system. Rather than the flat or si
 - Don't apply positive letter-spacing at display sizes -- Stripe tracks tight
 - Don't use the magenta/ruby accents for buttons or links -- they're decorative/gradient only
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
+### 断点
 | Name | Width | Key Changes |
 |------|-------|-------------|
 | Mobile | <640px | Single column, reduced heading sizes, stacked cards |
@@ -271,13 +271,13 @@ What truly distinguishes Stripe is its shadow system. Rather than the flat or si
 | Desktop | 1024-1280px | Full layout, 3-column feature grids |
 | Large Desktop | >1280px | Centered content with generous margins |
 
-### Touch Targets
+### 触摸目标
 - Buttons use comfortable padding (8px-16px vertical)
 - Navigation links at 14px with adequate spacing
 - Badges have 6px horizontal padding minimum for tap targets
 - Mobile nav toggle with 6px radius button
 
-### Collapsing Strategy
+### 折叠策略
 - Hero: 56px display -> 32px on mobile, weight 300 maintained
 - Navigation: horizontal links + CTAs -> hamburger toggle
 - Feature cards: 3-column -> 2-column -> single column stacked
@@ -286,15 +286,15 @@ What truly distinguishes Stripe is its shadow system. Rather than the flat or si
 - Section spacing: 64px+ -> 40px on mobile
 - Typography scale compresses: 56px -> 48px -> 32px hero sizes across breakpoints
 
-### Image Behavior
+### 图片行为
 - Dashboard/product screenshots maintain blue-tinted shadow at all sizes
 - Hero gradient decorations simplify on mobile
 - Code blocks maintain `SourceCodePro` treatment, may horizontally scroll
 - Card images maintain consistent 4px-6px border-radius
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
+### 色彩速查表
 - Primary CTA: Stripe Purple (`#533afd`)
 - CTA Hover: Purple Dark (`#4434d4`)
 - Background: Pure White (`#ffffff`)
@@ -307,14 +307,14 @@ What truly distinguishes Stripe is its shadow system. Rather than the flat or si
 - Success: Green (`#15be53`)
 - Accent decorative: Ruby (`#ea2261`), Magenta (`#f96bee`)
 
-### Example Component Prompts
+### 组件提示示例
 - "Create a hero section on white background. Headline at 48px sohne-var weight 300, line-height 1.15, letter-spacing -0.96px, color #061b31, font-feature-settings 'ss01'. Subtitle at 18px weight 300, line-height 1.40, color #64748d. Purple CTA button (#533afd, 4px radius, 8px 16px padding, white text) and ghost button (transparent, 1px solid #b9b9f9, #533afd text, 4px radius)."
 - "Design a card: white background, 1px solid #e5edf5 border, 6px radius. Shadow: rgba(50,50,93,0.25) 0px 30px 45px -30px, rgba(0,0,0,0.1) 0px 18px 36px -18px. Title at 22px sohne-var weight 300, letter-spacing -0.22px, color #061b31, 'ss01'. Body at 16px weight 300, #64748d."
 - "Build a success badge: rgba(21,190,83,0.2) background, #108c3d text, 4px radius, 1px 6px padding, 10px sohne-var weight 300, border 1px solid rgba(21,190,83,0.4)."
 - "Create navigation: white sticky header with backdrop-filter blur(12px). sohne-var 14px weight 400 for links, #061b31 text, 'ss01'. Purple CTA 'Start now' right-aligned (#533afd bg, white text, 4px radius). Nav container 6px radius."
 - "Design a dark brand section: #1c1e54 background, white text. Headline 32px sohne-var weight 300, letter-spacing -0.64px, 'ss01'. Body 16px weight 300, rgba(255,255,255,0.7). Cards inside use rgba(255,255,255,0.1) border with 6px radius."
 
-### Iteration Guide
+### 迭代指南
 1. Always enable `font-feature-settings: "ss01"` on sohne-var text -- this is the brand's typographic DNA
 2. Weight 300 is the default; use 400 only for buttons/links/navigation
 3. Shadow formula: `rgba(50,50,93,0.25) 0px Y1 B1 -S1, rgba(0,0,0,0.1) 0px Y2 B2 -S2` where Y1/B1 are larger (far shadow) and Y2/B2 are smaller (near shadow)

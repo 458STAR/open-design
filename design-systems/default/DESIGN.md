@@ -1,62 +1,62 @@
-# Neutral Modern
+# 中性现代
 
-> Category: Starter
-> A clean, product-oriented default. Use when the brief doesn't call for a
-> specific mood — good for B2B tools, dashboards, and utility pages.
+> Category: 入门
+> 简洁、面向产品的默认风格。当需求没有指定特定风格时使用——
+> 适合 B2B 工具、仪表盘和工具型页面。
 
-## Visual Theme & Atmosphere
-Calm, functional, quietly confident. No ornament. Content-first, chrome-second.
+## 视觉主题与氛围
+冷静、功能性强、低调自信。无装饰。内容优先，界面框架次之。
 
-## Color Palette & Roles
-- **Background:** `#FAFAFA`
-- **Foreground:** `#111111`
-- **Accent:** `#2F6FEB` (cobalt) — primary CTAs, links, one hero element per screen
-- **Muted:** `#6B6B6B` — secondary text, captions
-- **Border:** `#E5E5E5`
-- **Surface:** `#FFFFFF` — cards, modals
-- **Success:** `#17A34A`, **Warn:** `#EAB308`, **Danger:** `#DC2626`
-Never pure black; never pure white for backgrounds.
+## 色彩体系与角色
+- **背景色:** `#FAFAFA`
+- **前景色:** `#111111`
+- **强调色:** `#2F6FEB`（钴蓝）— 主按钮、链接、每屏一个焦点元素
+- **柔和色:** `#6B6B6B` — 次要文字、标题说明
+- **边框色:** `#E5E5E5`
+- **表面色:** `#FFFFFF` — 卡片、弹窗
+- **成功:** `#17A34A`，**警告:** `#EAB308`，**危险:** `#DC2626`
+禁止纯黑；背景禁止纯白。
 
-## Typography Rules
-- **Display / headings:** `'Inter', -apple-system, system-ui, sans-serif`, weight 600
-- **Body:** `'Inter', -apple-system, system-ui, sans-serif`, weight 400
-- **Mono:** `ui-monospace, 'JetBrains Mono', monospace`
-- Scale (px): 12 · 14 · 16 · 20 · 24 · 32 · 48 · 64
-- Line-height: 1.5 for body, 1.2 for headings
-- Letter-spacing: -0.01em on display sizes ≥32px
+## 排版规则
+- **展示/标题:** `'Inter', -apple-system, system-ui, sans-serif`，字重 600
+- **正文:** `'Inter', -apple-system, system-ui, sans-serif`，字重 400
+- **等宽:** `ui-monospace, 'JetBrains Mono', monospace`
+- 字号阶梯（px）: 12 · 14 · 16 · 20 · 24 · 32 · 48 · 64
+- 行高: 正文 1.5，标题 1.2
+- 字间距: 展示字号 ≥32px 时 -0.01em
 
-## Component Stylings
-- **Buttons:** 8px radius, 10px padding-block, 16px padding-inline. Primary = cobalt fill, white label. Secondary = 1px border, transparent fill.
-- **Cards:** white, 1px border, 12px radius, 20px internal padding, no shadow by default.
-- **Inputs:** 1px border, 8px radius, 10px vertical padding, cobalt border on focus.
-- **Links:** cobalt, no underline, underline on hover.
+## 组件样式
+- **按钮:** 圆角 8px，上下内距 10px，左右内距 16px。主按钮 = 钴蓝填充 + 白色文字。次要按钮 = 1px 边框 + 透明填充。
+- **卡片:** 白色底，1px 边框，圆角 12px，内距 20px，默认无阴影。
+- **输入框:** 1px 边框，圆角 8px，上下内距 10px，聚焦时钴蓝边框。
+- **链接:** 钴蓝色，无下划线，悬停时显示下划线。
 
-## Layout Principles
-- 12-column grid, 1200px max-width, 24px gutters.
-- Hero: 40–60vh. Content top-biased, never centered vertically.
-- Sections: 80px top+bottom spacing desktop, 48px tablet, 32px phone.
-- Use whitespace as the main separator. Dividers only between unrelated top-level sections.
+## 布局原则
+- 12 列栅格，最大宽度 1200px，列间距 24px。
+- 首屏区域: 40–60vh。内容偏上放置，禁止垂直居中。
+- 区块间距: 桌面端上下各 80px，平板 48px，手机 32px。
+- 用留白作为主要分隔。分割线仅用于无关联的顶级区块之间。
 
-## Depth & Elevation
-Two levels only:
-- **Flat (0):** default.
-- **Raised (1):** dropdowns, modals, floating buttons. 2px y-offset, 8px blur, foreground at 8% opacity.
-No neumorphism, no glassmorphism.
+## 层深与阴影
+仅两个层级:
+- **平面 (0):** 默认状态。
+- **浮起 (1):** 下拉菜单、弹窗、浮动按钮。y 偏移 2px，模糊 8px，前景色 8% 透明度。
+禁止拟物风格，禁止毛玻璃效果。
 
-## Do's and Don'ts
-- ✅ Let whitespace do the work.
-- ✅ One accent element per screen.
-- ✅ Sentence-case headings by default; title case only for brand names.
-- ❌ No gradients (except the accent → accent-at-80% on a hero, sparingly).
-- ❌ No drop shadows on inputs.
-- ❌ No more than three type sizes on one screen.
+## 设计规范：推荐与禁忌
+- ✅ 让留白发挥作用。
+- ✅ 每屏只突出一个强调元素。
+- ✅ 标题默认用句首大写；仅品牌名用首字母大写。
+- ❌ 禁止渐变（首屏上强调色→强调色 80% 的渐变可偶尔使用）。
+- ❌ 输入框禁止阴影。
+- ❌ 同一屏幕不超过三种字号。
 
-## Responsive Behavior
-- **Desktop ≥ 1024px:** 12-col grid.
-- **Tablet 640–1023px:** 8-col grid, 16px gutters.
-- **Phone < 640px:** 4-col grid, 12px gutters; hero drops to 40vh.
+## 响应式行为
+- **桌面端 ≥ 1024px:** 12 列栅格。
+- **平板 640–1023px:** 8 列栅格，列间距 16px。
+- **手机 < 640px:** 4 列栅格，列间距 12px；首屏降至 40vh。
 
-## Agent Prompt Guide
-- When in doubt, subtract. Fewer boxes, less chrome, more space.
-- Use the accent color sparingly — at most one hero accent and one CTA accent per screen.
-- Do not invent hex values outside this palette. If the request needs one, surface a warning comment in the artifact and use the closest existing token.
+## 代理提示指南
+- 拿不准时做减法。更少的框框，更少的装饰，更多的空间。
+- 强调色要节制——每屏最多一个首屏强调和一个按钮强调。
+- 不要自行创造色板之外的色值。如果需求要求新颜色，在产物中写警告注释并使用最接近的现有色值。

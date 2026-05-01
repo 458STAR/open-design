@@ -1,9 +1,9 @@
-# Design System Inspired by Wise
+# Wise
 
-> Category: Fintech & Crypto
+> Category: 金融科技与加密
 > Money transfer. Bright green accent, friendly and clear.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 Wise's website is a bold, confident fintech platform that communicates "money without borders" through massive typography and a distinctive lime-green accent. The design operates on a warm off-white canvas with near-black text (`#0e0f0c`) and a signature Wise Green (`#9fe870`) — a fresh, lime-bright color that feels alive and optimistic, unlike the corporate blues of traditional banking.
 
@@ -11,7 +11,7 @@ The typography uses Wise Sans — a proprietary font used at extreme weight 900 
 
 What distinguishes Wise is its green-on-white-on-black material palette. Lime Green (`#9fe870`) appears on buttons with dark green text (`#163300`), creating a nature-inspired CTA that feels fresh. Hover states use `scale(1.05)` expansion rather than color changes — buttons physically grow on interaction. The border-radius system uses 9999px for buttons (pill), 30px–40px for cards, and the shadow system is minimal — just `rgba(14,15,12,0.12) 0px 0px 0px 1px` ring shadows.
 
-**Key Characteristics:**
+**核心特征：**
 - Wise Sans at weight 900, 0.85 line-height — billboard-scale bold headlines
 - Lime Green (`#9fe870`) accent with dark green text (`#163300`) — nature-inspired fintech
 - Inter body at weight 600 as default — confident, not light
@@ -21,7 +21,7 @@ What distinguishes Wise is its green-on-white-on-black material palette. Lime Gr
 - Pill buttons (9999px) and large rounded cards (30px–40px)
 - Semantic color system with comprehensive state management
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
 ### Primary Brand
 - **Near Black** (`#0e0f0c`): Primary text, background for dark sections
@@ -42,13 +42,13 @@ What distinguishes Wise is its green-on-white-on-black material palette. Lime Gr
 - **Gray** (`#868685`): Muted text, tertiary
 - **Light Surface** (`#e8ebe6`): Subtle green-tinted light surface
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Families
+### 字体家族
 - **Display**: `Wise Sans`, fallback: `Inter` — OpenType `"calt"` on all text
 - **Body / UI**: `Inter`, fallbacks: `Helvetica, Arial`
 
-### Hierarchy
+### 字体层级
 
 | Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
 |------|------|------|--------|-------------|----------------|-------|
@@ -65,15 +65,15 @@ What distinguishes Wise is its green-on-white-on-black material palette. Lime Gr
 | Caption | Inter | 14px (0.88rem) | 400–600 | 1.50–1.86 | -0.084px to -0.108px | `"calt"` |
 | Small | Inter | 12px (0.75rem) | 400–600 | 1.00–2.17 | -0.084px to -0.108px | `"calt"` |
 
-### Principles
+### 原则
 - **Weight 900 as identity**: Wise Sans Black (900) is used exclusively for display — the heaviest weight in any analyzed system. It creates text that feels stamped, pressed, physical.
 - **0.85 line-height**: The tightest display line-height analyzed. Letters overlap vertically, creating dense, billboard-like text blocks.
 - **"calt" everywhere**: Contextual alternates enabled on ALL text — both Wise Sans and Inter.
 - **Weight 600 as body default**: Inter Semibold is the standard reading weight — confident, not light.
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
 **Primary Green Pill**
 - Background: `#9fe870` (Wise Green)
@@ -91,23 +91,23 @@ What distinguishes Wise is its green-on-white-on-black material palette. Lime Gr
 - Radius: 9999px
 - Same scale hover/active behavior
 
-### Cards & Containers
+### 卡片与容器
 - Radius: 16px (small), 30px (medium), 40px (large cards/tables)
 - Border: `1px solid rgba(14,15,12,0.12)` or `1px solid #9fe870` (green accent)
 - Shadow: `rgba(14,15,12,0.12) 0px 0px 0px 1px` (ring shadow)
 
-### Navigation
+### 导航
 - Green-tinted navigation hover: `rgba(211,242,192,0.4)`
 - Clean header with Wise wordmark
 - Pill CTAs right-aligned
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
+### 间距体系
 - Base unit: 8px
 - Scale: 1px, 2px, 3px, 4px, 5px, 8px, 10px, 11px, 12px, 16px, 18px, 19px, 20px, 22px, 24px
 
-### Border Radius Scale
+### 圆角尺度
 - Minimal (2px): Links, inputs
 - Standard (10px): Comboboxes, inputs
 - Card (16px): Small cards, buttons, radio
@@ -118,7 +118,7 @@ What distinguishes Wise is its green-on-white-on-black material palette. Lime Gr
 - Pill (9999px): All buttons, images
 - Circle (50%): Icons, badges
 
-## 6. Depth & Elevation
+## 6. 层深与阴影
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
@@ -128,9 +128,9 @@ What distinguishes Wise is its green-on-white-on-black material palette. Lime Gr
 
 **Shadow Philosophy**: Wise uses minimal shadows — ring shadows only. Depth comes from the bold green accent against the neutral canvas.
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 
-### Do
+### 推荐
 - Use Wise Sans weight 900 for display — the extreme boldness IS the brand
 - Apply line-height 0.85 on Wise Sans display — ultra-tight is intentional
 - Use Lime Green (#9fe870) for primary CTAs with Dark Green (#163300) text
@@ -138,16 +138,16 @@ What distinguishes Wise is its green-on-white-on-black material palette. Lime Gr
 - Enable "calt" on all text
 - Use Inter weight 600 as the body default
 
-### Don't
+### 禁忌
 - Don't use light font weights for Wise Sans — only 900
 - Don't relax the 0.85 line-height on display — the density is the identity
 - Don't use the Wise Green as background for large surfaces — it's for buttons and accents
 - Don't skip the scale animation on buttons
 - Don't use traditional shadows — ring shadows only
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
+### 断点
 | Name | Width | Key Changes |
 |------|-------|-------------|
 | Mobile | <576px | Single column |
@@ -155,20 +155,20 @@ What distinguishes Wise is its green-on-white-on-black material palette. Lime Gr
 | Desktop | 992–1440px | Full layout |
 | Large | >1440px | Expanded |
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
+### 色彩速查表
 - Text: Near Black (`#0e0f0c`)
 - Background: White (`#ffffff` / off-white)
 - Accent: Wise Green (`#9fe870`)
 - Button text: Dark Green (`#163300`)
 - Secondary: Gray (`#868685`)
 
-### Example Component Prompts
+### 组件提示示例
 - "Create hero: white background. Headline at 96px Wise Sans weight 900, line-height 0.85, 'calt' enabled, #0e0f0c text. Green pill CTA (#9fe870, 9999px radius, 5px 16px padding, #163300 text). Hover: scale(1.05)."
 - "Build a card: 30px radius, 1px solid rgba(14,15,12,0.12). Title at 22px Inter weight 600, body at 18px weight 400."
 
-### Iteration Guide
+### 迭代指南
 1. Wise Sans 900 at 0.85 line-height — the extreme weight IS the brand
 2. Lime Green for buttons only — dark green text on green background
 3. Scale animations (1.05 hover, 0.95 active) on all interactive elements

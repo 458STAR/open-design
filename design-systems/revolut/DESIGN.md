@@ -1,9 +1,9 @@
-# Design System Inspired by Revolut
+# Revolut
 
-> Category: Fintech & Crypto
+> Category: 金融科技与加密
 > Digital banking. Sleek dark interface, gradient cards, fintech precision.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 Revolut's website is fintech confidence distilled into pixels — a design system that communicates "your money is in capable hands" through massive typography, generous whitespace, and a disciplined neutral palette. The visual language is built on Aeonik Pro, a geometric grotesque that creates billboard-scale headlines at 136px with weight 500 and aggressive negative tracking (-2.72px). This isn't subtle branding; it's fintech at stadium scale.
 
@@ -11,7 +11,7 @@ The color system is built on a comprehensive `--rui-*` (Revolut UI) token archit
 
 What distinguishes Revolut is its pill-everything button system. Every button uses 9999px radius — primary dark (`#191c1f`), secondary light (`#f4f4f4`), outlined (`transparent + 2px solid`), and ghost on dark (`rgba(244,244,244,0.1) + 2px solid`). The padding is generous (14px 32px–34px), creating large, confident touch targets. Combined with Inter for body text at various weights and positive letter-spacing (0.16px–0.24px), the result is a design that feels both premium and accessible — banking for the modern era.
 
-**Key Characteristics:**
+**核心特征：**
 - Aeonik Pro display at 136px weight 500 — billboard-scale fintech headlines
 - Near-black (`#191c1f`) + white binary with comprehensive `--rui-*` semantic tokens
 - Universal pill buttons (9999px radius) with generous padding (14px 32px)
@@ -20,9 +20,9 @@ What distinguishes Revolut is its pill-everything button system. Every button us
 - Zero shadows detected — depth through color contrast only
 - Tight display line-heights (1.00) with relaxed body (1.50–1.56)
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
-### Primary
+### 主色
 - **Revolut Dark** (`#191c1f`): Primary dark surface, button background, near-black text
 - **Pure White** (`#ffffff`): `--rui-color-action-label`, primary light surface
 - **Light Surface** (`#f4f4f4`): Secondary button background, subtle surface
@@ -49,14 +49,14 @@ What distinguishes Revolut is its pill-everything button system. Every button us
 - **Cool Gray** (`#8d969e`): Muted text, tertiary
 - **Gray Tone** (`#c9c9cd`): `--rui-color-grey-tone-20`, borders/dividers
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Families
+### 字体家族
 - **Display**: `Aeonik Pro` — geometric grotesque, no detected fallbacks
 - **Body / UI**: `Inter` — standard system sans
 - **Fallback**: `Arial` for specific button contexts
 
-### Hierarchy
+### 字体层级
 
 | Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
 |------|------|------|--------|-------------|----------------|-------|
@@ -72,14 +72,14 @@ What distinguishes Revolut is its pill-everything button system. Every button us
 | Body Semibold | Inter | 16px (1.00rem) | 600 | 1.50 | 0.16px | Emphasized body |
 | Body Bold Link | Inter | 16px (1.00rem) | 700 | 1.50 | 0.24px | Bold links |
 
-### Principles
+### 原则
 - **Weight 500 as display default**: Aeonik Pro uses medium (500) for ALL headings — no bold. This creates authority through size and tracking, not weight.
 - **Billboard tracking**: -2.72px at 136px is extremely compressed — text designed to be read at a glance, like airport signage.
 - **Positive tracking on body**: Inter uses +0.16px to +0.24px, creating airy, well-spaced reading text that contrasts with the compressed headings.
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
 **Primary Dark Pill**
 - Background: `#191c1f`
@@ -110,29 +110,29 @@ What distinguishes Revolut is its pill-everything button system. Every button us
 - Padding: 14px 32px
 - Radius: 9999px
 
-### Cards & Containers
+### 卡片与容器
 - Radius: 12px (small), 20px (cards)
 - No shadows — flat surfaces with color contrast
 - Dark and light section alternation
 
-### Navigation
+### 导航
 - Aeonik Pro 20px weight 500
 - Clean header, hamburger toggle at 12px radius
 - Pill CTAs right-aligned
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
+### 间距体系
 - Base unit: 8px
 - Scale: 4px, 6px, 8px, 14px, 16px, 20px, 24px, 32px, 40px, 48px, 80px, 88px, 120px
 - Large section spacing: 80px–120px
 
-### Border Radius Scale
+### 圆角尺度
 - Standard (12px): Navigation, small buttons
 - Card (20px): Feature cards
 - Pill (9999px): All buttons
 
-## 6. Depth & Elevation
+## 6. 层深与阴影
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
@@ -141,24 +141,24 @@ What distinguishes Revolut is its pill-everything button system. Every button us
 
 **Shadow Philosophy**: Revolut uses ZERO shadows. Depth comes entirely from the dark/light section contrast and the generous whitespace between elements.
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 
-### Do
+### 推荐
 - Use Aeonik Pro weight 500 for all display headings
 - Apply 9999px radius to all buttons — pill shape is universal
 - Use generous button padding (14px 32px)
 - Keep the palette to near-black + white for marketing surfaces
 - Apply positive letter-spacing on Inter body text
 
-### Don't
+### 禁忌
 - Don't use shadows — Revolut is flat by design
 - Don't use bold (700) for Aeonik Pro headings — 500 is the weight
 - Don't use small buttons — the generous padding is intentional
 - Don't apply semantic colors to marketing surfaces — they're for the product
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
+### 断点
 | Name | Width | Key Changes |
 |------|-------|-------------|
 | Mobile Small | <400px | Compact, single column |
@@ -167,9 +167,9 @@ What distinguishes Revolut is its pill-everything button system. Every button us
 | Desktop | 1024–1280px | Standard desktop |
 | Large | 1280–1920px | Full layout |
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
+### 色彩速查表
 - Dark: Revolut Dark (`#191c1f`)
 - Light: White (`#ffffff`)
 - Surface: Light (`#f4f4f4`)
@@ -177,11 +177,11 @@ What distinguishes Revolut is its pill-everything button system. Every button us
 - Danger: Red (`#e23b4a`)
 - Success: Teal (`#00a87e`)
 
-### Example Component Prompts
+### 组件提示示例
 - "Create a hero: white background. Headline at 136px Aeonik Pro weight 500, line-height 1.00, letter-spacing -2.72px, #191c1f text. Dark pill CTA (#191c1f, 9999px, 14px 32px). Outlined pill secondary (transparent, 2px solid #191c1f)."
 - "Build a pill button: #191c1f background, white text, 9999px radius, 14px 32px padding, 20px Aeonik Pro weight 500. Hover: opacity 0.85."
 
-### Iteration Guide
+### 迭代指南
 1. Aeonik Pro 500 for headings — never bold
 2. All buttons are pills (9999px) with generous padding
 3. Zero shadows — flat is the Revolut identity

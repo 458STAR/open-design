@@ -1,9 +1,9 @@
-# Design System Inspired by Vodafone
+# Vodafone
 
-> Category: Media & Consumer
+> Category: 媒体与消费
 > Global telecom brand. Monumental uppercase display, Vodafone Red chapter bands.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 Vodafone's corporate web system carries the confident, broadcast-scale presence of a global telecom brand — built around a single, fiercely-owned brand red and a restrained, editorial layout that lets imagery and type carry the emotional weight. Every page opens the same way: a cinematic dark hero image behind a towering, tight-tracked uppercase display headline ("EVERYONE. CONNECTED.", "INVESTORS", "OUR BUSINESS") followed by a deep red full-width band that acts as a chapter break, then a crisp white editorial grid or a near-black section reserved for institutional content (share ticker, global map, ESG data). The voice is institutional but human: warm documentary photography — cable-laying crews, coral reefs, pine forests, urban twilight — photographed with color-graded realism and set against clean neutral surfaces that never compete with the content.
 
@@ -11,7 +11,7 @@ The typography system is the signature. A custom Vodafone display face runs all 
 
 Surface treatment is disciplined and predictable: a three-surface pass of white (editorial canvas) → Vodafone red (band dividers, CTA buttons, the famous speech-mark logo) → near-black charcoal (footer, share-ticker panel, global-impact map). There is almost no decorative shadow, almost no gradient, and almost no rounded-corner softness. Edges are small and clinical (2px and 6px), buttons operate as a two-tier system — tight 2px rectangles for utility/form actions, and fully-rounded 60px pills for primary content CTAs. This is a design system that trusts the brand color to do the heavy lifting and gets out of its way everywhere else.
 
-**Key Characteristics:**
+**核心特征：**
 - Vodafone Red (`#e60000`) is the single dominant accent — used for CTAs, dividers, band sections, the speech-mark logo, and the rotated "IMPACT" brand-mark type on the sustainability map
 - Monumental uppercase display type (up to 144px, weight 800, negative letter-spacing) paired with calm 16-18px body copy
 - A universal page rhythm: dark atmospheric hero → monumental uppercase headline → full-width red band → white editorial canvas → dark charcoal institutional panel → charcoal footer
@@ -20,26 +20,26 @@ Surface treatment is disciplined and predictable: a three-surface pass of white 
 - Near-absence of shadows and gradients — hierarchy comes from type weight, color blocks, and spacing rather than elevation
 - Deep charcoal surface (`#25282b`) is reused as the footer AND the institutional data panel (share ticker, world map) — a single material for anything formal and numeric
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
-### Primary
+### 主色
 
 - **Vodafone Red** (`#e60000`): The brand's single, non-negotiable signature — used for primary CTA backgrounds, the speech-mark logo, full-bleed band dividers between editorial sections, tag-pill outlines, and the rotated brand-mark type that labels the global-impact map. This red must never be substituted or tinted; it is the identity.
 
-### Secondary & Accent
+### 辅助色与强调色
 
 - **Pure White** (`#ffffff`): The dominant editorial canvas — page background, card backgrounds, reversed text on dark or red surfaces, and circular icon-button fills.
 - **Signal Blue** (`#3860be`): Reserved for inline text links in their resting state (underlined), providing a calm accessible blue that reads clearly against both white and dark surfaces.
 - **Deep Brand Red Shade** (`#ac1811`): A darker red appears on quiet label chips (notably on the sustainability page) — used sparingly for low-prominence tag elements that need red identity without drawing primary attention.
 
-### Surface & Background
+### 表面与背景色
 
 - **Canvas White** (`#ffffff`): The primary page and card surface. Every editorial module sits on this canvas.
 - **Light Neutral** (`#f2f2f2`): Used for filled neutral pill-badge backgrounds and quiet UI chrome where full white would disappear against the canvas.
 - **Charcoal Institutional Panel** (`#25282b`): The same color used for text is reused as a full-width dark surface for the footer, the share-ticker panel, and the global-impact map section. It transforms the page into a "data mode" environment.
 - **Translucent White Overlay** (`rgba(255,255,255,0.1)`): A soft glass tint used for pill buttons that sit on dark hero imagery — lets the photo breathe through the button.
 
-### Neutrals & Text
+### 中性色与文字色
 
 - **Charcoal Headline** (`#25282b`): All heading text on light surfaces and the charcoal surface color itself — a near-black with a faint cool tint, never pure black.
 - **Secondary Body Grey** (`#7e7e7e`): Body copy, meta text, and secondary labels — a true mid-grey that reads as unemphatic but still legible.
@@ -47,27 +47,27 @@ Surface treatment is disciplined and predictable: a three-surface pass of white 
 - **Disabled Grey** (`#bebebe`): Inactive chip text on subtle ghost-style controls.
 - **Translucent White Divider** (`rgba(255,255,255,0.25)`): Hairline column dividers on dark institutional panels (footer columns, map legend rows).
 
-### Semantic & Accent
+### 语义色与强调色
 
 - **Surface Red Band** (`#e60000`): The same brand red deployed as a full-width band between editorial sections — functions as a chapter divider and a visual amplifier for the brand. Appears on every page template.
 - **Tag Pill Red Border** (`#e60000`): 1px outline on light tag pills, letting the brand color touch small UI without drowning card content.
 
-### Gradient System
+### 渐变体系
 
 Vodafone's design is intentionally gradient-free. The only tonal variation is a subtle photographic vignette on hero imagery (dim coral reefs, pine forests, cable-laying crews, urban twilight), where the image itself — not a CSS gradient — provides the tonal ramp. No linear gradients are used on buttons, cards, or surfaces.
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Family
+### 字体家族
 
 - **Primary**: `Vodafone` (custom corporate sans-serif)
 - **Fallback stack**: `Vodafone, "Helvetica Neue", Arial, sans-serif`
 - **Icon font**: `icomoon` — carries pictograph glyphs at 18px/24px/48px fixed sizes
 - **Rendering**: `font-smoothing: antialiased` across the board; OpenType features are not aggressively used — the design relies on weight and tracking, not stylistic alternates
 
-### Hierarchy
+### 字体层级
 
-| Role | Size | Weight | Line Height | Letter Spacing | Notes |
+| 角色 | 尺寸 | 字重 | 行高 | 字间距 | 备注 |
 |------|------|--------|-------------|----------------|-------|
 | Display / Hero XL | 144px | 800 | 0.79 | -1px | Uppercase; the signature "EVERYONE. CONNECTED." treatment |
 | Display / Hero L | 126px | 800 | 0.90 | -1px | Uppercase; used when the hero headline is longer |
@@ -94,7 +94,7 @@ Vodafone's design is intentionally gradient-free. The only tonal variation is a 
 | Button Primary | 14.4px | 700 | 1.00 | 0.144px | Primary filled button label |
 | Button Compact | 12px | 700 | 1.00 | 0.12px | Compact button label |
 
-### Principles
+### 原则
 
 - **Dual-scale drama**: the system deliberately stretches from 144px down to 8.5px without mid-range showing off. The result is a clear corporate hierarchy — monumental for brand moments, calm for reading.
 - **Uppercase display, mixed-case body**: all the largest display sizes are uppercase with negative tracking, while everything 48px and below is sentence case with normal tracking.
@@ -106,9 +106,9 @@ Vodafone's design is intentionally gradient-free. The only tonal variation is a 
 
 The Vodafone corporate typeface is proprietary. When recreating the look in open systems, substitute with **Inter** at weights 400/600/800, or **Neue Haas Grotesk** if available. Inter needs its letter-spacing reduced by roughly 1-2% at display sizes (80px+) to approximate the Vodafone face's tight tracking; its line-height should be set to 0.85-0.95 for the uppercase display tier.
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
 Vodafone operates a genuine two-tier primary button system. Both tiers are used as primary calls to action — the difference is context (form/chrome vs editorial/content), not hierarchy.
 
@@ -159,7 +159,7 @@ Vodafone operates a genuine two-tier primary button system. Both tiers are used 
 - Outline: 1px solid white, used for focus indication
 - Size: typically 32-40px diameter
 
-### Cards & Containers
+### 卡片与容器
 
 **News / Editorial Card** (homepage article tile)
 - Background: Pure White (`#ffffff`)
@@ -178,7 +178,7 @@ Vodafone operates a genuine two-tier primary button system. Both tiers are used 
 - Border radius: 100% — perfect circle
 - Used for ESG pictograms and executive portraits inside the institutional content area
 
-### Inputs & Forms
+### 输入框与表单
 
 Vodafone's corporate site does not expose many inline form controls on the homepage, but button-style inputs follow these rules:
 
@@ -189,7 +189,7 @@ Vodafone's corporate site does not expose many inline form controls on the homep
 - Padding: 12px 10px
 - Error state (when shown): the 1px border shifts to Vodafone Red (`#e60000`) and error message text inherits the same red at 12px weight 600
 
-### Navigation
+### 导航
 
 **Top bar**
 - Background: transparent over hero imagery; solid white (`#ffffff`) on scroll or interior pages
@@ -203,7 +203,7 @@ Vodafone's corporate site does not expose many inline form controls on the homep
 - At approximately 768px the horizontal nav collapses into a hamburger
 - Mobile menu opens as a full-width overlay with white surface, 18px weight 400 link rows, 16px vertical padding per row
 
-### Image Treatment
+### 图片处理
 
 - **Hero images**: full-bleed, dark atmospheric photography (coral reefs, pine forests, cable crews, urban twilight) with a natural vignette or cool-tone color grade — no CSS overlay is needed because the imagery itself is pre-graded
 - **Card thumbnails**: 16:9 aspect ratio, 6px top corner radius matching the card
@@ -261,9 +261,9 @@ A universal component across all page templates:
 - Column link type: 14px weight 400 white, stacked vertically with 12px row spacing
 - Divider hairlines: `rgba(255,255,255,0.25)` between column group and legal row
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
+### 间距体系
 
 Base unit: **8px**. The scale accommodates both tight UI (1px, 2px, 4px) and generous editorial rhythm (16px, 20px, 24px, 32px). Two values (`32px` and `38px`) appear across every page in the analysis, making them the template's universal rhythm constants.
 
@@ -280,7 +280,7 @@ Base unit: **8px**. The scale accommodates both tight UI (1px, 2px, 4px) and gen
 | 3xl | 38px | Band-to-next-section vertical push — universal constant |
 | section | 64-96px | Vertical rhythm between major editorial modules |
 
-### Grid & Container
+### 栅格与容器
 
 - **Max content width**: approximately 1440px on very large screens; articles and hero modules typically sit at 1200px
 - **Column pattern on cards**: 3-up or 4-up card grid at desktop (1200-1440px), 2-up at tablet (768-1024px), stacked 1-up at mobile (<768px)
@@ -288,11 +288,11 @@ Base unit: **8px**. The scale accommodates both tight UI (1px, 2px, 4px) and gen
 - **Gutters between cards**: 24px desktop, 16px mobile
 - **Institutional panel (share ticker, world map, footer)**: always full-bleed edge-to-edge at every breakpoint
 
-### Whitespace Philosophy
+### 留白哲学
 
 Vodafone's editorial canvas leans generous — whitespace is used as a visual palette cleanser between a monumental headline and the card grid or data panel that follows. Sections are separated by tall vertical rhythm (64-96px) plus the occasional red band that acts as both a separator and a brand signal. Within cards, spacing is tight and efficient (12-16px) so the photography can take the stage.
 
-### Border Radius Scale
+### 圆角尺度
 
 | Token | Value | Typical Use |
 |-------|-------|-------------|
@@ -306,7 +306,7 @@ Vodafone's editorial canvas leans generous — whitespace is used as a visual pa
 | circle | 50% | Icon buttons, carousel arrows, close controls |
 | portrait | 100% | Circular portraits and ESG pictograms |
 
-## 6. Depth & Elevation
+## 6. 层深与阴影
 
 Vodafone's system is deliberately flat. There is almost no conventional box-shadow in the UI. Hierarchy is carried by color (red bands, charcoal institutional panels), typography weight (800 vs 400), and spacing.
 
@@ -320,15 +320,15 @@ Vodafone's system is deliberately flat. There is almost no conventional box-shad
 
 Shadow philosophy: Vodafone treats drop shadows as a distraction from brand clarity. The few extracted shadow tokens are reserved for inset focus rings. The dominant "elevation" in the system is a **color surface shift** — switching from the white editorial canvas to the charcoal institutional panel — rather than a lift-off drop shadow.
 
-### Decorative Depth
+### 装饰性层深
 
 The only decorative depth cues are:
 - Atmospheric dark hero photography that carries its own cinematic tonal depth (no CSS overlay needed)
 - The rotated vertical "IMPACT" wordmark on the sustainability map, which creates the illusion of a fourth wall alongside the map panel
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 
-### Do
+### 推荐
 
 - Use Vodafone Red (`#e60000`) as the single loudest element on any screen — one primary CTA per fold, one red band per editorial break
 - Set display headlines in uppercase 800-weight with tight negative tracking; let them run to 90-144px on desktop
@@ -339,7 +339,7 @@ The only decorative depth cues are:
 - Anchor every page with a charcoal institutional surface (`#25282b`) — the footer always, and on investor/sustainability pages extend the same color up to include the share ticker or the global-impact map
 - Respect the universal page rhythm: dark hero → red band → white editorial → charcoal institutional → charcoal footer
 
-### Don't
+### 禁忌
 
 - Don't introduce a second brand hue to rival Vodafone Red — no teals, no purples, no orange accents
 - Don't soften rectangle button corners beyond 2px, and don't shrink pill button corners below 60px — the two shapes are both load-bearing
@@ -350,9 +350,9 @@ The only decorative depth cues are:
 - Don't decorate headlines with colored underlines or highlights — the type does the work
 - Don't use pure black (`#000000`) for text or surfaces — always use Charcoal Headline (`#25282b`)
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
+### 断点
 
 The practical tiers observed across all three templates:
 
@@ -365,11 +365,11 @@ The practical tiers observed across all three templates:
 | Desktop | 1200-1439px | Standard editorial layout; cards 3-up or 4-up |
 | Wide | ≥ 1440px | Content caps at 1440px; outer canvas padding grows |
 
-### Touch Targets
+### 触摸目标
 
 All interactive controls meet a 44×44px minimum on mobile. Icon buttons use 40×40px circular hit areas which expand with 4px invisible padding on touch devices. Primary CTA buttons land at approximately 48×48px on mobile (16px top/bottom + text line for pills; 12px + text line for rectangles).
 
-### Collapsing Strategy
+### 折叠策略
 
 - **Nav**: horizontal links collapse into a hamburger at 768px; the logo stays left-aligned at all widths
 - **Card grid**: 4-up → 3-up at 1200px → 2-up at 768px → 1-up at 600px, with gutters shrinking from 24px to 16px
@@ -379,16 +379,16 @@ All interactive controls meet a 44×44px minimum on mobile. Icon buttons use 40�
 - **Institutional panels (share ticker / world map)**: on mobile, multi-column content restacks into a single vertical stream but the charcoal surface stays edge-to-edge
 - **Vertically-rotated "IMPACT" wordmark**: becomes a horizontal label or is dropped entirely on mobile where vertical space is limited
 
-### Image Behavior
+### 图片行为
 
 - Hero imagery: art-directed variant at mobile (tighter crop) versus desktop (wide atmospheric frame)
 - Card thumbnails: always 16:9 regardless of viewport; `loading="lazy"` is standard
 - Circular portraits: fixed at 80-120px diameter on desktop, shrinking to 64-80px on mobile
 - Logo: fixed at 40×40px across breakpoints (consistent brand mark size)
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
+### 色彩速查表
 
 - Primary CTA: "Vodafone Red (`#e60000`)"
 - Background: "Canvas White (`#ffffff`)"
@@ -398,7 +398,7 @@ All interactive controls meet a 44×44px minimum on mobile. Icon buttons use 40�
 - Inline link: "Signal Blue (`#3860be`)"
 - Quiet pill background: "Light Neutral (`#f2f2f2`)"
 
-### Example Component Prompts
+### 组件提示示例
 
 - "Create a primary red rectangle button: Vodafone Red (`#e60000`) background, pure white 14.4px weight 700 text, 2px border radius (sharp corners), 12px vertical × 10px horizontal padding. Use for form and utility actions. No shadow, no gradient."
 - "Create a primary red pill CTA: Vodafone Red (`#e60000`) background, pure white 14.4px weight 700 text, 60px border radius (fully pill-shaped), 16px uniform padding. Use for editorial content calls-to-action."
@@ -408,7 +408,7 @@ All interactive controls meet a 44×44px minimum on mobile. Icon buttons use 40�
 - "Design an institutional data panel: full-bleed Charcoal Institutional Panel (`#25282b`) background, large numeric display at 48px weight 800 white with negative letter-spacing, 14px weight 400 grey meta row beneath. Use for share ticker or stats callout."
 - "Design a global impact map: Charcoal Institutional Panel (`#25282b`) background, minimal grey world-map illustration, red Vodafone-red circular markers on operational locations, the brand word 'IMPACT' set at large display size in brand red and rotated 90° to run vertically along one edge."
 
-### Iteration Guide
+### 迭代指南
 
 When refining existing screens generated with this design system:
 

@@ -1,15 +1,15 @@
-# Design System Inspired by Coinbase
+# Coinbase
 
-> Category: Fintech & Crypto
+> Category: 金融科技与加密
 > Crypto exchange. Clean blue identity, trust-focused, institutional feel.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 Coinbase's website is a clean, trustworthy crypto platform that communicates financial reliability through a blue-and-white binary palette. The design uses Coinbase Blue (`#0052ff`) — a deep, saturated blue — as the singular brand accent against white and near-black surfaces. The proprietary font family includes CoinbaseDisplay for hero headlines, CoinbaseSans for UI text, CoinbaseText for body reading, and CoinbaseIcons for iconography — a comprehensive four-font system.
 
 The button system uses a distinctive 56px radius for pill-shaped CTAs with hover transitions to a lighter blue (`#578bfa`). The design alternates between white content sections and dark (`#0a0b0d`, `#282b31`) feature sections, creating a professional, financial-grade interface.
 
-**Key Characteristics:**
+**核心特征：**
 - Coinbase Blue (`#0052ff`) as singular brand accent
 - Four-font proprietary family: Display, Sans, Text, Icons
 - 56px radius pill buttons with blue hover transition
@@ -18,9 +18,9 @@ The button system uses a distinctive 56px radius for pill-shaped CTAs with hover
 - Cool gray secondary surface (`#eef0f3`) with blue tint
 - `text-transform: lowercase` on some button labels — unusual
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
-### Primary
+### 主色
 - **Coinbase Blue** (`#0052ff`): Primary brand, links, CTA borders
 - **Pure White** (`#ffffff`): Primary light surface
 - **Near Black** (`#0a0b0d`): Text, dark section backgrounds
@@ -35,15 +35,15 @@ The button system uses a distinctive 56px radius for pill-shaped CTAs with hover
 - **Dark Card** (`#282b31`): Dark button/card backgrounds
 - **Light Surface** (`rgba(247,247,247,0.88)`): Subtle surface
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Families
+### 字体家族
 - **Display**: `CoinbaseDisplay` — hero headlines
 - **UI / Sans**: `CoinbaseSans` — buttons, headings, nav
 - **Body**: `CoinbaseText` — reading text
 - **Icons**: `CoinbaseIcons` — icon font
 
-### Hierarchy
+### 字体层级
 
 | Role | Font | Size | Weight | Line Height | Notes |
 |------|------|------|--------|-------------|-------|
@@ -61,9 +61,9 @@ The button system uses a distinctive 56px radius for pill-shaped CTAs with hover
 | Caption | CoinbaseSans | 14px | 600–700 | 1.50 | Metadata |
 | Small | CoinbaseSans | 13px | 600 | 1.23 | Tags |
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
 **Primary Pill (56px radius)**
 - Background: `#eef0f3` or `#282b31`
@@ -79,17 +79,17 @@ The button system uses a distinctive 56px radius for pill-shaped CTAs with hover
 - Border: `1px solid #0052ff`
 - Background: transparent
 
-### Cards & Containers
+### 卡片与容器
 - Radius: 8px–40px range
 - Borders: `1px solid rgba(91,97,110,0.2)`
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
+### 间距体系
 - Base: 8px
 - Scale: 1px, 3px, 4px, 5px, 6px, 8px, 10px, 12px, 15px, 16px, 20px, 24px, 25px, 32px, 48px
 
-### Border Radius Scale
+### 圆角尺度
 - Small (4px–8px): Article links, small cards
 - Standard (12px–16px): Cards, menus
 - Large (24px–32px): Feature containers
@@ -97,29 +97,29 @@ The button system uses a distinctive 56px radius for pill-shaped CTAs with hover
 - Pill (56px): Primary CTAs
 - Full (100000px): Maximum pill
 
-## 6. Depth & Elevation
+## 6. 层深与阴影
 
 Minimal shadow system — depth from color contrast between dark/light sections.
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 
-### Do
+### 推荐
 - Use Coinbase Blue (#0052ff) for primary interactive elements
 - Apply 56px radius for all CTA buttons
 - Use CoinbaseDisplay for hero headings only
 - Alternate dark (#0a0b0d) and white sections
 
-### Don't
+### 禁忌
 - Don't use the blue decoratively — it's functional only
 - Don't use sharp corners on CTAs — 56px minimum
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
 Breakpoints: 400px, 576px, 640px, 768px, 896px, 1280px, 1440px, 1600px
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
+### 色彩速查表
 - Brand: Coinbase Blue (`#0052ff`)
 - Background: White (`#ffffff`)
 - Dark surface: `#0a0b0d`
@@ -127,6 +127,6 @@ Breakpoints: 400px, 576px, 640px, 768px, 896px, 1280px, 1440px, 1600px
 - Hover: `#578bfa`
 - Text: `#0a0b0d`
 
-### Example Component Prompts
+### 组件提示示例
 - "Create hero: white background. CoinbaseDisplay 80px, line-height 1.00. Pill CTA (#eef0f3, 56px radius). Hover: #578bfa."
 - "Build dark section: #0a0b0d background. CoinbaseDisplay 64px white text. Blue accent link (#0052ff)."

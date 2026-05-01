@@ -1,9 +1,9 @@
-# Design System Inspired by Sanity
+# Sanity
 
-> Category: Backend & Data
+> Category: 后端与数据
 > Headless CMS. Red accent, content-first editorial layout.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 Sanity's website is a developer-content platform rendered as a nocturnal command center -- dark, precise, and deeply structured. The entire experience sits on a near-black canvas (`#0b0b0b`) that reads less like a "dark mode toggle" and more like the natural state of a tool built for people who live in terminals. Where most CMS marketing pages reach for friendly pastels and soft illustration, Sanity leans into the gravity of its own product: structured content deserves a structured stage.
 
@@ -11,17 +11,17 @@ The signature typographic voice is waldenburgNormal -- a distinctive, slightly g
 
 What makes Sanity distinctive is the interplay between its monochromatic dark palette and vivid, saturated accent punctuation. The neutral scale runs from pure black through a tightly controlled gray ramp (`#0b0b0b` -> `#212121` -> `#353535` -> `#797979` -> `#b9b9b9` -> `#ededed` -> `#ffffff`) with no warm or cool bias -- just pure, achromatic precision. Against this disciplined backdrop, a neon green accent (display-p3 green) and electric blue (`#0052ef`) land with the impact of signal lights in a dark control room. The orange-red CTA (`#f36458`) provides the only warm touch in an otherwise cool system.
 
-**Key Characteristics:**
+**核心特征：**
 - Near-black canvas (`#0b0b0b`) as the default, natural environment -- not a dark "mode" but the primary identity
 - waldenburgNormal with extreme negative tracking at display sizes, creating a precision-engineered typographic voice
 - Pure achromatic gray scale -- no warm or cool undertones, pure neutral discipline
 - Vivid accent punctuation: neon green, electric blue (`#0052ef`), and coral-red (`#f36458`) against the dark field
 - Pill-shaped primary buttons (99999px radius) contrasting with subtle rounded rectangles (3-6px) for secondary actions
 - IBM Plex Mono as the technical counterweight to the editorial display face
-- Full-bleed dark sections with content contained in measured max-width containers
+- Full-bleed dark sections with content contained in measured 最大宽度 containers
 - Hover states that shift to electric blue (`#0052ef`) across all interactive elements -- a consistent "activation" signal
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
 ### Primary Brand
 - **Sanity Black** (`#0b0b0b`): The primary canvas and dominant surface color. Not pure black but close enough to feel absolute. The foundation of the entire visual identity.
@@ -34,14 +34,14 @@ What makes Sanity distinctive is the interplay between its monochromatic dark pa
 - **Neon Green** (`color(display-p3 .270588 1 0)`): A vivid, wide-gamut green used as `--color-fg-accent-green` for success states and premium feature highlights. Falls back to `#19d600` in sRGB.
 - **Accent Magenta** (`color(display-p3 .960784 0 1)`): A vivid wide-gamut magenta for specialized accent moments.
 
-### Surface & Background
+### 表面与背景色
 - **Near Black** (`#0b0b0b`): Default page background and primary surface.
 - **Dark Gray** (`#212121`): Elevated surface color for cards, secondary containers, input backgrounds, and subtle layering above the base canvas.
 - **Medium Dark** (`#353535`): Tertiary surface and border color for creating depth between dark layers.
 - **Pure White** (`#ffffff`): Used for inverted sections, light-on-dark text, and specific button surfaces.
 - **Light Gray** (`#ededed`): Light surface for inverted/light sections and subtle background tints.
 
-### Neutrals & Text
+### 中性色与文字色
 - **White** (`#ffffff`): Primary text color on dark surfaces, maximum legibility.
 - **Silver** (`#b9b9b9`): Secondary text, body copy on dark surfaces, muted descriptions, and placeholder text.
 - **Medium Gray** (`#797979`): Tertiary text, metadata, timestamps, and de-emphasized content.
@@ -60,9 +60,9 @@ What makes Sanity distinctive is the interplay between its monochromatic dark pa
 - **Light Border** (`#ffffff`): Border on inverted/light elements or buttons needing contrast separation.
 - **Orange Border** (`color(display-p3 1 0.3333 0)`): Special accent border for highlighted/featured elements.
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Family
+### 字体家族
 - **Display / Headline**: `waldenburgNormal`, fallback: `waldenburgNormal Fallback, ui-sans-serif, system-ui`
 - **Body / UI**: `waldenburgNormal`, fallback: `waldenburgNormal Fallback, ui-sans-serif, system-ui`
 - **Code / Technical**: `IBM Plex Mono`, fallback: `ibmPlexMono Fallback, ui-monospace`
@@ -70,7 +70,7 @@ What makes Sanity distinctive is the interplay between its monochromatic dark pa
 
 *Note: waldenburgNormal is a custom typeface. For external implementations, use Inter or Space Grotesk as the sans substitute (geometric, slightly condensed feel). IBM Plex Mono is available on Google Fonts.*
 
-### Hierarchy
+### 字体层级
 
 | Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
 |------|------|------|--------|-------------|----------------|-------|
@@ -91,16 +91,16 @@ What makes Sanity distinctive is the interplay between its monochromatic dark pa
 | Code Caption | IBM Plex Mono | 13px (0.81rem) | 400-500 | 1.30-1.50 | normal | Inline code, small technical labels |
 | Code Micro | IBM Plex Mono | 10-12px | 400 | 1.30-1.50 | normal | Tiny code labels, uppercase tags |
 
-### Principles
+### 原则
 - **Extreme negative tracking at scale**: Display headings at 72px+ use aggressive negative letter-spacing (-2.88px to -4.48px), creating a tight, engineered quality that distinguishes Sanity from looser editorial typography.
 - **Single font, multiple registers**: waldenburgNormal handles both editorial display and functional UI text. The weight range is narrow (400-425 for most, 500-600 only for tiny labels), keeping the voice consistent.
 - **OpenType feature control**: Typography uses deliberate feature settings including `"cv01", "cv11", "cv12", "cv13", "ss07"` for display sizes and `"calt" 0` for body text, fine-tuning character alternates for different contexts.
 - **Tight headings, relaxed body**: Headings use 1.00-1.24 line-height (extremely tight), while body text breathes at 1.50. This contrast creates clear visual hierarchy.
 - **Uppercase for technical labels**: IBM Plex Mono captions and small labels frequently use `text-transform: uppercase` with tight line-heights, creating a "system readout" aesthetic for technical metadata.
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
 **Primary CTA (Pill)**
 - Background: Sanity Red (`#f36458`)
@@ -177,7 +177,7 @@ What makes Sanity distinctive is the interplay between its monochromatic dark pa
 - Border Radius: 3px
 - Placeholder: Medium Gray (`#797979`)
 
-### Navigation
+### 导航
 
 **Top Navigation**
 - Background: Near Black (`#0b0b0b`) with backdrop blur
@@ -210,9 +210,9 @@ What makes Sanity distinctive is the interplay between its monochromatic dark pa
 - Font: 13px
 - Border Radius: 99999px
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
+### 间距体系
 Base unit: **8px**
 
 | Token | Value | Usage |
@@ -230,17 +230,17 @@ Base unit: **8px**
 | space-11 | 64px | Major section breaks |
 | space-12 | 96-120px | Hero vertical padding, maximum section spacing |
 
-### Grid & Container
+### 栅格与容器
 - Max content width: ~1440px (inferred from breakpoints)
 - Page gutter: 32px on desktop, 16px on mobile
-- Content sections use full-bleed backgrounds with centered, max-width content
+- Content sections use full-bleed backgrounds with centered, 最大宽度 content
 - Multi-column layouts: 2-3 columns on desktop, single column on mobile
 - Card grids: CSS Grid with consistent gaps (16-24px)
 
-### Whitespace Philosophy
+### 留白哲学
 Sanity uses aggressive vertical spacing between sections (64-120px) to create breathing room on the dark canvas. Within sections, spacing is tighter (16-32px), creating dense information clusters separated by generous voids. This rhythm gives the page a "slides" quality -- each section feels like its own focused frame.
 
-### Border Radius Scale
+### 圆角尺度
 
 | Token | Value | Usage |
 |-------|-------|-------|
@@ -250,7 +250,7 @@ Sanity uses aggressive vertical spacing between sections (64-120px) to create br
 | radius-lg | 12px | Large cards, feature containers, forms |
 | radius-pill | 99999px | Primary buttons, badges, nav pills |
 
-## 6. Depth & Elevation
+## 6. 层深与阴影
 
 ### Shadow System
 
@@ -266,9 +266,9 @@ Sanity's depth system is almost entirely **colorimetric** rather than shadow-bas
 
 Border-based containment (1px solid `#212121` or `#353535`) serves as the primary spatial separator, with the border darkness calibrated to be visible but not dominant. The system avoids "floating card" aesthetics -- everything feels mounted to the surface rather than hovering above it.
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 
-### Do
+### 推荐
 - Use the achromatic gray scale as the foundation -- maintain pure neutral discipline with no warm/cool tinting
 - Apply Electric Blue (`#0052ef`) consistently as the universal hover/active state across all interactive elements
 - Use extreme negative letter-spacing (-2px to -4.48px) on display headings 48px and above
@@ -278,7 +278,7 @@ Border-based containment (1px solid `#212121` or `#353535`) serves as the primar
 - Maintain generous vertical section spacing (64-120px) on the dark canvas
 - Use `"cv01", "cv11", "cv12", "cv13", "ss07"` OpenType features for display typography
 
-### Don't
+### 禁忌
 - Don't introduce warm or cool color tints to the neutral scale -- Sanity's grays are pure achromatic
 - Don't use drop shadows for elevation -- dark interfaces demand colorimetric depth
 - Don't apply border-radius between 13px and 99998px -- the system jumps from 12px (large card) directly to pill (99999px)
@@ -288,9 +288,9 @@ Border-based containment (1px solid `#212121` or `#353535`) serves as the primar
 - Don't use traditional offset box-shadows -- ring shadows (0 0 0 Npx) or border-based containment only
 - Don't break the tight line-height on headings -- 1.00-1.24 is the range, never go to 1.5+ for display text
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
+### 断点
 
 | Name | Width | Behavior |
 |------|-------|----------|
@@ -304,7 +304,7 @@ Border-based containment (1px solid `#212121` or `#353535`) serves as the primar
 | Mobile | >= 480px | Single-column, stacked layout |
 | Mobile Small | >= 376px | Minimum supported width |
 
-### Collapsing Strategy
+### 折叠策略
 - **Navigation**: Horizontal links collapse to hamburger menu below 768px
 - **Hero typography**: Scales from 112px -> 72px -> 48px -> 38px across breakpoints, maintaining tight letter-spacing ratios
 - **Grid layouts**: 3-column -> 2-column at ~960px, single-column below 768px
@@ -319,9 +319,9 @@ Border-based containment (1px solid `#212121` or `#353535`) serves as the primar
 - Heading letter-spacing relaxes slightly at mobile sizes (less aggressive negative tracking)
 - Image containers switch from fixed aspect ratios to full-width with auto height
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
+### 色彩速查表
 ```
 Background:      #0b0b0b (near-black canvas)
 Surface:         #212121 (elevated cards/containers)
@@ -350,7 +350,7 @@ Light Surface:   #ededed / #ffffff (inverted sections)
 **Navigation bar:**
 "Create a sticky top navigation on #0b0b0b with backdrop blur. Left: brand text in 15px white. Center/right: nav links in 16px #b9b9b9 that hover to blue. Far right: a coral-red (#f36458) pill CTA button. Bottom border: 1px solid #212121."
 
-### Iteration Guide
+### 迭代指南
 1. **Start dark**: Begin with `#0b0b0b` background, `#ffffff` primary text, `#b9b9b9` secondary text
 2. **Add structure**: Use `#212121` surfaces and `#353535` borders for containment -- no shadows
 3. **Apply typography**: Inter (or Space Grotesk) with tight letter-spacing on headings, 1.50 line-height on body

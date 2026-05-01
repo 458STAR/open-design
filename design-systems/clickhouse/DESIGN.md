@@ -1,9 +1,9 @@
-# Design System Inspired by ClickHouse
+# ClickHouse
 
-> Category: Backend & Data
+> Category: 后端与数据
 > Fast analytics database. Yellow-accented, technical documentation style.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 ClickHouse's interface is a high-performance cockpit rendered in acid yellow-green on obsidian black — a design that screams "speed" before you read a single word. The entire experience lives in darkness: pure black backgrounds (`#000000`) with dark charcoal cards (`#414141` borders) creating a terminal-grade aesthetic where the only chromatic interruption is the signature neon yellow-green (`#faff69`) that slashes across CTAs, borders, and highlighted moments like a highlighter pen on a dark console.
 
@@ -11,7 +11,7 @@ The typography is aggressively heavy — Inter at weight 900 (Black) for the her
 
 What makes ClickHouse distinctive is the electrifying tension between the near-black canvas and the neon yellow-green accent. This color combination (`#faff69` on `#000000`) creates one of the highest-contrast pairings in any tech brand, making every CTA button, every highlighted card, and every accent border impossible to miss. Supporting this is a forest green (`#166534`) for secondary CTAs that adds depth to the action hierarchy without competing with the neon.
 
-**Key Characteristics:**
+**核心特征：**
 - Pure black canvas (#000000) with neon yellow-green (#faff69) accent — maximum contrast
 - Extra-heavy display typography: Inter at weight 900 (Black) up to 96px
 - Dark charcoal card system with #414141 borders at 80% opacity
@@ -22,42 +22,42 @@ What makes ClickHouse distinctive is the electrifying tension between the near-b
 - All links hover to neon yellow-green — unified interactive signal
 - Inset shadows on select elements creating "pressed into the surface" depth
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
-### Primary
+### 主色
 - **Neon Volt** (`#faff69`): The signature brand color — a vivid acid yellow-green that's the sole chromatic accent on the black canvas. Used for primary CTAs, accent borders, link hovers, and highlighted moments.
 - **Forest Green** (`#166534`): Secondary CTA color — a deep, saturated green for "Get Started" and primary action buttons that need distinction from the neon.
 - **Dark Forest** (`#14572f`): A darker green variant for borders and secondary accents.
 
-### Secondary & Accent
+### 辅助色与强调色
 - **Pale Yellow** (`#f4f692`): Active/pressed state text color — a softer, more muted version of Neon Volt for state feedback.
 - **Border Olive** (`#4f5100`): A dark olive-yellow for ghost button borders — the neon's muted sibling.
 - **Olive Dark** (`#161600`): The darkest neon-tinted color for subtle brand text.
 
-### Surface & Background
+### 表面与背景色
 - **Pure Black** (`#000000`): The primary page background — absolute black for maximum contrast.
 - **Near Black** (`#141414`): Button backgrounds and slightly elevated dark surfaces.
 - **Charcoal** (`#414141`): The primary border color at 80% opacity — the workhorse for card and container containment.
 - **Deep Charcoal** (`#343434`): Darker border variant for subtle division lines.
 - **Hover Gray** (`#3a3a3a`): Button hover state background — slightly lighter than Near Black.
 
-### Neutrals & Text
+### 中性色与文字色
 - **Pure White** (`#ffffff`): Primary text on dark surfaces.
 - **Silver** (`#a0a0a0`): Secondary body text and muted content.
 - **Mid Gray** (`#585858` at 28%): Subtle gray overlay for depth effects.
 - **Border Gray** (`#e5e7eb`): Light border variant (used in rare light contexts).
 
-### Gradient System
+### 渐变体系
 - **None in the traditional sense.** ClickHouse uses flat color blocks and high-contrast borders. The "gradient" is the contrast itself — neon yellow-green against pure black creates a visual intensity that gradients would dilute.
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Family
+### 字体家族
 - **Primary**: `Inter` (Next.js optimized variant `__Inter_d1b8ee`)
 - **Secondary Display**: `Basier` (`__basier_a58b65`), with fallbacks: `Arial, Helvetica`
 - **Code**: `Inconsolata` (`__Inconsolata_a25f62`)
 
-### Hierarchy
+### 字体层级
 
 | Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
 |------|------|------|--------|-------------|----------------|-------|
@@ -74,15 +74,15 @@ What makes ClickHouse distinctive is the electrifying tension between the near-b
 | Small | Inter | 12px (0.75rem) | 500 | 1.33 | normal | Smallest text |
 | Micro | Inter | 11.2px (0.7rem) | 500 | 1.79 (relaxed) | normal | Tags, tiny labels |
 
-### Principles
+### 原则
 - **Weight 900 is the weapon**: The display headline uses Inter Black (900) — a weight most sites never touch. Combined with 96px size, this creates text with a physical, almost architectural presence.
 - **Full weight spectrum**: The system uses 400, 500, 600, 700, and 900 — covering the full gamut. Weight IS hierarchy.
 - **Uppercase with maximum tracking**: Section overlines use 1.4px letter-spacing — wider than most systems — creating bold structural labels that stand out against the dense dark background.
 - **Dual sans-serif**: Inter handles display and body; Basier handles feature section headings at 600 weight. This creates a subtle personality shift between "data/performance" (Inter) and "product/feature" (Basier) contexts.
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
 **Neon Primary**
 - Background: Neon Volt (`#faff69`)
@@ -128,7 +128,7 @@ What makes ClickHouse distinctive is the electrifying tension between the near-b
 - Radius: pill (9999px)
 - Used for toggle/switch elements
 
-### Cards & Containers
+### 卡片与容器
 - Background: transparent or Near Black
 - Border: `1px solid rgba(65, 65, 65, 0.8)` — the signature charcoal containment
 - Radius: 4px (small elements) or 8px (cards, containers)
@@ -137,14 +137,14 @@ What makes ClickHouse distinctive is the electrifying tension between the near-b
 - Shadow Level 3: inset (`rgba(0,0,0,0.06) 0px 4px 4px, rgba(0,0,0,0.14) 0px 4px 25px inset`) — the "pressed" effect
 - Neon-highlighted cards: selected/active cards get neon yellow-green border or accent
 
-### Navigation
+### 导航
 - Dark nav on black background
 - Logo: ClickHouse wordmark + icon in yellow/neon
 - Links: white text, hover to Neon Volt (#faff69)
 - CTA: Neon Volt button or Forest Green button
 - Uppercase labels for categories
 
-### Distinctive Components
+### 特色组件
 
 **Performance Stats**
 - Oversized numbers (72px+, weight 700–900)
@@ -167,32 +167,32 @@ What makes ClickHouse distinctive is the electrifying tension between the near-b
 - Monochrome/white logo treatment
 - Horizontal layout
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
+### 间距体系
 - Base unit: 8px
 - Scale: 2px, 6px, 7px, 8px, 10px, 12px, 16px, 20px, 24px, 25px, 32px, 40px, 44px, 48px, 64px
 - Button padding: 12px 16px (standard), 0px 16px (compact), 0px 32px (wide ghost)
 - Section vertical spacing: generous (48–64px)
 
-### Grid & Container
+### 栅格与容器
 - Max container width: up to 2200px (extra-wide) with responsive scaling
 - Hero: full-width dark with massive typography
 - Feature sections: multi-column card grids with dark borders
 - Stats: horizontal metric bar
 - Full-dark page — no light sections
 
-### Whitespace Philosophy
+### 留白哲学
 - **Dark void as canvas**: The pure black background provides infinite depth — elements float in darkness.
 - **Dense information**: Feature cards and stats are packed with data, reflecting the database product's performance focus.
 - **Neon highlights as wayfinding**: Yellow-green accents guide the eye through the dark interface like runway lights.
 
-### Border Radius Scale
+### 圆角尺度
 - Sharp (4px): Buttons, badges, small elements, code blocks
 - Comfortable (8px): Cards, containers, dividers
 - Pill (9999px): Toggle buttons, status indicators
 
-## 6. Depth & Elevation
+## 6. 层深与阴影
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
@@ -205,9 +205,9 @@ What makes ClickHouse distinctive is the electrifying tension between the near-b
 
 **Shadow Philosophy**: ClickHouse uses shadows on a black canvas, where they're barely visible — they exist more for subtle dimensionality than obvious elevation. The most distinctive depth mechanism is the **inset shadow** (Level 4), which creates a "pressed into the surface" effect unique to ClickHouse. The neon border highlight (Level 5) is the primary attention-getting depth mechanism.
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 
-### Do
+### 推荐
 - Use Neon Volt (#faff69) as the sole chromatic accent — it must pop against pure black
 - Use Inter at weight 900 for hero display text — the extreme weight IS the personality
 - Keep everything on pure black (#000000) — never use dark gray as the page background
@@ -218,7 +218,7 @@ What makes ClickHouse distinctive is the electrifying tension between the near-b
 - Apply Pale Yellow (#f4f692) for active/pressed text states
 - Link hovers should ALWAYS shift to Neon Volt — unified interactive feedback
 
-### Don't
+### 禁忌
 - Don't introduce additional colors — the palette is strictly black, neon, green, and gray
 - Don't use the neon as a background fill — it's an accent and border color only (except on CTA buttons)
 - Don't reduce display weight below 700 — heavy weight is core to the personality
@@ -228,9 +228,9 @@ What makes ClickHouse distinctive is the electrifying tension between the near-b
 - Don't skip the inset shadow on active states — the "pressed" effect is distinctive
 - Don't use warm neutrals — all grays are perfectly neutral
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
+### 断点
 | Name | Width | Key Changes |
 |------|-------|-------------|
 | Mobile | <640px | Single column, stacked cards |
@@ -240,25 +240,25 @@ What makes ClickHouse distinctive is the electrifying tension between the near-b
 | Large Desktop | 1280–1536px | Expanded content |
 | Ultra-wide | 1536–2200px | Maximum container width |
 
-### Touch Targets
+### 触摸目标
 - Buttons with 12px 16px padding minimum
 - Card surfaces as touch targets
 - Adequate nav link spacing
 
-### Collapsing Strategy
+### 折叠策略
 - **Hero text**: 96px → 72px → 48px → 36px
 - **Feature grids**: Multi-column → 2 → 1 column
 - **Stats**: Horizontal → stacked
 - **Navigation**: Full → hamburger
 
-### Image Behavior
+### 图片行为
 - Product screenshots maintain aspect ratio
 - Code blocks use horizontal scroll on narrow screens
 - All images on dark backgrounds
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
+### 色彩速查表
 - Brand Accent: "Neon Volt (#faff69)"
 - Page Background: "Pure Black (#000000)"
 - CTA Green: "Forest Green (#166534)"
@@ -268,14 +268,14 @@ What makes ClickHouse distinctive is the electrifying tension between the near-b
 - Active State: "Pale Yellow (#f4f692)"
 - Button Surface: "Near Black (#141414)"
 
-### Example Component Prompts
+### 组件提示示例
 - "Create a hero section on Pure Black (#000000) with a massive headline at 96px Inter weight 900, line-height 1.0. Pure White text. Add a Neon Volt (#faff69) CTA button (dark text, 4px radius, 0px 16px padding) and a ghost button (transparent, 1px solid #4f5100 border)."
 - "Design a feature card on black with 1px solid rgba(65,65,65,0.8) border and 8px radius. Title at 24px Inter weight 700, body at 16px in Silver (#a0a0a0). Add a neon-highlighted variant with 1px solid #faff69 border."
 - "Build a performance stats bar: large numbers at 72px Inter weight 700 in Pure White. Brief descriptions at 14px in Silver. On black background."
 - "Create a Forest Green (#166534) CTA button: white text, 12px 16px padding, 4px radius, 1px solid #141414 border. Hover: bg shifts to #3a3a3a, text to 80% opacity."
 - "Design an uppercase section label: 14px Inter weight 600, letter-spacing 1.4px, uppercase. Silver (#a0a0a0) text on black background."
 
-### Iteration Guide
+### 迭代指南
 1. Keep everything on pure black — no dark gray alternatives
 2. Neon Volt (#faff69) is for accents and CTAs only — never large backgrounds
 3. Weight 900 for hero, 700 for headings, 600 for labels, 400-500 for body

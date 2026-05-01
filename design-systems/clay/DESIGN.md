@@ -1,9 +1,9 @@
-# Design System Inspired by Clay
+# Clay
 
-> Category: Design & Creative
+> Category: 设计与创意
 > Creative agency. Organic shapes, soft gradients, art-directed layout.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 Clay's website is a warm, playful celebration of color that treats B2B data enrichment like a craft rather than an enterprise chore. The design language is built on a foundation of warm cream backgrounds (`#faf9f7`) and oat-toned borders (`#dad4c8`, `#eee9df`) that give every surface the tactile quality of handmade paper. Against this artisanal canvas, a vivid swatch palette explodes with personality — Matcha green, Slushie cyan, Lemon gold, Ube purple, Pomegranate pink, Blueberry navy, and Dragonfruit magenta — each named like flavors at a juice bar, not colors in an enterprise UI kit.
 
@@ -11,7 +11,7 @@ The typography is anchored by Roobert, a geometric sans-serif with character, lo
 
 What makes Clay truly distinctive is its hover micro-animations: buttons on hover rotate slightly (`rotateZ(-8deg)`), translate upward (`translateY(-80%)`), change background to a contrasting swatch color, and cast a hard offset shadow (`rgb(0,0,0) -7px 7px`). This playful hover behavior — where a button literally tilts and jumps on interaction — creates a sense of physical delight that's rare in B2B software. Combined with generously rounded containers (24px–40px radius), dashed borders alongside solid ones, and a multi-layer shadow system that includes inset highlights, Clay feels like a design system that was made by people who genuinely enjoy making things.
 
-**Key Characteristics:**
+**核心特征：**
 - Warm cream canvas (`#faf9f7`) with oat-toned borders (`#dad4c8`) — artisanal, not clinical
 - Named swatch palette: Matcha, Slushie, Lemon, Ube, Pomegranate, Blueberry, Dragonfruit
 - Roobert font with 5 OpenType stylistic sets — quirky geometric character
@@ -21,9 +21,9 @@ What makes Clay truly distinctive is its hover micro-animations: buttons on hove
 - Mixed border styles: solid + dashed in the same interface
 - Multi-layer shadow with inset highlight: `0px 1px 1px` + `-1px inset` + `-0.5px`
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
-### Primary
+### 主色
 - **Clay Black** (`#000000`): Text, headings, pricing card text, `--_theme--pricing-cards---text`
 - **Pure White** (`#ffffff`): Card backgrounds, button backgrounds, inverse text
 - **Warm Cream** (`#faf9f7`): Page background — the warm, paper-like canvas
@@ -77,14 +77,14 @@ What makes Clay truly distinctive is its hover micro-animations: buttons on hove
 - **Clay Shadow** (`rgba(0,0,0,0.1) 0px 1px 1px, rgba(0,0,0,0.04) 0px -1px 1px inset, rgba(0,0,0,0.05) 0px -0.5px 1px`): Multi-layer with inset highlight — the signature
 - **Hard Offset** (`rgb(0,0,0) -7px 7px`): Hover state — playful hard shadow
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Families
+### 字体家族
 - **Primary**: `Roobert`, fallback: `Arial`
 - **Monospace**: `Space Mono`
 - **OpenType Features**: `"ss01"`, `"ss03"`, `"ss10"`, `"ss11"`, `"ss12"` on all Roobert text (display uses all 5; body/UI uses `"ss03"`, `"ss10"`, `"ss11"`, `"ss12"`)
 
-### Hierarchy
+### 字体层级
 
 | Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
 |------|------|------|--------|-------------|----------------|-------|
@@ -107,15 +107,15 @@ What makes Clay truly distinctive is its hover micro-animations: buttons on hove
 | Uppercase Label | Roobert | 12px (0.75rem) | 600 | 1.20 (tight) | 1.08px | `text-transform: uppercase`, 4 sets |
 | Badge | Roobert | 9.6px | 600 | — | — | Pill badges |
 
-### Principles
+### 原则
 - **Five stylistic sets as identity**: The combination of `"ss01"`, `"ss03"`, `"ss10"`, `"ss11"`, `"ss12"` on Roobert creates a distinctive typographic personality. `ss01` is reserved for headings and emphasis — body text omits it, creating a subtle hierarchy through glyph variation.
 - **Aggressive display compression**: -3.2px at 80px, -2.4px at 60px — the most compressed display tracking alongside the most generous body spacing (1.60 line-height), creating dramatic contrast.
 - **Weight 600 for headings, 500 for UI, 400 for body**: Clean three-tier system where each weight has a strict role.
 - **Uppercase labels with positive tracking**: 12px uppercase at 1.08px letter-spacing creates the systematic wayfinding pattern.
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
 **Primary (Transparent with Hover Animation)**
 - Background: transparent (`rgba(239, 241, 243, 0)`)
@@ -140,20 +140,20 @@ What makes Clay truly distinctive is its hover micro-animations: buttons on hove
 - Radius: 4px
 - Hover: dragonfruit swatch color, white text, animated rotation
 
-### Cards & Containers
+### 卡片与容器
 - Background: `#ffffff` on cream canvas
 - Border: `1px solid #dad4c8` (warm oat) or `1px dashed #dad4c8`
 - Radius: 12px (standard cards), 24px (feature cards/images), 40px (section containers/footer)
 - Shadow: `rgba(0,0,0,0.1) 0px 1px 1px, rgba(0,0,0,0.04) 0px -1px 1px inset, rgba(0,0,0,0.05) 0px -0.5px 1px`
 - Colorful section backgrounds using swatch palette (matcha, slushie, ube, lemon)
 
-### Inputs & Forms
+### 输入框与表单
 - Text: `#000000`
 - Border: `1px solid #717989`
 - Radius: 4px
 - Focus: `rgb(20, 110, 245) solid 2px` outline
 
-### Navigation
+### 导航
 - Sticky top nav on cream background
 - Roobert 15px weight 500 for nav links
 - Clay logo left-aligned
@@ -161,13 +161,13 @@ What makes Clay truly distinctive is its hover micro-animations: buttons on hove
 - Border bottom: `1px solid #dad4c8`
 - Mobile: hamburger collapse at 767px
 
-### Image Treatment
+### 图片处理
 - Product screenshots in white cards with oat borders
 - Colorful illustrated sections with swatch background colors
 - 8px–24px radius on images
 - Full-width colorful section backgrounds
 
-### Distinctive Components
+### 特色组件
 
 **Swatch Color Sections**
 - Full-width sections with swatch-colored backgrounds (matcha green, slushie cyan, ube purple, lemon gold)
@@ -185,25 +185,25 @@ What makes Clay truly distinctive is its hover micro-animations: buttons on hove
 - Used for secondary containers and decorative elements
 - Adds a hand-drawn, craft-like quality
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
+### 间距体系
 - Base unit: 8px
 - Scale: 1px, 2px, 4px, 6.4px, 8px, 12px, 12.8px, 16px, 18px, 20px, 24px
 
-### Grid & Container
+### 栅格与容器
 - Max content width centered
 - Feature sections alternate between white cards and colorful swatch backgrounds
 - Card grids: 2–3 columns on desktop
 - Full-width colorful sections break the grid
 - Footer with generous 40px radius container
 
-### Whitespace Philosophy
+### 留白哲学
 - **Warm, generous breathing**: The cream background provides a warm rest between content blocks. Spacing is generous but not austere — it feels inviting, like a well-set table.
 - **Color as spatial rhythm**: The alternating swatch-colored sections create visual rhythm through hue rather than just whitespace. Each color section is its own "room."
 - **Craft-like density inside cards**: Within cards, content is compact and well-organized, contrasting with the generous outer spacing.
 
-### Border Radius Scale
+### 圆角尺度
 - Sharp (4px): Ghost buttons, inputs
 - Standard (8px): Small cards, images, links
 - Badge (11px): Tag badges
@@ -212,7 +212,7 @@ What makes Clay truly distinctive is its hover micro-animations: buttons on hove
 - Section (40px): Large sections, footer, containers
 - Pill (1584px): CTAs, pill-shaped buttons
 
-## 6. Depth & Elevation
+## 6. 层深与阴影
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
@@ -223,14 +223,14 @@ What makes Clay truly distinctive is its hover micro-animations: buttons on hove
 
 **Shadow Philosophy**: Clay's shadow system is uniquely three-layered: a downward cast (`0px 1px 1px`), an upward inset highlight (`0px -1px 1px inset`), and a subtle edge (`0px -0.5px 1px`). This creates a "pressed into clay" quality where elements feel both raised AND embedded — like a clay tablet where content is stamped into the surface. The hover hard shadow (`-7px 7px`) is deliberately retro-graphic, referencing print-era drop shadows and adding physical playfulness.
 
-### Decorative Depth
+### 装饰性层深
 - Full-width swatch-colored sections create dramatic depth through color contrast
 - Dashed borders add visual texture alongside solid borders
 - Product illustrations with warm, organic art style
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 
-### Do
+### 推荐
 - Use warm cream (`#faf9f7`) as the page background — the warmth is the identity
 - Apply all 5 OpenType stylistic sets on Roobert headings: `"ss01", "ss03", "ss10", "ss11", "ss12"`
 - Use the named swatch palette (Matcha, Slushie, Lemon, Ube, Pomegranate, Blueberry) for section backgrounds
@@ -240,7 +240,7 @@ What makes Clay truly distinctive is its hover micro-animations: buttons on hove
 - Use generous radius: 24px for cards, 40px for sections
 - Use weight 600 exclusively for headings, 500 for UI, 400 for body
 
-### Don't
+### 禁忌
 - Don't use cool gray backgrounds — the warm cream (`#faf9f7`) is non-negotiable
 - Don't use neutral gray borders (`#ccc`, `#ddd`) — always use the warm oat tones
 - Don't mix more than 2 swatch colors in the same section
@@ -250,9 +250,9 @@ What makes Clay truly distinctive is its hover micro-animations: buttons on hove
 - Don't use standard shadows (blur-based) — Clay uses hard offset and multi-layer inset
 - Don't forget the uppercase labels with 1.08px tracking — they're the wayfinding system
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
+### 断点
 | Name | Width | Key Changes |
 |------|-------|-------------|
 | Mobile Small | <479px | Single column, tight padding |
@@ -260,26 +260,26 @@ What makes Clay truly distinctive is its hover micro-animations: buttons on hove
 | Tablet | 768–991px | 2-column grids, condensed nav |
 | Desktop | 992px+ | Full layout, 3-column grids, expanded sections |
 
-### Touch Targets
+### 触摸目标
 - Buttons: minimum 6.4px + 12.8px padding for adequate touch area
 - Nav links: 15px font with generous spacing
 - Mobile: full-width buttons for easy tapping
 
-### Collapsing Strategy
+### 折叠策略
 - Hero: 80px → 60px → smaller display text
 - Navigation: horizontal → hamburger at 767px
 - Feature sections: multi-column → stacked
 - Colorful sections: maintain full-width but compress padding
 - Card grids: 3-column → 2-column → single column
 
-### Image Behavior
+### 图片行为
 - Product screenshots scale proportionally
 - Colorful section illustrations adapt to viewport width
 - Rounded corners maintained across breakpoints
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
+### 色彩速查表
 - Background: Warm Cream (`#faf9f7`)
 - Text: Clay Black (`#000000`)
 - Secondary text: Warm Silver (`#9f9b93`)
@@ -290,14 +290,14 @@ What makes Clay truly distinctive is its hover micro-animations: buttons on hove
 - Purple accent: Ube 800 (`#43089f`)
 - Pink accent: Pomegranate 400 (`#fc7981`)
 
-### Example Component Prompts
+### 组件提示示例
 - "Create a hero on warm cream (#faf9f7) background. Headline at 80px Roobert weight 600, line-height 1.00, letter-spacing -3.2px, OpenType 'ss01 ss03 ss10 ss11 ss12', black text. Subtitle at 20px weight 400, line-height 1.40, #9f9b93 text. Two buttons: white solid pill (12px radius) and ghost outlined (4px radius, 1px solid #717989)."
 - "Design a colorful section with Matcha 800 (#02492a) background. Heading at 44px Roobert weight 600, letter-spacing -1.32px, white text. Body at 18px weight 400, line-height 1.60, #84e7a5 text. White card inset with oat border (#dad4c8), 24px radius."
 - "Build a button with playful hover: default transparent background, black text, 16px Roobert weight 500. On hover: background #434346, text white, transform rotateZ(-8deg) translateY(-80%), hard shadow rgb(0,0,0) -7px 7px."
 - "Create a card: white background, 1px solid #dad4c8 border, 24px radius. Shadow: rgba(0,0,0,0.1) 0px 1px 1px, rgba(0,0,0,0.04) 0px -1px 1px inset. Title at 32px Roobert weight 600, letter-spacing -0.64px."
 - "Design an uppercase label: 12px Roobert weight 600, text-transform uppercase, letter-spacing 1.08px, OpenType 'ss03 ss10 ss11 ss12'."
 
-### Iteration Guide
+### 迭代指南
 1. Start with warm cream (#faf9f7) — never cool white
 2. Swatch colors are for full sections, not small accents — go bold with matcha, slushie, ube
 3. Oat borders (#dad4c8) everywhere — dashed variants for decoration

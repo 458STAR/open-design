@@ -1,65 +1,65 @@
-# Warm Editorial
+# 暖色编辑风
 
-> Category: Starter
-> A serif-led magazine aesthetic. Terracotta accent on warm off-white paper —
-> good for long-form, editorial, and brand-led marketing pages.
+> Category: 入门
+> 衬线字体主导的杂志美学。暖色米白纸底上的赭红强调色——
+> 适合长图文、编辑类和品牌营销页面。
 
-## Visual Theme & Atmosphere
-Warm, unhurried, magazine-like. Think "a New Yorker interview column online." Generous whitespace, long-form readability, restrained chrome. Playful but never novelty.
+## 视觉主题与氛围
+温暖、不紧不慢、杂志感。想象“线上版《纽约客》人物专栏”。慈惠的留白、长文可读性、克制的界面框架。不失趣味但绝不花哨。
 
-## Color Palette & Roles
-- **Background:** `#FAF7F2` (warm off-white paper)
-- **Foreground:** `#1C1A17` (near-black, slightly warm)
-- **Accent (primary):** `#C0512F` (terracotta) — used for links, primary CTAs, 1 hero element max per page
-- **Accent (secondary):** `#2F5B4F` (forest) — section dividers, tags
-- **Muted:** `#8A817A` (mid-warm-grey) — timestamps, metadata
-- **Surface:** `#FFFFFF` — elevated cards only
-Never use pure black or pure white anywhere user-facing.
+## 色彩体系与角色
+- **背景色:** `#FAF7F2`（暖色米白纸）
+- **前景色:** `#1C1A17`（近黑、微暖）
+- **主强调色:** `#C0512F`（赭红）— 用于链接、主按钮，每页最多一个首屏强调
+- **辅强调色:** `#2F5B4F`（森林绿）— 区块分隔、标签
+- **柔和色:** `#8A817A`（中暖灰）— 时间戳、元数据
+- **表面色:** `#FFFFFF` — 仅用于浮起卡片
+任何用户可见处禁止纯黑或纯白。
 
-## Typography Rules
-- **Display / headings:** "GT Sectra" or fallback serif (`'GT Sectra', 'Times New Roman', serif`)
-- **Body:** "Söhne" or fallback sans (`'Söhne', -apple-system, system-ui, sans-serif`)
-- **Mono:** `'JetBrains Mono', ui-monospace, monospace` for code only
-- Scale (px): 12 · 14 · 16 · 20 · 28 · 40 · 56 · 80
-- Line-height: 1.6 for body, 1.2 for display
-- Letter-spacing: -0.02em for display sizes above 40px; default elsewhere
+## 排版规则
+- **展示/标题:** "GT Sectra" 或后备衬线体 (`'GT Sectra', 'Times New Roman', serif`)
+- **正文:** "Söhne" 或后备无衬线体 (`'Söhne', -apple-system, system-ui, sans-serif`)
+- **等宽:** `'JetBrains Mono', ui-monospace, monospace`，仅用于代码
+- 字号阶梯（px）: 12 · 14 · 16 · 20 · 28 · 40 · 56 · 80
+- 行高: 正文 1.6，展示 1.2
+- 字间距: 展示字号 >40px 时 -0.02em，其他默认
 
-## Component Stylings
-- **Buttons:** flat fill, 12px radius, 14px padding-block, 20px padding-inline. Primary = terracotta fill, off-white label. Secondary = outlined 1px foreground, transparent fill.
-- **Cards:** off-white background, 1px forest-at-8%-opacity border, 16px radius, 24–32px internal padding. No shadow except hover (y+2px, blur 16, foreground-at-6%).
-- **Inputs:** underline only (no box), 1px muted baseline, terracotta baseline on focus, 16px vertical padding.
-- **Links:** terracotta, 1px terracotta-at-40% underline, no underline on hover (swap for terracotta-at-8% background).
+## 组件样式
+- **按钮:** 平面填充，圆角 12px，上下内距 14px，左右内距 20px。主按钮 = 赭红填充 + 米白文字。次要按钮 = 1px 前景色边框 + 透明填充。
+- **卡片:** 米白底，1px 森林绿 8%透明度边框，圆角 16px，内距 24–32px。仅悬停时有阴影（y+2px，模糊 16，前景色 6%）。
+- **输入框:** 仅底线（无边框），1px 柔和色底线，聚焦时赭红底线，上下内距 16px。
+- **链接:** 赭红色，1px 赭红 40%透明度下划线，悬停时无下划线（改为赭红 8%透明度背景）。
 
-## Layout Principles
-- 12-column grid, 1200px max-width, 24px gutters.
-- Hero sections: 72vh minimum, 120vh maximum. Content top-biased, never centered vertically.
-- Body sections: 80px top+bottom spacing at desktop; 48px at tablet; 32px at phone.
-- One accent color per screen. If a page has a terracotta hero, secondary CTAs are foreground-only, not forest.
+## 布局原则
+- 12 列栅格，最大宽度 1200px，列间距 24px。
+- 首屏区域: 最小 72vh，最大 120vh。内容偏上放置，禁止垂直居中。
+- 内容区块: 桌面端上下各 80px，平板 48px，手机 32px。
+- 每屏只用一种强调色。如果首屏用了赭红，次要按钮只用前景色，不用森林绿。
 
-## Depth & Elevation
-Minimal. Only two elevation levels:
-- **Flat (0):** everything by default.
-- **Raised (1):** cards on hover, dropdown menus, floating CTAs. 2px y-offset, 16px blur, foreground at 6% opacity.
-No shadows on inputs. No shadows on the hero. No neumorphism, no glassmorphism.
+## 层深与阴影
+极简。仅两个层级:
+- **平面 (0):** 默认状态。
+- **浮起 (1):** 悬停卡片、下拉菜单、浮动按钮。y 偏移 2px，模糊 16px，前景色 6%透明度。
+输入框禁止阴影。首屏禁止阴影。禁止拟物风格，禁止毛玻璃效果。
 
-## Do's and Don'ts
-- ✅ Let whitespace breathe. A short headline on 50% of the viewport height is correct.
-- ✅ Use serif for numbers when they matter (pricing, stats).
-- ✅ Draw one accent element per page; the rest is foreground.
-- ❌ No gradients.
-- ❌ No emojis in product copy.
-- ❌ No sentence-case for headings — use title case for H1/H2, sentence case for H3 and below.
-- ❌ No border-radius above 24px; no border-radius below 8px.
+## 设计规范：推荐与禁忌
+- ✅ 让留白充分呼吸。一个短标题占 50% 视口高度是正确的。
+- ✅ 重要数字（价格、统计）用衬线字体。
+- ✅ 每页只突出一个强调元素，其余用前景色。
+- ❌ 禁止渐变。
+- ❌ 产品文案禁止表情符号。
+- ❌ 标题禁止句首大写——H1/H2 用首字母大写，H3 及以下用句首大写。
+- ❌ 圆角不超过 24px，不低于 8px。
 
-## Responsive Behavior
-- **Desktop ≥ 1024px:** 12-col grid, full hero heights, side-by-side columns.
-- **Tablet 640–1023px:** 8-col grid; hero drops to 60vh; columns stack at 3+.
-- **Phone < 640px:** 4-col grid; single-column layout; hero drops to 50vh; all padding -33%.
+## 响应式行为
+- **桌面端 ≥ 1024px:** 12 列栅格，完整首屏高度，并排列。
+- **平板 640–1023px:** 8 列栅格；首屏降至 60vh；3 列以上堆叠。
+- **手机 < 640px:** 4 列栅格；单列布局；首屏降至 50vh；所有内距减 33%。
 
-## Agent Prompt Guide
-When generating artifacts against this design system:
-- Lead with typography and whitespace; chrome (borders, shadows) is subtractive.
-- If you need more than one accent element on a screen, you're doing too much — cut one.
-- When asked for "professional" or "serious," lean harder on serif + whitespace. When asked for "modern," this system isn't the right answer; pick a different DESIGN.md.
-- Color tokens are non-negotiable. Do not invent new hex values. If the request needs a color outside this palette, produce a warning comment in the artifact and use the closest existing token.
-- Prefer 1 hero + 3–5 body sections over 1 hero + 8+ sections. Editorial means restraint.
+## 代理提示指南
+使用此设计体系生成产物时:
+- 以排版和留白为先；界面框架（边框、阴影）是减法。
+- 如果一屏需要超过一个强调元素，说明做多了——码掉一个。
+- 要求“专业”或“严肃”时，加强衬线体 + 留白。要求“现代”时，此体系不合适，应选择其他设计体系。
+- 色值不可协商。不要自行创造新色值。如需超出色板的颜色，在产物中写警告注释并使用最接近的现有色值。
+- 优先 1 个首屏 + 3–5 个内容区块，而非 1 个首屏 + 8+ 个区块。编辑美学意味着克制。

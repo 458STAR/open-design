@@ -1,9 +1,9 @@
-# Design System Inspired by Pinterest
+# Pinterest
 
-> Category: Media & Consumer
+> Category: 媒体与消费
 > Visual discovery. Red accent, masonry grid, image-first.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 Pinterest's website is a warm, inspiration-driven canvas that treats visual discovery like a lifestyle magazine. The design operates on a soft, slightly warm white background with Pinterest Red (`#e60023`) as the singular, bold brand accent. Unlike the cool blues of most tech platforms, Pinterest's neutral scale has a distinctly warm undertone — grays lean toward olive/sand (`#91918c`, `#62625b`, `#e5e5e0`) rather than cool steel, creating a cozy, craft-like atmosphere that invites browsing.
 
@@ -11,7 +11,7 @@ The typography uses Pin Sans — a custom proprietary font with a broad fallback
 
 What distinguishes Pinterest is its generous border-radius system (12px–40px, plus 50% for circles) and warm-tinted button backgrounds. The secondary button (`#e5e5e0`) has a distinctly warm, sand-like tone rather than cold gray. The primary red button uses 16px radius — rounded but not pill-shaped. Combined with warm badge backgrounds (`hsla(60,20%,98%,.5)` — a subtle yellow-warm wash) and photography-dominant layouts, the result is a design that feels handcrafted and personal, not corporate and sterile.
 
-**Key Characteristics:**
+**核心特征：**
 - Warm white canvas with olive/sand-toned neutrals — cozy, not clinical
 - Pinterest Red (`#e60023`) as singular bold accent — never subtle, always confident
 - Pin Sans custom font with global fallback stack (including CJK)
@@ -21,7 +21,7 @@ What distinguishes Pinterest is its generous border-radius system (12px–40px, 
 - Photography-first content — pins/images are the primary visual element
 - Dark near-purple text (`#211922`) — warm, with a hint of plum
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
 ### Primary Brand
 - **Pinterest Red** (`#e60023`): Primary CTA, brand accent — bold, confident red
@@ -55,12 +55,12 @@ What distinguishes Pinterest is its generous border-radius system (12px–40px, 
 ### Semantic
 - **Error Red** (`#9e0a0a`): Checkbox/form error states
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Family
+### 字体家族
 - **Primary**: `Pin Sans`, fallbacks: `-apple-system, system-ui, Segoe UI, Roboto, Oxygen-Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, ヒラギノ角ゴ Pro W3, メイリオ, Meiryo, ＭＳ Ｐゴシック, Arial`
 
-### Hierarchy
+### 字体层级
 
 | Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
 |------|------|------|--------|-------------|----------------|-------|
@@ -71,15 +71,15 @@ What distinguishes Pinterest is its generous border-radius system (12px–40px, 
 | Caption | Pin Sans | 12px (0.75rem) | 400–500 | 1.50 | normal | Small text, tags |
 | Button | Pin Sans | 12px (0.75rem) | 400 | normal | normal | Button labels |
 
-### Principles
+### 原则
 - **Compact type scale**: The range is 12px–70px with a dramatic jump — most functional text is 12–16px, creating a dense, app-like information hierarchy.
 - **Warm weight distribution**: 600–700 for headings, 400–500 for body. No ultra-light weights — the type always feels substantial.
 - **Negative tracking on headings**: -1.2px on 28px headings creates cozy, intimate section titles.
 - **Single font family**: Pin Sans handles everything — no secondary display or monospace font detected.
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
 **Primary Red**
 - Background: `#e60023` (Pinterest Red)
@@ -108,7 +108,7 @@ What distinguishes Pinterest is its generous border-radius system (12px–40px, 
 - No border
 - Use: Tertiary actions
 
-### Cards & Containers
+### 卡片与容器
 - Photography-first pin cards with generous radius (12px–20px)
 - No traditional box-shadow on most cards
 - White or warm fog backgrounds
@@ -118,36 +118,36 @@ What distinguishes Pinterest is its generous border-radius system (12px–40px, 
 - Email input: white background, `1px solid #91918c` border, 16px radius, 11px 15px padding
 - Focus: semantic border + outline system via CSS variables
 
-### Navigation
+### 导航
 - Clean header on white or warm background
 - Pinterest logo + search bar centered
 - Pin Sans 16px for nav links
 - Pinterest Red accents for active states
 
-### Image Treatment
+### 图片处理
 - Pin-style masonry grid (signature Pinterest layout)
 - Rounded corners: 12px–20px on images
 - Photography as primary content — every pin is an image
 - Thick white borders (8px) on featured image containers
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
+### 间距体系
 - Base unit: 8px
 - Scale: 4px, 6px, 7px, 8px, 10px, 11px, 12px, 16px, 18px, 20px, 22px, 24px, 32px, 80px, 100px
 - Large jumps: 32px → 80px → 100px for section spacing
 
-### Grid & Container
+### 栅格与容器
 - Masonry grid for pin content (signature layout)
-- Centered content sections with generous max-width
+- Centered content sections with generous 最大宽度
 - Full-width dark footer
 - Search bar as primary navigation element
 
-### Whitespace Philosophy
+### 留白哲学
 - **Inspiration density**: The masonry grid packs pins tightly — the content density IS the value proposition. Whitespace exists between sections, not within the grid.
 - **Breathing above, density below**: Hero/feature sections get generous padding; the pin grid is compact and immersive.
 
-### Border Radius Scale
+### 圆角尺度
 - Standard (12px): Small cards, links
 - Button (16px): Buttons, inputs, medium cards
 - Comfortable (20px): Feature cards
@@ -156,7 +156,7 @@ What distinguishes Pinterest is its generous border-radius system (12px–40px, 
 - Hero (40px): Hero containers, large feature blocks
 - Circle (50%): Action buttons, tab indicators
 
-## 6. Depth & Elevation
+## 6. 层深与阴影
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
@@ -166,9 +166,9 @@ What distinguishes Pinterest is its generous border-radius system (12px–40px, 
 
 **Shadow Philosophy**: Pinterest uses minimal shadows. The masonry grid relies on content (photography) to create visual interest rather than elevation effects. Depth comes from the warmth of surface colors and the generous rounding of containers.
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 
-### Do
+### 推荐
 - Use warm neutrals (`#e5e5e0`, `#e0e0d9`, `#91918c`) — the warm olive/sand tone is the identity
 - Apply Pinterest Red (`#e60023`) only for primary CTAs — it's bold and singular
 - Use Pin Sans exclusively — one font for everything
@@ -177,7 +177,7 @@ What distinguishes Pinterest is its generous border-radius system (12px–40px, 
 - Use warm badge backgrounds (`hsla(60,20%,98%,.5)`) for subtle warm washes
 - Use `#211922` (plum black) for primary text — it's warmer than pure black
 
-### Don't
+### 禁忌
 - Don't use cool gray neutrals — always warm/olive-toned
 - Don't use pure black (`#000000`) as primary text — use plum black (`#211922`)
 - Don't use pill-shaped buttons — 16px radius is rounded but not pill
@@ -186,9 +186,9 @@ What distinguishes Pinterest is its generous border-radius system (12px–40px, 
 - Don't introduce additional brand colors — red + warm neutrals is the complete palette
 - Don't use thin font weights — Pin Sans at 400 minimum
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
+### 断点
 | Name | Width | Key Changes |
 |------|-------|-------------|
 | Mobile | <576px | Single column, compact layout |
@@ -199,16 +199,16 @@ What distinguishes Pinterest is its generous border-radius system (12px–40px, 
 | Large Desktop | 1440–1680px | Expanded grid columns |
 | Ultra-wide | >1680px | Maximum grid density |
 
-### Collapsing Strategy
+### 折叠策略
 - Pin grid: 5+ columns → 3 → 2 → 1
 - Navigation: search bar + icons → simplified mobile nav
 - Feature sections: side-by-side → stacked
 - Hero: 70px → scales down proportionally
 - Footer: dark multi-column → stacked
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
+### 色彩速查表
 - Brand: Pinterest Red (`#e60023`)
 - Background: White (`#ffffff`)
 - Text: Plum Black (`#211922`)
@@ -217,14 +217,14 @@ What distinguishes Pinterest is its generous border-radius system (12px–40px, 
 - Border: Warm Silver (`#91918c`)
 - Focus: Focus Blue (`#435ee5`)
 
-### Example Component Prompts
+### 组件提示示例
 - "Create a hero: white background. Headline at 70px Pin Sans weight 600, plum black (#211922). Red CTA button (#e60023, 16px radius, 6px 14px padding). Secondary sand button (#e5e5e0, 16px radius)."
 - "Design a pin card: white background, 16px radius, no shadow. Photography fills top, 16px Pin Sans weight 400 description below in #62625b."
 - "Build a circular action button: #e0e0d9 background, 50% radius, #211922 icon."
 - "Create an input field: white background, 1px solid #91918c, 16px radius, 11px 15px padding. Focus: blue outline via semantic tokens."
 - "Design the dark footer: #33332e background. Pinterest script logo in white. 12px Pin Sans links in #91918c."
 
-### Iteration Guide
+### 迭代指南
 1. Warm neutrals everywhere — olive/sand grays, never cool steel
 2. Pinterest Red for CTAs only — bold and singular
 3. 16px radius on buttons/inputs, 20px+ on cards — generous but not pill

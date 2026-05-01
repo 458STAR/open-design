@@ -1,13 +1,13 @@
-# Design System Inspired by Kraken
+# Kraken
 
-> Category: Fintech & Crypto
+> Category: 金融科技与加密
 > Crypto trading. Purple-accented dark UI, data-dense dashboards.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 Kraken's website is a clean, trustworthy crypto exchange that uses purple as its commanding brand color. The design operates on white backgrounds with Kraken Purple (`#7132f5`, `#5741d8`, `#5b1ecf`) creating a distinctive, professional crypto identity. The proprietary Kraken-Brand font handles display headings with bold (700) weight and negative tracking, while Kraken-Product (with IBM Plex Sans fallback) serves as the UI workhorse.
 
-**Key Characteristics:**
+**核心特征：**
 - Kraken Purple (`#7132f5`) as primary brand with darker variants (`#5741d8`, `#5b1ecf`)
 - Kraken-Brand (display) + Kraken-Product (UI) dual font system
 - Near-black (`#101114`) text with cool blue-gray neutral scale
@@ -15,9 +15,9 @@ Kraken's website is a clean, trustworthy crypto exchange that uses purple as its
 - Subtle shadows (`rgba(0,0,0,0.03) 0px 4px 24px`) — whisper-level
 - Green accent (`#149e61`) for positive/success states
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
-### Primary
+### 主色
 - **Kraken Purple** (`#7132f5`): Primary CTA, brand accent, links
 - **Purple Dark** (`#5741d8`): Button borders, outlined variants
 - **Purple Deep** (`#5b1ecf`): Deepest purple
@@ -34,13 +34,13 @@ Kraken's website is a clean, trustworthy crypto exchange that uses purple as its
 - **Green** (`#149e61`): Success/positive at 16% opacity for badges
 - **Green Dark** (`#026b3f`): Badge text
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Families
+### 字体家族
 - **Display**: `Kraken-Brand`, fallbacks: `IBM Plex Sans, Helvetica, Arial`
 - **UI / Body**: `Kraken-Product`, fallbacks: `Helvetica Neue, Helvetica, Arial`
 
-### Hierarchy
+### 字体层级
 
 | Role | Font | Size | Weight | Line Height | Letter Spacing |
 |------|------|------|--------|-------------|----------------|
@@ -55,9 +55,9 @@ Kraken's website is a clean, trustworthy crypto exchange that uses purple as its
 | Small | Kraken-Product | 12px | 400–500 | 1.33 | normal |
 | Micro | Kraken-Product | 7px | 500 | 1.00 | uppercase |
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
 **Primary Purple**
 - Background: `#7132f5`
@@ -92,37 +92,37 @@ Kraken's website is a clean, trustworthy crypto exchange that uses purple as its
 - Success: `rgba(20,158,97,0.16)` bg, `#026b3f` text, 6px radius
 - Neutral: `rgba(104,107,130,0.12)` bg, `#484b5e` text, 8px radius
 
-## 5. Layout Principles
+## 5. 布局原则
 
 ### Spacing: 1px, 2px, 3px, 4px, 5px, 6px, 8px, 10px, 12px, 13px, 15px, 16px, 20px, 24px, 25px
 ### Border Radius: 3px, 6px, 8px, 10px, 12px, 16px, 9999px, 50%
 
-## 6. Depth & Elevation
+## 6. 层深与阴影
 - Subtle: `rgba(0,0,0,0.03) 0px 4px 24px`
 - Micro: `rgba(16,24,40,0.04) 0px 1px 4px`
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 
-### Do
+### 推荐
 - Use Kraken Purple (#7132f5) for CTAs and links
 - Apply 12px radius on all buttons
 - Use Kraken-Brand for headings, Kraken-Product for body
 
-### Don't
+### 禁忌
 - Don't use pill buttons — 12px is the max radius for buttons
 - Don't use other purples outside the defined scale
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 Breakpoints: 375px, 425px, 640px, 768px, 1024px, 1280px, 1536px
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
+### 色彩速查表
 - Brand: Kraken Purple (`#7132f5`)
 - Dark variant: `#5741d8`
 - Text: Near Black (`#101114`)
 - Secondary text: `#9497a9`
 - Background: White (`#ffffff`)
 
-### Example Component Prompts
+### 组件提示示例
 - "Create hero: white background. Kraken-Brand 48px weight 700, letter-spacing -1px. Purple CTA (#7132f5, 12px radius, 13px 16px padding)."

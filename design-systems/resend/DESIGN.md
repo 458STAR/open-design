@@ -1,9 +1,9 @@
-# Design System Inspired by Resend
+# Resend
 
-> Category: Productivity & SaaS
+> Category: 效率工具与 SaaS
 > Email API. Minimal dark theme, monospace accents.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 Resend's website is a dark, cinematic canvas that treats email infrastructure like a luxury product. The entire page is draped in pure black (`#000000`) with text that glows in near-white (`#f0f0f0`), creating a theater-like experience where content performs on a void stage. This isn't the typical developer-tool darkness — it's the controlled darkness of a photography gallery, where every element is lit with intention and nothing competes for attention.
 
@@ -11,7 +11,7 @@ The typography system is the star of the show. Three carefully chosen typefaces 
 
 What makes Resend distinctive is its icy, blue-tinted border system. Instead of neutral gray borders, Resend uses `rgba(214, 235, 253, 0.19)` — a frosty, slightly blue-tinted line at 19% opacity that gives every container and divider a cold, crystalline quality against the black background. Combined with pill-shaped buttons (9999px radius), multi-color accent system (orange, green, blue, yellow, red — each with its own CSS variable scale), and OpenType stylistic sets (`"ss01"`, `"ss03"`, `"ss04"`, `"ss11"`), the result is a design system that feels premium, precise, and quietly confident.
 
-**Key Characteristics:**
+**核心特征：**
 - Pure black background with near-white (`#f0f0f0`) text — theatrical, gallery-like darkness
 - Three-font hierarchy: Domaine Display (serif hero), ABC Favorit (geometric sections), Inter (body/UI)
 - Icy blue-tinted borders: `rgba(214, 235, 253, 0.19)` — every border has a cold, crystalline shimmer
@@ -21,9 +21,9 @@ What makes Resend distinctive is its icy, blue-tinted border system. Instead of 
 - Commit Mono for code — monospace as a design element, not an afterthought
 - Whisper-level shadows using blue-tinted ring: `rgba(176, 199, 217, 0.145) 0px 0px 0px 1px`
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
-### Primary
+### 主色
 - **Void Black** (`#000000`): Page background, the defining canvas color (95% opacity via `--color-black-12`)
 - **Near White** (`#f0f0f0`): Primary text, button text, high-contrast elements
 - **Pure White** (`#ffffff`): `--color-white`, maximum emphasis text, link highlights
@@ -70,9 +70,9 @@ What makes Resend distinctive is its icy, blue-tinted border system. Instead of 
 - **Focus Ring** (`rgb(0, 0, 0) 0px 0px 0px 8px`): Heavy black focus ring
 - **Subtle Shadow** (`rgba(0, 0, 0, 0.1) 0px 1px 3px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px`): Minimal card elevation
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Families
+### 字体家族
 - **Display Serif**: `domaine` (Domaine Display by Klim Type Foundry) — hero headlines
 - **Display Sans**: `aBCFavorit` (ABC Favorit by Dinamo), fallbacks: `ui-sans-serif, system-ui` — section headings
 - **Body / UI**: `inter`, fallbacks: `ui-sans-serif, system-ui` — body text, buttons, navigation
@@ -80,7 +80,7 @@ What makes Resend distinctive is its icy, blue-tinted border system. Instead of 
 - **Secondary**: `Helvetica` — fallback for specific UI contexts
 - **System**: `-apple-system, system-ui, Segoe UI, Roboto` — embedded content
 
-### Hierarchy
+### 字体层级
 
 | Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
 |------|------|------|--------|-------------|----------------|-------|
@@ -105,16 +105,16 @@ What makes Resend distinctive is its icy, blue-tinted border system. Instead of 
 | Code Tiny | commitMono | 12px (0.75rem) | 400 | 1.33 | normal | Small code labels |
 | Heading (Helvetica) | Helvetica | 24px (1.50rem) | 400 | 1.40 | normal | Alternate heading context |
 
-### Principles
+### 原则
 - **Three-font editorial hierarchy**: Domaine Display (serif, hero), ABC Favorit (geometric sans, sections), Inter (readable body). Each font has a strict role — they never cross lanes.
 - **Aggressive negative tracking on display**: Domaine at -0.96px, ABC Favorit at -2.8px. The display type feels compressed, urgent, and designed — like a magazine masthead.
 - **Positive tracking on nav**: ABC Favorit nav links use +0.35px letter-spacing — the only positive tracking in the system. This creates airy, spaced-out navigation text that contrasts with the compressed headings.
 - **OpenType as identity**: The `"ss01"`, `"ss03"`, `"ss04"`, `"ss11"` stylistic sets are enabled on all ABC Favorit and Domaine text, activating alternate glyphs that give Resend's typography its unique character.
 - **Commit Mono as design element**: The monospace font isn't hidden in code blocks — it's used prominently for code examples and technical content, treated as a first-class visual element.
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
 **Primary Transparent Pill**
 - Background: transparent
@@ -140,7 +140,7 @@ What makes Resend distinctive is its icy, blue-tinted border system. Instead of 
 - Hover: subtle background tint
 - Use: Secondary actions, tab items
 
-### Cards & Containers
+### 卡片与容器
 - Background: transparent or very subtle dark tint
 - Border: `1px solid rgba(214, 235, 253, 0.19)` (frost border)
 - Radius: 16px (standard cards), 24px (large sections/panels)
@@ -148,26 +148,26 @@ What makes Resend distinctive is its icy, blue-tinted border system. Instead of 
 - Dark product screenshots and code demos as card content
 - No traditional box-shadow elevation
 
-### Inputs & Forms
+### 输入框与表单
 - Text: `#f0f0f0` on dark, `#000000` on light
 - Radius: 4px
 - Focus: shadow-based ring
 - Minimal styling — inherits dark theme
 
-### Navigation
+### 导航
 - Sticky dark header with frost border bottom: `1px solid rgba(214, 235, 253, 0.19)`
 - "Resend" wordmark left-aligned
 - ABC Favorit 14px weight 500 with +0.35px tracking for nav links
 - Pill CTAs right-aligned
 - Mobile: hamburger collapse
 
-### Image Treatment
+### 图片处理
 - Product screenshots and code demos dominate content sections
 - Dark-themed screenshots on dark background — seamless integration
 - Rounded corners: 12px–16px on images
 - Full-width sections with subtle gradient overlays
 
-### Distinctive Components
+### 特色组件
 
 **Tab Navigation**
 - Horizontal tabs with subtle selection indicator
@@ -183,24 +183,24 @@ What makes Resend distinctive is its icy, blue-tinted border system. Instead of 
 - Each product feature has its own accent color from the CSS variable scale
 - Badges use the accent color at low opacity (12–42%) for background, full opacity for text
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
+### 间距体系
 - Base unit: 8px
 - Scale: 1px, 2px, 4px, 5px, 6px, 7px, 8px, 10px, 12px, 16px, 20px, 24px, 30px, 32px, 40px
 
-### Grid & Container
-- Centered content with generous max-width
+### 栅格与容器
+- Centered content with generous 最大宽度
 - Full-width black sections with contained inner content
 - Single-column hero, expanding to feature grids below
 - Code preview panels as full-width or contained showcases
 
-### Whitespace Philosophy
+### 留白哲学
 - **Cinematic black space**: The black background IS the whitespace. Generous vertical spacing (80px–120px+) between sections creates a scroll-through-darkness experience where each section emerges like a scene.
 - **Tight content, vast surrounds**: Text blocks and cards are compact internally, but float in vast dark space — creating isolated "islands" of content.
 - **Typography-led rhythm**: The massive display fonts (96px) create their own vertical rhythm — each headline is a visual event that anchors the surrounding space.
 
-### Border Radius Scale
+### 圆角尺度
 - Sharp (4px): Buttons (ghost), inputs, small interactive elements
 - Subtle (6px): Menu panels, navigation items
 - Standard (8px): Tabs, content blocks
@@ -210,7 +210,7 @@ What makes Resend distinctive is its icy, blue-tinted border system. Instead of 
 - Section (24px): Large panels, section containers
 - Pill (9999px): Primary CTAs, tags, badges
 
-## 6. Depth & Elevation
+## 6. 层深与阴影
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
@@ -222,14 +222,14 @@ What makes Resend distinctive is its icy, blue-tinted border system. Instead of 
 
 **Shadow Philosophy**: Resend barely uses shadows at all. On a pure black background, traditional shadows are invisible — you can't cast a shadow into the void. Instead, Resend creates depth through its signature frost borders (`rgba(214, 235, 253, 0.19)`) — thin, icy blue-tinted lines that catch light against the darkness. This creates a "glass panel floating in space" aesthetic where borders are the primary depth mechanism.
 
-### Decorative Depth
+### 装饰性层深
 - Subtle warm gradient glows behind hero content (orange/amber tints)
 - Product screenshots create visual depth through their own internal UI
 - No gradient backgrounds — depth comes from border luminance and content contrast
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 
-### Do
+### 推荐
 - Use pure black (`#000000`) as the page background — the void is the canvas
 - Apply frost borders (`rgba(214, 235, 253, 0.19)`) for all structural lines — they're the blue-tinted signature
 - Use Domaine Display ONLY for hero headings (96px), ABC Favorit for section headings, Inter for everything else
@@ -239,7 +239,7 @@ What makes Resend distinctive is its icy, blue-tinted border system. Instead of 
 - Keep shadows at ring level (`0px 0px 0px 1px`) — on black, traditional shadows don't work
 - Use +0.35px letter-spacing on ABC Favorit nav links — the only positive tracking
 
-### Don't
+### 禁忌
 - Don't lighten the background above `#000000` — the pure black void is non-negotiable
 - Don't use neutral gray borders — all borders must have the frost blue tint
 - Don't apply Domaine Display to body text — it's a display-only serif
@@ -249,9 +249,9 @@ What makes Resend distinctive is its icy, blue-tinted border system. Instead of 
 - Don't use negative letter-spacing on nav links — ABC Favorit nav uses positive +0.35px
 - Don't make buttons opaque on dark — transparency with frost border is the pattern
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
+### 断点
 | Name | Width | Key Changes |
 |------|-------|-------------|
 | Mobile Small | <480px | Single column, tight padding, 76.8px hero |
@@ -260,26 +260,26 @@ What makes Resend distinctive is its icy, blue-tinted border system. Instead of 
 
 *Note: Resend uses a minimal breakpoint system — only 480px and 600px detected. The design is desktop-first with a clean mobile collapse.*
 
-### Touch Targets
+### 触摸目标
 - Pill buttons: adequate padding (5px 12px minimum)
 - Tab items: 8px radius with comfortable hit areas
 - Navigation links spaced with 0.35px tracking for visual separation
 
-### Collapsing Strategy
+### 折叠策略
 - Hero: Domaine 96px → 76.8px on mobile
 - Navigation: horizontal → hamburger
 - Feature sections: side-by-side → stacked
 - Code panels: maintain width, horizontal scroll if needed
 - Spacing compresses proportionally
 
-### Image Behavior
+### 图片行为
 - Product screenshots maintain aspect ratio
 - Dark screenshots blend seamlessly with dark background at all sizes
 - Rounded corners (12px–16px) maintained across breakpoints
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
+### 色彩速查表
 - Background: Void Black (`#000000`)
 - Primary text: Near White (`#f0f0f0`)
 - Secondary text: Silver (`#a1a4a5`)
@@ -289,14 +289,14 @@ What makes Resend distinctive is its icy, blue-tinted border system. Instead of 
 - Blue accent: `#3b9eff`
 - Focus ring: `rgb(0, 0, 0) 0px 0px 0px 8px`
 
-### Example Component Prompts
+### 组件提示示例
 - "Create a hero section on pure black (#000000) background. Headline at 96px Domaine Display weight 400, line-height 1.00, letter-spacing -0.96px, near-white (#f0f0f0) text, OpenType 'ss01 ss04 ss11'. Subtitle at 20px ABC Favorit weight 400, line-height 1.30. Two pill buttons: white solid (#ffffff, 9999px radius) and transparent with frost border (rgba(214,235,253,0.19))."
 - "Design a navigation bar: dark background with frost border bottom (1px solid rgba(214,235,253,0.19)). Nav links at 14px ABC Favorit weight 500, letter-spacing +0.35px, OpenType 'ss01 ss03 ss04'. White pill CTA right-aligned."
 - "Build a feature card: transparent background, frost border (rgba(214,235,253,0.19)), 16px radius. Title at 56px ABC Favorit weight 400, letter-spacing -2.8px. Body at 16px Inter weight 400, #a1a4a5 text."
 - "Create a code block using Commit Mono 16px on dark background. Frost border container (24px radius). Syntax colors: orange (#ff801f), blue (#3b9eff), green (#11ff99), yellow (#ffc53d)."
 - "Design an accent badge: background #ff5900 at 22% opacity, text #ffa057, 9999px radius, 12px Inter weight 500."
 
-### Iteration Guide
+### 迭代指南
 1. Start with pure black — everything floats in the void
 2. Frost borders (`rgba(214, 235, 253, 0.19)`) are the universal structural element — not gray, not neutral
 3. Three fonts, three roles: Domaine (hero), ABC Favorit (sections), Inter (body) — never cross

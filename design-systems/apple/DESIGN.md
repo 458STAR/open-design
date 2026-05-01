@@ -1,9 +1,9 @@
-# Design System Inspired by Apple
+# Apple
 
-> Category: Media & Consumer
+> Category: 媒体与消费
 > Consumer electronics. Premium white space, SF Pro, cinematic imagery.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 Apple's web language is a precision editorial system that alternates between gallery-like calm and retail-density information blocks. The visual tone stays restrained: broad neutral canvases, quiet chrome, and product imagery given almost all of the expressive weight. The interface is engineered to disappear so hardware, materials, and finish options become the narrative foreground.
 
@@ -11,7 +11,7 @@ Across the five analyzed pages, the rhythm is consistent but not monolithic. Mar
 
 Typography is the stabilizer. SF Pro Display carries hero and merchandising hierarchy with compact line heights and controlled tracking, while SF Pro Text handles product metadata, navigation, filters, and dense selection UI. The typography stays understated, but the scale range is wide enough to support both billboard hero messaging and micro utility labels.
 
-**Key Characteristics:**
+**核心特征：**
 - Binary section rhythm: deep black scenes (`#000000`) alternating with pale neutral fields (`#f5f5f7`)
 - Single blue accent family for action and link semantics (`#0071e3`, `#0066cc`, `#2997ff`)
 - Dual operating modes in one system: cinematic showcase modules and dense commerce configurators
@@ -21,49 +21,49 @@ Typography is the stabilizer. SF Pro Display carries hero and merchandising hier
 - Depth used sparingly; contrast and surface separation do most of the layering work
 - Multi-page color-block rhythm: black hero chapters -> pale neutral merchandising fields -> utility white retail surfaces -> dark micro-surfaces for controls
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
 > **Source Pages:** `https://www.apple.com/`, `https://www.apple.com/environment/`, `https://www.apple.com/store`, `https://www.apple.com/shop/buy-iphone/iphone-17-pro`, `https://www.apple.com/shop/accessories/all`
 
-### Primary
+### 主色
 - **Absolute Black** (`#000000`): Immersive hero canvases, high-drama product chapters, deep UI anchors.
 - **Pale Apple Gray** (`#f5f5f7`): Main light surface for feature bands, comparison blocks, and editorial transitions.
 - **Near-Black Ink** (`#1d1d1f`): Primary text and dark-fill control color on light canvases.
 
-### Secondary & Accent
+### 辅助色与强调色
 - **Apple Action Blue** (`#0071e3`): Primary action fill and focus-signaling brand accent.
 - **Body Link Blue** (`#0066cc`): Inline link color optimized for long-form readability.
 - **High-Luminance Link Blue** (`#2997ff`): Bright link treatment on darker scenes where stronger contrast is required.
 
-### Surface & Background
+### 表面与背景色
 - **Pure White Canvas** (`#ffffff`): Retail/product-list backgrounds and dense transactional sections.
 - **Graphite Surface A** (`#272729`): Dark card and media-control context layer.
 - **Graphite Surface B** (`#262629`): Slightly deeper dark utility layer for control groupings.
 - **Graphite Surface C** (`#28282b`): Elevated dark supporting surfaces.
 - **Graphite Surface D** (`#2a2a2c`): Darkest elevated step used for separation in richer dark scenes.
 
-### Neutrals & Text
+### 中性色与文字色
 - **Secondary Neutral Gray** (`#6e6e73`): Body secondary copy, helper descriptions, tertiary metadata.
 - **Soft Border Gray** (`#d2d2d7`): Dividers, subtle outlines, and muted utility containment.
 - **Mid Border Gray** (`#86868b`): Stronger field outlines in product-configuration and filter contexts.
 - **Utility Dark Gray** (`#424245`): Dark-neutral text/surface crossover in store contexts.
 
-### Semantic & Accent
+### 语义色与强调色
 - **Selection/Focus Signal** (`#0071e3`): Shared focus and selected-state signal across marketing and commerce contexts.
 - **Error/Warning/Success**: No distinct semantic palette was consistently visible in the extracted surface set.
 
-### Gradient System
+### 渐变体系
 - The extracted pages are overwhelmingly solid-surface driven. Visual richness comes from photography and finish rendering rather than persistent UI gradients.
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Family
+### 字体家族
 - **Display Family:** `SF Pro Display`, fallbacks `SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif`
 - **Text Family:** `SF Pro Text`, fallbacks `SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif`
 - **Usage Split:** Display family handles hero/product headlines and merchandising headings; Text family handles navigation, controls, labels, and dense commerce copy.
 
-### Hierarchy
-| Role | Size | Weight | Line Height | Letter Spacing | Notes |
+### 字体层级
+| 角色 | 尺寸 | 字重 | 行高 | 字间距 | 备注 |
 |------|------|--------|-------------|----------------|-------|
 | Hero Display XL | 80px | 600 | 1.00-1.05 | -1.2px | Environment/store hero scale |
 | Hero Display L | 56px | 600 | 1.07 | -0.28px | Homepage hero moments |
@@ -81,7 +81,7 @@ Typography is the stabilizer. SF Pro Display carries hero and merchandising hier
 | Micro UI | 12px | 400-600 | 1.00-1.33 | -0.12px | Fine print, micro labels |
 | Legal/Meta | 10px | 400 | 1.30-1.47 | -0.08px | Dense metadata and legal support text |
 
-### Principles
+### 原则
 - **Continuity across page types:** The same typographic DNA spans cinematic launches and product-purchase flows, preventing a brand split between marketing and commerce.
 - **Compression at scale:** Display tiers use tight leading and controlled tracking to feel machined and product-first.
 - **Readable density at retail depth:** SF Pro Text balances compactness with enough vertical rhythm for long product lists and option matrices.
@@ -91,32 +91,32 @@ Typography is the stabilizer. SF Pro Display carries hero and merchandising hier
 - Closest freely available substitutes: `Inter` for text-heavy implementation and `SF Pro Display-like` metrics approximated with `Inter Tight` for headings.
 - When substituting, increase line-height slightly (+0.02 to +0.06) on body sizes and reduce negative tracking intensity to preserve readability.
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 - **Primary Fill Action:** `#0071e3` background, `#ffffff` text, 8px radius, compact horizontal padding (commonly 8px 15px). Used for decisive purchase/progression actions.
 - **Dark Fill Action:** `#1d1d1f` background, `#ffffff` text, 8px radius. Used when light surfaces need a restrained high-contrast primary.
 - **Pill/Capsule Action Family:** large capsule actions at `18px`-`56px` radii and extreme pill links at `980px`. Establishes Apple’s soft but precise call-to-action silhouette.
 - **Utility Filter/Button Shells:** light shells (`#fafafc` or translucent white) with subtle gray borders (`#d2d2d7` / `#86868b`) for dense configuration contexts.
 - **Pressed Behavior:** active controls commonly reduce scale or shift fill slightly to indicate physical press confirmation.
 
-### Cards & Containers
+### 卡片与容器
 - **Editorial/Product Cards:** light cards on `#f5f5f7` or white fields with minimal framing and image-first composition.
 - **Dark Utility Cards:** graphite steps (`#272729` to `#2a2a2c`) used for overlays, media controls, and dark-context modules.
 - **Configurator Panels:** rounded containers (often 12px-18px) with clear but restrained border definition.
 - **Carousel/Spotlight Modules:** larger rounded shells (`28px`-`36px`) for featured content lanes.
 
-### Inputs & Forms
+### 输入框与表单
 - **Retail Input Fields:** translucent or white backgrounds, dark text (`#1d1d1f`), border-led containment (`#86868b`).
 - **Selection Controls:** circular/toggle-like control geometry appears frequently in product selection interfaces.
 - **Density Strategy:** form fields remain visually quiet to keep device imagery and pricing hierarchy dominant.
 
-### Navigation
+### 导航
 - **Global Marketing Nav:** compact dark translucent bar with small-type links and restrained iconography.
 - **Store/Sub-shop Nav Layers:** additional utility bars, chips, and segmented controls for category and product narrowing.
 - **Link Hierarchy:** link blues remain the primary interactive signal while neutral text supports dense navigation sets.
 
-### Image Treatment
+### 图片处理
 - **Object-First Photography:** hardware and accessories are foregrounded on controlled solid surfaces.
 - **High-fidelity finish rendering:** reflective/material details are central to visual persuasion.
 - **Mixed framing:** full-bleed hero scenes coexist with rounded retail cards and tightly cropped merchandising thumbnails.
@@ -126,24 +126,24 @@ Typography is the stabilizer. SF Pro Display carries hero and merchandising hier
 - **Carousel Control Dots/Arrows:** circular control vocabulary in muted overlays for gallery progression.
 - **Environment Story Panels:** narrative chapters that blend editorial typography with cinematic product/environment visuals.
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
+### 间距体系
 - Base unit is effectively `8px`, but the system supports dense micro-steps for precision alignment.
 - Frequently reused spacing values across pages: `2`, `4`, `6`, `7`, `8`, `9`, `10`, `12`, `14`, `17`, `20` px.
 - Universal rhythm constants visible across both marketing and retail flows: `8px` unit scaffolding with `14-20px` utility intervals for component padding and list spacing.
 
-### Grid & Container
+### 栅格与容器
 - **Showcase pages:** large central columns with broad horizontal breathing room and full-width color chapters.
 - **Commerce pages:** tighter multi-column product and control grids with frequent modular stacking.
 - **Container behavior:** constrained readable core with generous outer margins at desktop widths.
 
-### Whitespace Philosophy
+### 留白哲学
 - **Scene pacing:** major visual chapters use broad top/bottom breathing room.
 - **Information compaction where needed:** retail pages deliberately compress spacing to expose more actionable information per viewport.
 - **Contrast-led separation:** section transitions rely more on surface changes than decorative separators.
 
-### Border Radius Scale
+### 圆角尺度
 - **5px:** tiny utility links/tags and minor small shells.
 - **8px-12px:** standard controls and compact fields.
 - **16px-18px:** cards, module frames, and commerce panels.
@@ -151,7 +151,7 @@ Typography is the stabilizer. SF Pro Display carries hero and merchandising hier
 - **56px / 100px / 980px:** capsules, large pills, and signature elongated CTA forms.
 - **50%:** circular media and selection controls.
 
-## 6. Depth & Elevation
+## 6. 层深与阴影
 
 | Level | Treatment | Use |
 |------|-----------|-----|
@@ -163,13 +163,13 @@ Typography is the stabilizer. SF Pro Display carries hero and merchandising hier
 
 Depth is intentionally restrained. Apple favors tonal contrast, surface stepping, and compositional hierarchy over heavy shadow stacks.
 
-### Decorative Depth
+### 装饰性层深
 - Decorative depth is primarily created by photographic realism and material rendering, not synthetic UI effects.
 - Translucent overlays and glass-like utility bars provide mild atmospheric layering in navigation and controls.
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 
-### Do
+### 推荐
 - Use the neutral triad (`#000000`, `#f5f5f7`, `#ffffff`) as the structural foundation.
 - Reserve blue accents for genuine action and navigation semantics.
 - Keep typography tight and deliberate, especially at display scales.
@@ -178,7 +178,7 @@ Depth is intentionally restrained. Apple favors tonal contrast, surface stepping
 - Use border-led containment in dense retail contexts instead of heavy card ornamentation.
 - Preserve clear separation between showcase modules and transactional modules while keeping core tokens shared.
 
-### Don't
+### 禁忌
 - Don’t introduce broad secondary accent palettes that compete with Apple blue.
 - Don’t overuse shadows, glow effects, or decorative gradients in core UI chrome.
 - Don’t mix unrelated font families or loosen tracking indiscriminately.
@@ -187,9 +187,9 @@ Depth is intentionally restrained. Apple favors tonal contrast, surface stepping
 - Don’t remove neutral contrast cadence between dark and light chapters.
 - Don’t treat marketing and purchase flows as separate design systems.
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
+### 断点
 | Name | Width | Key Changes |
 |------|-------|-------------|
 | Small Mobile | 374px and below | Tightened retail controls, single-column product stacks |
@@ -200,26 +200,26 @@ Depth is intentionally restrained. Apple favors tonal contrast, surface stepping
 | Desktop Wide | 1241px-1440px | Marketing hero expansion and broader section spacing |
 | Large Desktop | 1441px+ | Maximum chapter breathing room and wide editorial composition |
 
-### Touch Targets
+### 触摸目标
 - Primary and secondary actions are generally presented in tap-friendly pill/button geometries.
 - Circular media and selection controls align with minimum touchable intent in mobile contexts.
 - Dense commerce UI uses compact labels but maintains clear hit regions via surrounding shape padding.
 
-### Collapsing Strategy
+### 折叠策略
 - Marketing hero typography scales down in discrete tiers while preserving hierarchy contrast.
 - Product and commerce grids collapse from multi-column to stacked cards with persistent selector visibility.
 - Utility navigation compresses into simpler link/control groupings while preserving key actions.
 - Option/configuration clusters become vertically sequenced to keep purchase flow linear on small screens.
 
-### Image Behavior
+### 图片行为
 - Product imagery preserves aspect and centrality through breakpoints.
 - Hero visuals remain dominant on mobile, with text repositioned around media priority.
 - Retail thumbnails stay legible via tighter crop logic and denser card stacking.
 - Image-led modules continue to anchor the rhythm as layout density increases.
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
+### 色彩速查表
 - Primary action blue: **Apple Action Blue** (`#0071e3`)
 - Inline link blue: **Body Link Blue** (`#0066cc`)
 - Dark chapter canvas: **Absolute Black** (`#000000`)
@@ -229,14 +229,14 @@ Depth is intentionally restrained. Apple favors tonal contrast, surface stepping
 - Retail border soft: **Soft Border Gray** (`#d2d2d7`)
 - Retail border strong: **Mid Border Gray** (`#86868b`)
 
-### Example Component Prompts
+### 组件提示示例
 - "Design an Apple-style product hero on a black canvas (`#000000`) with SF Pro Display semibold headline (48-56px), concise supporting copy, and two capsule CTAs using `#0071e3` and `#1d1d1f`."
 - "Create a commerce configuration panel on white (`#ffffff`) with 18px rounded cards, `#86868b` border fields, SF Pro Text 17px body copy, and compact option selectors."
 - "Build a merchandising card grid alternating `#f5f5f7` and white surfaces, with image-first cards, restrained shadows, and 14-17px SF Pro Text metadata."
 - "Generate a carousel control cluster using circular buttons (50% radius), muted gray overlays, and clear active feedback for gallery navigation."
 - "Compose a mixed marketing + retail page rhythm: dark showcase chapter -> light feature chapter -> dense product list module while keeping blue accents only for actions and links."
 
-### Iteration Guide
+### 迭代指南
 1. Lock the neutral foundation first (`#000000`, `#f5f5f7`, `#ffffff`) before tuning accents.
 2. Keep blue accents scarce and purposeful; if everything is blue, hierarchy collapses.
 3. Tune typography in this order: display scale, body readability, then micro labels.

@@ -1,15 +1,15 @@
-# Design System Inspired by Miro
+# Miro
 
-> Category: Design & Creative
+> Category: 设计与创意
 > Visual collaboration. Bright yellow accent, infinite canvas aesthetic.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 Miro's website is a clean, collaborative-tool-forward platform that communicates "visual thinking" through generous whitespace, pastel accent colors, and a confident geometric font. The design uses a predominantly white canvas with near-black text (`#1c1c1e`) and a distinctive pastel color palette — coral, rose, teal, orange, yellow, moss — each representing different collaboration contexts.
 
 The typography uses Roobert PRO Medium as the primary display font with OpenType character variants (`"blwf", "cv03", "cv04", "cv09", "cv11"`) and negative letter-spacing (-1.68px at 56px). Noto Sans handles body text with its own stylistic set (`"liga" 0, "ss01", "ss04", "ss05"`). The design is built with Framer, giving it smooth animations and modern component patterns.
 
-**Key Characteristics:**
+**核心特征：**
 - White canvas with near-black (`#1c1c1e`) text
 - Roobert PRO Medium with multiple OpenType character variants
 - Pastel accent palette: coral, rose, teal, orange, yellow, moss (light + dark pairs)
@@ -19,9 +19,9 @@ The typography uses Roobert PRO Medium as the primary display font with OpenType
 - Framer-built with smooth motion patterns
 - Ring shadow border: `rgb(224,226,232) 0px 0px 0px 1px`
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
-### Primary
+### 主色
 - **Near Black** (`#1c1c1e`): Primary text
 - **White** (`#ffffff`): `--tw-color-white`, primary surface
 - **Blue 450** (`#5b76fe`): `--tw-color-blue-450`, primary interactive
@@ -39,22 +39,22 @@ The typography uses Roobert PRO Medium as the primary display font with OpenType
 - **Dark Red** (`#e3c5c5`): Muted red
 
 ### Semantic
-- **Success** (`#00b473`): `--tw-color-success-accent`
+- **成功** (`#00b473`): `--tw-color-success-accent`
 
 ### Neutral
 - **Slate** (`#555a6a`): Secondary text
 - **Input Placeholder** (`#a5a8b5`): `--tw-color-input-placeholder`
-- **Border** (`#c7cad5`): Button borders
+- **边框色** (`#c7cad5`): Button borders
 - **Ring** (`rgb(224,226,232)`): Shadow-as-border
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Families
+### 字体家族
 - **Display**: `Roobert PRO Medium`, fallback: Placeholder — `"blwf", "cv03", "cv04", "cv09", "cv11"`
 - **Display Variants**: `Roobert PRO SemiBold`, `Roobert PRO SemiBold Italic`, `Roobert PRO`
 - **Body**: `Noto Sans` — `"liga" 0, "ss01", "ss04", "ss05"`
 
-### Hierarchy
+### 字体层级
 
 | Role | Font | Size | Weight | Line Height | Letter Spacing |
 |------|------|------|--------|-------------|----------------|
@@ -70,9 +70,9 @@ The typography uses Roobert PRO Medium as the primary display font with OpenType
 | Small | Roobert PRO Medium | 12px | 400 | 1.15 | -0.36px |
 | Micro Uppercase | Roobert PRO | 10.5px | 400 | 0.90 | uppercase |
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 - Outlined: transparent bg, `1px solid #c7cad5`, 8px radius, 7px 12px padding
 - White circle: 50% radius, white bg with shadow
 - Blue primary (implied from interactive color)
@@ -80,32 +80,32 @@ The typography uses Roobert PRO Medium as the primary display font with OpenType
 ### Cards: 12px–24px radius, pastel backgrounds
 ### Inputs: white bg, `1px solid #e9eaef`, 8px radius, 16px padding
 
-## 5. Layout Principles
+## 5. 布局原则
 - Spacing: 1–24px base scale
 - Radius: 8px (buttons), 10px–12px (cards), 20px–24px (panels), 40px–50px (large containers)
 - Ring shadow: `rgb(224,226,232) 0px 0px 0px 1px`
 
-## 6. Depth & Elevation
+## 6. 层深与阴影
 Minimal — ring shadow + pastel surface contrast
 
-## 7. Do's and Don'ts
-### Do
+## 7. 设计规范：推荐与禁忌
+### 推荐
 - Use pastel light/dark pairs for feature sections
 - Apply Roobert PRO with OpenType character variants
 - Use Blue 450 (#5b76fe) for interactive elements
-### Don't
+### 禁忌
 - Don't use heavy shadows
 - Don't mix more than 2 pastel accents per section
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 Breakpoints: 425px, 576px, 768px, 896px, 1024px, 1200px, 1280px, 1366px, 1700px, 1920px
 
-## 9. Agent Prompt Guide
-### Quick Color Reference
+## 9. 代理提示指南
+### 色彩速查表
 - Text: Near Black (`#1c1c1e`)
 - Background: White (`#ffffff`)
 - Interactive: Blue 450 (`#5b76fe`)
 - Success: `#00b473`
 - Border: `#c7cad5`
-### Example Component Prompts
+### 组件提示示例
 - "Create hero: white background. Roobert PRO Medium 56px, line-height 1.15, letter-spacing -1.68px. Blue CTA (#5b76fe). Outlined secondary (1px solid #c7cad5, 8px radius)."

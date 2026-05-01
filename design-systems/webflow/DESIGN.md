@@ -1,13 +1,13 @@
-# Design System Inspired by Webflow
+# Webflow
 
-> Category: Design & Creative
+> Category: 设计与创意
 > Visual web builder. Blue-accented, polished marketing site aesthetic.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 Webflow's website is a visually rich, tool-forward platform that communicates "design without code" through clean white surfaces, the signature Webflow Blue (`#146ef5`), and a rich secondary color palette (purple, pink, green, orange, yellow, red). The custom WF Visual Sans Variable font creates a confident, precise typographic system with weight 600 for display and 500 for body.
 
-**Key Characteristics:**
+**核心特征：**
 - White canvas with near-black (`#080808`) text
 - Webflow Blue (`#146ef5`) as primary brand + interactive color
 - WF Visual Sans Variable — custom variable font with weight 500–600
@@ -17,9 +17,9 @@ Webflow's website is a visually rich, tool-forward platform that communicates "d
 - Uppercase labels: 10px–15px, weight 500–600, wide letter-spacing (0.6px–1.5px)
 - translate(6px) hover animation on buttons
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
-### Primary
+### 主色
 - **Near Black** (`#080808`): Primary text
 - **Webflow Blue** (`#146ef5`): `--_color---primary--webflow-blue`, primary CTA and links
 - **Blue 400** (`#3b89ff`): `--_color---primary--blue-400`, lighter interactive blue
@@ -45,11 +45,11 @@ Webflow's website is a visually rich, tool-forward platform that communicates "d
 ### Shadows
 - **5-layer cascade**: `rgba(0,0,0,0) 0px 84px 24px, rgba(0,0,0,0.01) 0px 54px 22px, rgba(0,0,0,0.04) 0px 30px 18px, rgba(0,0,0,0.08) 0px 13px 13px, rgba(0,0,0,0.09) 0px 3px 7px`
 
-## 3. Typography Rules
+## 3. 排版规则
 
 ### Font: `WF Visual Sans Variable`, fallback: `Arial`
 
-| Role | Size | Weight | Line Height | Letter Spacing | Notes |
+| 角色 | 尺寸 | 字重 | 行高 | 字间距 | 备注 |
 |------|------|--------|-------------|----------------|-------|
 | Display Hero | 80px | 600 | 1.04 | -0.8px | |
 | Section Heading | 56px | 600 | 1.04 | normal | |
@@ -64,9 +64,9 @@ Webflow's website is a visually rich, tool-forward platform that communicates "d
 | Micro Uppercase | 10px | 500–600 | 1.30 | 1px | uppercase |
 | Code: Inconsolata (companion monospace font)
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 - Transparent: text `#080808`, translate(6px) on hover
 - White circle: 50% radius, white bg
 - Blue badge: `#146ef5` bg, 4px radius, weight 550
@@ -74,20 +74,20 @@ Webflow's website is a visually rich, tool-forward platform that communicates "d
 ### Cards: `1px solid #d8d8d8`, 4px–8px radius
 ### Badges: Blue-tinted bg at 10% opacity, 4px radius
 
-## 5. Layout
+## 5. 布局原则
 - Spacing: fractional scale (1px, 2.4px, 3.2px, 4px, 5.6px, 6px, 7.2px, 8px, 9.6px, 12px, 16px, 24px)
 - Radius: 2px, 4px, 8px, 50% — conservative, sharp
 - Breakpoints: 479px, 768px, 992px
 
-## 6. Depth: 5-layer cascading shadow system
+## 6. 层深与阴影：5 层级联阴影体系
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 - Do: Use WF Visual Sans Variable at 500–600. Blue (#146ef5) for CTAs. 4px radius. translate(6px) hover.
 - Don't: Round beyond 8px for functional elements. Use secondary colors on primary CTAs.
 
-## 8. Responsive: 479px, 768px, 992px
+## 8. 响应式行为: 479px, 768px, 992px
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 - Text: Near Black (`#080808`)
 - CTA: Webflow Blue (`#146ef5`)
 - Background: White (`#ffffff`)

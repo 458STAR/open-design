@@ -1,9 +1,9 @@
-# Design System Inspired by HashiCorp
+# HashiCorp
 
-> Category: Backend & Data
+> Category: 后端与数据
 > Infrastructure automation. Enterprise-clean, black and white.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 HashiCorp's website is enterprise infrastructure made tangible — a design system that must communicate the complexity of cloud infrastructure management while remaining approachable. The visual language splits between two modes: a clean white light-mode for informational sections and a dramatic dark-mode (`#15181e`, `#0d0e12`) for hero areas and product showcases, creating a day/night duality that mirrors the "build in light, deploy in dark" developer workflow.
 
@@ -13,7 +13,7 @@ What distinguishes HashiCorp is its multi-product color system. Each product in 
 
 The component system uses the `mds` (Markdown Design System) prefix, indicating a systematic, token-driven approach where colors, spacing, and states are all managed through CSS variables. Shadows are remarkably subtle — dual-layer micro-shadows using `rgba(97, 104, 117, 0.05)` that are nearly invisible but provide just enough depth to separate interactive surfaces from the background.
 
-**Key Characteristics:**
+**核心特征：**
 - Dual-mode: clean white sections + dramatic dark (`#15181e`) hero/product areas
 - Custom HashiCorp Sans font with 600–700 weights and `"kern"` feature
 - Multi-product color system via `--mds-color-*` CSS custom properties
@@ -24,7 +24,7 @@ The component system uses the `mds` (Markdown Design System) prefix, indicating 
 - Tight border radius: 2px–8px, nothing pill-shaped or circular
 - System-ui fallback stack for secondary text
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
 ### Brand Primary
 - **Black** (`#000000`): Primary brand color, text on light surfaces, `--mds-color-hcp-brand`
@@ -63,13 +63,13 @@ The component system uses the `mds` (Markdown Design System) prefix, indicating 
 - **Micro Shadow** (`rgba(97, 104, 117, 0.05) 0px 1px 1px, rgba(97, 104, 117, 0.05) 0px 2px 2px`): Default card/button elevation
 - **Focus Outline**: `3px solid var(--mds-color-focus-action-external)` — systematic focus ring
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Families
+### 字体家族
 - **Primary Brand**: `__hashicorpSans_96f0ca` (HashiCorp Sans), with fallback: `__hashicorpSans_Fallback_96f0ca`
 - **System UI**: `system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial`
 
-### Hierarchy
+### 字体层级
 
 | Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
 |------|------|------|--------|-------------|----------------|-------|
@@ -87,16 +87,16 @@ The component system uses the `mds` (Markdown Design System) prefix, indicating 
 | Caption | system-ui | 13px (0.81rem) | 400–500 | 1.23–1.69 | normal | Metadata, footer links |
 | Uppercase Label | HashiCorp Sans | 13px (0.81rem) | 600 | 1.69 (relaxed) | 1.3px | `text-transform: uppercase` |
 
-### Principles
+### 原则
 - **Brand/System split**: HashiCorp Sans for headings and brand-critical text; system-ui for body, navigation, and functional text. The brand font carries the weight, system-ui carries the words.
 - **Kern always on**: All HashiCorp Sans text enables OpenType `"kern"` — letterfitting is non-negotiable.
 - **Tight headings**: Every heading uses 1.17–1.21 line-height, creating dense, stacked text blocks that feel infrastructural — solid, load-bearing.
 - **Relaxed body**: Body text uses 1.50–1.69 line-height (notably generous), creating comfortable reading rhythm beneath the dense headings.
 - **Uppercase labels as wayfinding**: 13px uppercase with 1.3px letter-spacing serves as the systematic category/section marker — always HashiCorp Sans weight 600.
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
 **Primary Dark**
 - Background: `#15181e`
@@ -154,13 +154,13 @@ The component system uses the `mds` (Markdown Design System) prefix, indicating 
 - **Light on Dark**: `#efeff1`, similar hover pattern
 - All links use `var(--wpl-blue-600)` as hover color
 
-### Cards & Containers
+### 卡片与容器
 - Light mode: white background, micro-shadow elevation
 - Dark mode: `#15181e` or darker surfaces
 - Radius: 8px for cards and containers
 - Product showcase cards with gradient borders or accent lighting
 
-### Navigation
+### 导航
 - Clean horizontal nav with mega-menu dropdowns
 - HashiCorp logo left-aligned
 - system-ui 15px weight 500 for links
@@ -168,19 +168,19 @@ The component system uses the `mds` (Markdown Design System) prefix, indicating 
 - "Get started" and "Contact us" CTAs in header
 - Dark mode variant for hero sections
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
+### 间距体系
 - Base unit: 8px
 - Scale: 2px, 3px, 4px, 6px, 7px, 8px, 9px, 11px, 12px, 16px, 20px, 24px, 32px, 40px, 48px
 
-### Grid & Container
+### 栅格与容器
 - Max content width: ~1150px (xl breakpoint)
 - Full-width dark hero sections with contained content
 - Card grids: 2–3 column layouts
 - Generous horizontal padding at desktop scale
 
-### Breakpoints
+### 断点
 | Name | Width | Key Changes |
 |------|-------|-------------|
 | Mobile Small | <375px | Tight single column |
@@ -192,19 +192,19 @@ The component system uses the `mds` (Markdown Design System) prefix, indicating 
 | Large Desktop | 1120–1440px | Max-width content |
 | Ultra-wide | >1440px | Centered, generous margins |
 
-### Whitespace Philosophy
+### 留白哲学
 - **Enterprise breathing room**: Generous vertical spacing between sections (48px–80px+) communicates stability and seriousness.
 - **Dense headings, spacious body**: Tight line-height headings sit above relaxed body text, creating visual "weight at the top" of each section.
 - **Dark as canvas**: Dark hero sections use extra vertical padding to let 3D illustrations and gradients breathe.
 
-### Border Radius Scale
+### 圆角尺度
 - Minimal (2px): Links, small inline elements
 - Subtle (3px): Checkboxes, small inputs
 - Standard (4px): Secondary buttons
 - Comfortable (5px): Primary buttons, badges, inputs
 - Card (8px): Cards, containers, images
 
-## 6. Depth & Elevation
+## 6. 层深与阴影
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
@@ -214,9 +214,9 @@ The component system uses the `mds` (Markdown Design System) prefix, indicating 
 
 **Shadow Philosophy**: HashiCorp uses arguably the subtlest shadow system in modern web design. The dual-layer shadows at 5% opacity are nearly invisible — they exist not to create visual depth but to signal interactivity. If you can see the shadow, it's too strong. This restraint communicates the enterprise value of stability — nothing floats, nothing is uncertain.
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 
-### Do
+### 推荐
 - Use HashiCorp Sans for headings and brand text, system-ui for body and UI text
 - Enable `"kern"` on all HashiCorp Sans text
 - Use product brand colors ONLY for their respective products (Terraform = purple, Vault = yellow, etc.)
@@ -226,7 +226,7 @@ The component system uses the `mds` (Markdown Design System) prefix, indicating 
 - Maintain the tight-heading / relaxed-body rhythm (1.17–1.21 vs 1.50–1.69 line-heights)
 - Use `3px solid` focus outlines for accessibility
 
-### Don't
+### 禁忌
 - Don't use product brand colors outside their product context (no Terraform purple on Vault content)
 - Don't increase shadow opacity above 0.1 — the whisper level is intentional
 - Don't use pill-shaped buttons (>8px radius) — the sharp, minimal radius is structural
@@ -236,9 +236,9 @@ The component system uses the `mds` (Markdown Design System) prefix, indicating 
 - Don't use pure black (`#000000`) for dark backgrounds — use `#15181e` or `#0d0e12`
 - Don't forget the asymmetric button padding — 9px 9px 9px 15px is intentional
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
+### 断点
 | Name | Width | Key Changes |
 |------|-------|-------------|
 | Mobile | <768px | Single column, hamburger nav, stacked CTAs |
@@ -246,16 +246,16 @@ The component system uses the `mds` (Markdown Design System) prefix, indicating 
 | Desktop | 992–1150px | Full layout, mega-menu nav |
 | Large | >1150px | Max-width centered, generous margins |
 
-### Collapsing Strategy
+### 折叠策略
 - Hero: 82px → 52px → 42px heading sizes
 - Navigation: mega-menu → hamburger
 - Product cards: 3-column → 2-column → stacked
 - Dark sections maintain full-width but compress padding
 - Buttons: inline → full-width stacked on mobile
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
+### 色彩速查表
 - Light bg: `#ffffff`, `#f1f2f3`
 - Dark bg: `#15181e`, `#0d0e12`
 - Text light: `#000000`, `#3b3d45`
@@ -265,14 +265,14 @@ The component system uses the `mds` (Markdown Design System) prefix, indicating 
 - Borders: `rgba(178, 182, 189, 0.4)`, `rgb(97, 104, 117)`
 - Focus: `3px solid` product-appropriate color
 
-### Example Component Prompts
+### 组件提示示例
 - "Create a hero on dark background (#15181e). Headline at 82px HashiCorp Sans weight 600, line-height 1.17, kern enabled, white text. Sub-text at 20px system-ui weight 400, line-height 1.50, #d5d7db text. Two buttons: primary dark (#15181e, 5px radius, 9px 15px padding) and secondary white (#ffffff, 4px radius, 8px 12px padding)."
 - "Design a product card: white background, 8px radius, dual-layer shadow at rgba(97,104,117,0.05). Title at 26px HashiCorp Sans weight 700, body at 16px system-ui weight 400 line-height 1.63."
 - "Build an uppercase section label: 13px HashiCorp Sans weight 600, line-height 1.69, letter-spacing 1.3px, text-transform uppercase, #656a76 color."
 - "Create a product-specific CTA button: Terraform → #7b42bc background, Vault → #ffcf25 with dark text, Waypoint → #14c6cb. All: 5px radius, 500 weight text, 16px system-ui."
 - "Design a dark form: #0d0e12 input background, #efeff1 text, 1px solid rgb(97,104,117) border, 5px radius, 11px padding. Focus: 3px solid accent-color outline."
 
-### Iteration Guide
+### 迭代指南
 1. Always start with the mode decision: light (white) for informational, dark (#15181e) for hero/product
 2. HashiCorp Sans for headings only (17px+), system-ui for everything else
 3. Shadows are at whisper level (0.05 opacity) — if visible, reduce

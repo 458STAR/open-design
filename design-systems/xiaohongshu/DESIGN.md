@@ -1,9 +1,9 @@
-# Design System Inspired by Xiaohongshu
+# Xiaohongshu
 
-> Category: Media & Consumer
+> Category: 媒体与消费
 > Lifestyle UGC social platform. Singular brand red, generous radius, content-first.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 Xiaohongshu (小红书 / RED) is the visual opposite of a SaaS console. Open the app and you do not see "Xiaohongshu" — you see other people's breakfasts, hotel sofas, the lipstick they bought on the third try. That is by design. The entire UI tries to act as a transparent picture frame: white surfaces, low-noise components, no shadow stacks competing for attention. Everything yields to the user-uploaded image.
 
@@ -15,7 +15,7 @@ Type is PingFang SC at medium weight throughout. There is no thin-light heroic d
 
 The result reads like a slightly worn lifestyle magazine with a few handwritten Post-its tucked between the pages. Not Apple-store cold-minimal. Not Lark efficiency-console. Definitely not any SaaS dashboard. The design baseline is *daily-ness* — the user should not feel they are using software, only flipping through someone else's life.
 
-**Key Characteristics:**
+**核心特征：**
 - Singular brand red (`#FF2442` token, `#FF2E4D` at the component layer) — never two saturated colors at once
 - Translucent neutrals (`rgba(48,48,52, .05/.10/.20)`) instead of discrete grey steps
 - Generous rounding everywhere: cards 12–16px, buttons fully pill, sheets 16px top-only
@@ -25,7 +25,7 @@ The result reads like a slightly worn lifestyle magazine with a few handwritten 
 - Bottom sheet for secondary actions on mobile, never modal
 - Voice: second person, lifestyle, never SaaS-enterprise
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
 All values below are sampled from production CSS at `https://www.xiaohongshu.com/explore` (inline `<style>` blocks for `:root, .force-light` and `:root[dark], .force-dark`).
 
@@ -35,7 +35,7 @@ All values below are sampled from production CSS at `https://www.xiaohongshu.com
 - **Star Yellow** (`#FDBC5F`): bookmark / collect-active icon fill (sampled from `<symbol id="collected">` SVG). Only place yellow is allowed.
 
 ### Neutrals (translucent overlay system)
-- **Surface** (`#FFFFFF`) — `--bg`. Cards, modals.
+- **表面色** (`#FFFFFF`) — `--bg`. Cards, modals.
 - **Canvas** (`#F5F5F5`) — `--bg0`. Page background behind cards.
 - **Subtle** (`#FAFAFA`) — `--bg0-lighter` / `--color-information-background`. Information backgrounds.
 - **Fill 1** (`rgba(48,48,52,0.05)`) — `--fill1`. Lightest hover, group lines.
@@ -52,9 +52,9 @@ All values below are sampled from production CSS at `https://www.xiaohongshu.com
 - **Disabled / Placeholder** (`rgba(0,0,0,0.27)`) — `--disabled` / `--placeholder`.
 
 ### Semantic (token-level only — rarely visible in consumer UI)
-- **Success** (`#02B940`) — `--success`. Background variant `#EAF8EF` (`--success2`).
-- **Warning** (`#FF7D03`) — `--warning`. Background variant `#FFF2E6` (`--warning2`).
-- **Info** (`#3D8AF5`) — `--info` / `--color-blue`. Almost never appears in consumer flow.
+- **成功** (`#02B940`) — `--success`. Background variant `#EAF8EF` (`--success2`).
+- **警告** (`#FF7D03`) — `--warning`. Background variant `#FFF2E6` (`--warning2`).
+- **信息** (`#3D8AF5`) — `--info` / `--color-blue`. Almost never appears in consumer flow.
 - **Link** (`#133667`) — `--link`. Deep navy, not a typical link blue. In practice, brand red is used for emphasis instead.
 - **Danger / Error**: no independent token — danger reuses `--primary` (brand red). Heads-up for skill authors: an emitted destructive action and an emitted primary CTA will therefore be visually identical out of the box (a "Delete account" button reads exactly like a "Follow" button). RED's production destructive treatment is not directly observable in this snapshot, so as a defensive default, differentiate destructive intent via outline-style + brand-red text, or a leading destructive icon, when the difference matters.
 
@@ -67,18 +67,18 @@ Brand red itself is **never gradient**. The only gradients in the system are fun
 
 Dark mode follows `prefers-color-scheme: dark` with a manual override; both the `:root[dark]` attribute and the `.force-dark` class are honored in source.
 
-- **Surface** (`#19191E`) — purple-tinted near-black, not pure `#000`.
+- **表面色** (`#19191E`) — purple-tinted near-black, not pure `#000`.
 - **Canvas** (`#0E0E11`) — deepest layer.
 - **Title** (`rgba(255,255,255,0.84)`).
 - **Paragraph** (`rgba(255,255,255,0.56)`).
 - **Brand Primary** (`#FF2E4D`) — slight pink shift vs. light mode (`#FF2442` → `#FF2E4D`) to lower visual sting in low light.
 - **Separator** (`rgba(255,255,255,0.07)`).
 
-## 3. Typography Rules
+## 3. 排版规则
 
 All values sampled from production CSS at `https://www.xiaohongshu.com/`.
 
-### Font Family
+### 字体家族
 
 **Chinese (display + body, all levels):**
 ```
@@ -120,7 +120,7 @@ Used for like counts, follower counts, stat displays. Solves PingFang's non-tabu
 
 `*-emphasized` variants (e.g. `--c1-emphasized`) bump the same size to weight 500.
 
-### Principles
+### 原则
 
 - **Compact heading scale.** Max display is 32/600 — there is no 48px / 64px hero type. Density wins over visual jumps.
 - **Three weights only.** 400 (Regular), 500 (Medium), 600 (Semibold). Weight 700 is reserved exclusively for `--number-emphasized-font-weight`. No thin / light.
@@ -128,9 +128,9 @@ Used for like counts, follower counts, stat displays. Solves PingFang's non-tabu
 - **Soft black, not pure black.** Title text is `rgba(0,0,0,0.80)`. Pure `#000` is never used for body or title text.
 - **Dedicated digit face.** Counts, stats, and follow-numbers always use `RED Number` for tabular alignment.
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
 **Primary**
 - Background: `#FF2442` (or `#FF2E4D` when matching the live `.reds-button-new.primary` class)
@@ -222,7 +222,7 @@ Feed-card variant: `6px 14px` padding, 12px text. Profile-page variant: `8px 20p
 - Centered, white background, 12px radius
 - Light shadow (`0 8px 32px rgba(0,0,0,0.12)`) — the only place shadow is conspicuous
 
-## 5. Layout Principles
+## 5. 布局原则
 
 ### Spacing System (8pt grid)
 
@@ -270,7 +270,7 @@ Standard left-nav console: 200–240px sidebar + ~1000–1100px content area. To
 - Section padding sits *between* feeds, not within them.
 - Cards do not have internal vertical padding above the image — image is flush to the top of the card.
 
-## 6. Depth & Elevation
+## 6. 层深与阴影
 
 Three levels, used sparingly.
 
@@ -288,9 +288,9 @@ Three levels, used sparingly.
 
 No neumorphism. No glassmorphism. No coloured shadows. Bottom sheet has no shadow at all — the scrim provides the separation. In dark mode, drop the PC card-hover effect (`translateY(-2px)` + alpha-on-black shadow) entirely; both motion and shadow read as no-ops against the dark canvas.
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 
-### Do
+### 推荐
 - ✅ Treat brand red as singular. One CTA accent per screen, no second saturated color competing.
 - ✅ Use translucent fill overlays (`rgba(48,48,52,0.05/.10/.20)`) for hover / disabled / pressed — not separate grey shades.
 - ✅ Round generously: 12–16px on cards, full pill on buttons.
@@ -301,7 +301,7 @@ No neumorphism. No glassmorphism. No coloured shadows. Bottom sheet has no shado
 - ✅ Tabs are text + 2px underline. Always.
 - ✅ Speak in second person, conversational. "what you just scrolled past" is more RED than "Discover trending content".
 
-### Don't
+### 禁忌
 - ❌ Don't use purple, deep blue, or black-gold as a primary color. Tech / fintech / luxury vocabulary is the wrong genre — RED is lifestyle.
 - ❌ Don't gradient the brand red itself. The only gradients are functional (search-hotspot badge, video mask).
 - ❌ Don't fill an entire hero with a brand-color background. Brand red is accent-only; a red-bordered hero reads as a sale poster, not a feed.
@@ -321,9 +321,9 @@ No neumorphism. No glassmorphism. No coloured shadows. Bottom sheet has no shado
 - ❌ Don't use orange / yellow as a Toast emphasis color. Emphasis in this system is brand red, period.
 - ❌ Don't hard-pin every card to the same height. Variable card height across columns is the realism — don't "fix" it.
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
+### 断点
 
 | Name | Width | Discover columns | Notes |
 |---|---|---|---|
@@ -332,14 +332,14 @@ No neumorphism. No glassmorphism. No coloured shadows. Bottom sheet has no shado
 | Small Desktop | 690–960px | 4 | Standard reading width |
 | Desktop | ≥ 960px | 5 | Full waterfall, sidebar visible |
 
-### Collapsing Strategy
+### 折叠策略
 
 - **Discover**: 5 → 4 → 3 → 2 columns; column gap stays at 10px throughout.
 - **Note detail**: two-pane PC layout collapses to single-column stack on mobile (image carousel on top, body + comments below).
 - **Profile**: stat row stays horizontal at 3 columns down to mobile; tab strip remains horizontal with overflow scroll.
 - **Console (creator / ad)**: sidebar collapses to a hamburger drawer below ~768px; stat-card row wraps to 2-up.
 
-### Touch Targets
+### 触摸目标
 
 - Minimum tap target 44×44px on mobile. Icon buttons render at 24px icon inside a 44×44 hit zone.
 - Pill buttons keep 36–40px height on mobile to honor this without growing radius.
@@ -348,7 +348,7 @@ No neumorphism. No glassmorphism. No coloured shadows. Bottom sheet has no shado
 
 - Body sizes do not shrink below 14px. Small captions stay at 12px to preserve density without becoming illegible on Chinese characters.
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
 ### Brand Red Disambiguation
 
@@ -360,7 +360,7 @@ Two reds ship in the live system. They split by **surface**, not by mood — the
 
 The Component One-Liners block below is intentional: the primary CTA uses `#FF2442` (token red, default) while the tab indicator uses `#FF2E4D` (component red, pixel-replica). They are different surfaces, so they get different reds.
 
-### Quick Color Reference
+### 色彩速查表
 
 - Brand: `#FF2442` (token, default) / `#FF2E4D` (component layer, pixel-replica only — see disambiguation above)
 - Star (collect): `#FDBC5F`
@@ -390,7 +390,7 @@ The Component One-Liners block below is intentional: the primary CTA uses `#FF24
 - Search input: `background: #F5F5F5; border-radius: 9999px; padding: 8px 16px; height: 36–40px; border: none;`
 - Bottom sheet: `border-radius: 16px 16px 0 0; background: #FFF;` 4×36px drag handle `#E0E0E0` centered
 
-### Iteration Guide
+### 迭代指南
 
 1. **Start from the picture, not the chrome.** Drop a generous photographic hero or pin grid first; build UI around it as quietly as possible.
 2. **One accent.** If you have used `#FF2442` once on a screen, you have used it enough.

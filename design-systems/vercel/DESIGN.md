@@ -1,9 +1,9 @@
-# Design System Inspired by Vercel
+# Vercel
 
-> Category: Developer Tools
+> Category: 开发者工具
 > Frontend deployment. Black and white precision, Geist font.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 Vercel's website is the visual thesis of developer infrastructure made invisible — a design system so restrained it borders on philosophical. The page is overwhelmingly white (`#ffffff`) with near-black (`#171717`) text, creating a gallery-like emptiness where every element earns its pixel. This isn't minimalism as decoration; it's minimalism as engineering principle. The Geist design system treats the interface like a compiler treats code — every unnecessary token is stripped away until only structure remains.
 
@@ -11,7 +11,7 @@ The custom Geist font family is the crown jewel. Geist Sans uses aggressive nega
 
 What distinguishes Vercel from other monochrome design systems is its shadow-as-border philosophy. Instead of traditional CSS borders, Vercel uses `box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.08)` — a zero-offset, zero-blur, 1px-spread shadow that creates a border-like line without the box model implications. This technique allows borders to exist in the shadow layer, enabling smoother transitions, rounded corners without clipping, and a subtler visual weight than traditional borders. The entire depth system is built on layered, multi-value shadow stacks where each layer serves a specific purpose: one for the border, one for soft elevation, one for ambient depth.
 
-**Key Characteristics:**
+**核心特征：**
 - Geist Sans with extreme negative letter-spacing (-2.4px to -2.88px at display) — text as compressed infrastructure
 - Geist Mono for code and technical labels with OpenType `"liga"` globally
 - Shadow-as-border technique: `box-shadow 0px 0px 0px 1px` replaces traditional borders throughout
@@ -21,9 +21,9 @@ What distinguishes Vercel from other monochrome design systems is its shadow-as-
 - Focus ring system using `hsla(212, 100%, 48%, 1)` — a saturated blue for accessibility
 - Pill badges (9999px) with tinted backgrounds for status indicators
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
-### Primary
+### 主色
 - **Vercel Black** (`#171717`): Primary text, headings, dark surface backgrounds. Not pure black — the slight warmth prevents harshness.
 - **Pure White** (`#ffffff`): Page background, card surfaces, button text on dark.
 - **True Black** (`#000000`): Secondary use, `--geist-console-text-color-default`, used in specific console/code contexts.
@@ -63,14 +63,14 @@ What distinguishes Vercel from other monochrome design systems is its shadow-as-
 - **Card Stack** (`rgba(0,0,0,0.08) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 2px 2px, rgba(0,0,0,0.04) 0px 8px 8px -8px, #fafafa 0px 0px 0px 1px`): Full multi-layer card shadow.
 - **Ring Border** (`rgb(235, 235, 235) 0px 0px 0px 1px`): Light gray ring-border for tabs and images.
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Family
+### 字体家族
 - **Primary**: `Geist`, with fallbacks: `Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol`
 - **Monospace**: `Geist Mono`, with fallbacks: `ui-monospace, SFMono-Regular, Roboto Mono, Menlo, Monaco, Liberation Mono, DejaVu Sans Mono, Courier New`
 - **OpenType Features**: `"liga"` enabled globally on all Geist text; `"tnum"` for tabular numbers on specific captions.
 
-### Hierarchy
+### 字体层级
 
 | Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
 |------|------|------|--------|-------------|----------------|-------|
@@ -93,15 +93,15 @@ What distinguishes Vercel from other monochrome design systems is its shadow-as-
 | Mono Small | Geist Mono | 12px (0.75rem) | 500 | 1.00 (tight) | normal | `text-transform: uppercase`, technical labels |
 | Micro Badge | Geist | 7px (0.44rem) | 700 | 1.00 (tight) | normal | `text-transform: uppercase`, tiny badges |
 
-### Principles
+### 原则
 - **Compression as identity**: Geist Sans at display sizes uses -2.4px to -2.88px letter-spacing — the most aggressive negative tracking of any major design system. This creates text that feels _minified_, like code optimized for production. The tracking progressively relaxes as size decreases: -1.28px at 32px, -0.96px at 24px, -0.32px at 16px, and normal at 14px.
 - **Ligatures everywhere**: Every Geist text element enables OpenType `"liga"`. Ligatures aren't decorative — they're structural, creating tighter, more efficient glyph combinations.
 - **Three weights, strict roles**: 400 (body/reading), 500 (UI/interactive), 600 (headings/emphasis). No bold (700) except for tiny micro-badges. This narrow weight range creates hierarchy through size and tracking, not weight.
 - **Mono for identity**: Geist Mono in uppercase with `"tnum"` or `"liga"` serves as the "developer console" voice — compact technical labels that connect the marketing site to the product.
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
 **Primary White (Shadow-bordered)**
 - Background: `#ffffff`
@@ -133,7 +133,7 @@ What distinguishes Vercel from other monochrome design systems is its shadow-as-
 - Radius: 64px–100px
 - Use: Tab navigation, section selectors
 
-### Cards & Containers
+### 卡片与容器
 - Background: `#ffffff`
 - Border: via shadow — `rgba(0, 0, 0, 0.08) 0px 0px 0px 1px`
 - Radius: 8px (standard), 12px (featured/image cards)
@@ -141,13 +141,13 @@ What distinguishes Vercel from other monochrome design systems is its shadow-as-
 - Image cards: `1px solid #ebebeb` with 12px top radius
 - Hover: subtle shadow intensification
 
-### Inputs & Forms
+### 输入框与表单
 - Radio: standard styling with focus `var(--ds-gray-200)` background
 - Focus shadow: `1px 0 0 0 var(--ds-gray-alpha-600)`
 - Focus outline: `2px solid var(--ds-focus-color)` — consistent blue focus ring
 - Border: via shadow technique, not traditional border
 
-### Navigation
+### 导航
 - Clean horizontal nav on white, sticky
 - Vercel logotype left-aligned, 262x52px
 - Links: Geist 14px weight 500, `#171717` text
@@ -156,13 +156,13 @@ What distinguishes Vercel from other monochrome design systems is its shadow-as-
 - Mobile: hamburger menu collapse
 - Product dropdowns with multi-level menus
 
-### Image Treatment
+### 图片处理
 - Product screenshots with `1px solid #ebebeb` border
 - Top-rounded images: `12px 12px 0px 0px` radius
 - Dashboard/code preview screenshots dominate feature sections
 - Soft gradient backgrounds behind hero images (pastel multi-color)
 
-### Distinctive Components
+### 特色组件
 
 **Workflow Pipeline**
 - Three-step horizontal pipeline: Develop → Preview → Ship
@@ -181,26 +181,26 @@ What distinguishes Vercel from other monochrome design systems is its shadow-as-
 - Description below in gray body text
 - Shadow-bordered card container
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
+### 间距体系
 - Base unit: 8px
 - Scale: 1px, 2px, 3px, 4px, 5px, 6px, 8px, 10px, 12px, 14px, 16px, 32px, 36px, 40px
 - Notable gap: jumps from 16px to 32px — no 20px or 24px in primary scale
 
-### Grid & Container
+### 栅格与容器
 - Max content width: approximately 1200px
 - Hero: centered single-column with generous top padding
 - Feature sections: 2–3 column grids for cards
 - Full-width dividers using `border-bottom: 1px solid #171717`
 - Code/dashboard screenshots as full-width or contained with border
 
-### Whitespace Philosophy
+### 留白哲学
 - **Gallery emptiness**: Massive vertical padding between sections (80px–120px+). The white space IS the design — it communicates that Vercel has nothing to prove and nothing to hide.
 - **Compressed text, expanded space**: The aggressive negative letter-spacing on headlines is counterbalanced by generous surrounding whitespace. The text is dense; the space around it is vast.
 - **Section rhythm**: White sections alternate with white sections — there's no color variation between sections. Separation comes from borders (shadow-borders) and spacing alone.
 
-### Border Radius Scale
+### 圆角尺度
 - Micro (2px): Inline code snippets, small spans
 - Subtle (4px): Small containers
 - Standard (6px): Buttons, links, functional elements
@@ -211,7 +211,7 @@ What distinguishes Vercel from other monochrome design systems is its shadow-as-
 - Full Pill (9999px): Badges, status pills, tags
 - Circle (50%): Menu toggle, avatar containers
 
-## 6. Depth & Elevation
+## 6. 层深与阴影
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
@@ -224,14 +224,14 @@ What distinguishes Vercel from other monochrome design systems is its shadow-as-
 
 **Shadow Philosophy**: Vercel has arguably the most sophisticated shadow system in modern web design. Rather than using shadows for elevation in the traditional Material Design sense, Vercel uses multi-value shadow stacks where each layer has a distinct architectural purpose: one creates the "border" (0px spread, 1px), another adds ambient softness (2px blur), another handles depth at distance (8px blur with negative spread), and an inner ring (`#fafafa`) creates the subtle highlight that makes the card "glow" from within. This layered approach means cards feel built, not floating.
 
-### Decorative Depth
+### 装饰性层深
 - Hero gradient: soft, pastel multi-color gradient wash behind hero content (barely visible, atmospheric)
 - Section borders: `1px solid #171717` (full dark line) between major sections
 - No background color variation — depth comes entirely from shadow layering and border contrast
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 
-### Do
+### 推荐
 - Use Geist Sans with aggressive negative letter-spacing at display sizes (-2.4px to -2.88px at 48px)
 - Use shadow-as-border (`0px 0px 0px 1px rgba(0,0,0,0.08)`) instead of traditional CSS borders
 - Enable `"liga"` on all Geist text — ligatures are structural, not optional
@@ -241,7 +241,7 @@ What distinguishes Vercel from other monochrome design systems is its shadow-as-
 - Keep the color palette achromatic — grays from `#171717` to `#ffffff` are the system
 - Use `#171717` instead of `#000000` for primary text — the micro-warmth matters
 
-### Don't
+### 禁忌
 - Don't use positive letter-spacing on Geist Sans — it's always negative or zero
 - Don't use weight 700 (bold) on body text — 600 is the maximum, used only for headings
 - Don't use traditional CSS `border` on cards — use the shadow-border technique
@@ -252,9 +252,9 @@ What distinguishes Vercel from other monochrome design systems is its shadow-as-
 - Don't use pill radius (9999px) on primary action buttons — pills are for badges/tags only
 - Don't skip the inner `#fafafa` ring in card shadows — it's the glow that makes the system work
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
+### 断点
 | Name | Width | Key Changes |
 |------|-------|-------------|
 | Mobile Small | <400px | Tight single column, minimal padding |
@@ -265,13 +265,13 @@ What distinguishes Vercel from other monochrome design systems is its shadow-as-
 | Desktop | 1200–1400px | Full layout, maximum content width |
 | Large Desktop | >1400px | Centered, generous margins |
 
-### Touch Targets
+### 触摸目标
 - Buttons use comfortable padding (8px–16px vertical)
 - Navigation links at 14px with adequate spacing
 - Pill badges have 10px horizontal padding for tap targets
 - Mobile menu toggle uses 50% radius circular button
 
-### Collapsing Strategy
+### 折叠策略
 - Hero: display 48px → scales down, maintains negative tracking proportionally
 - Navigation: horizontal links + CTAs → hamburger menu
 - Feature cards: 3-column → 2-column → single column stacked
@@ -280,15 +280,15 @@ What distinguishes Vercel from other monochrome design systems is its shadow-as-
 - Footer: multi-column → stacked single column
 - Section spacing: 80px+ → 48px on mobile
 
-### Image Behavior
+### 图片行为
 - Dashboard screenshots maintain border treatment at all sizes
 - Hero gradient softens/simplifies on mobile
 - Product screenshots use responsive images with consistent border radius
 - Full-width sections maintain edge-to-edge treatment
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
+### 色彩速查表
 - Primary CTA: Vercel Black (`#171717`)
 - Background: Pure White (`#ffffff`)
 - Heading text: Vercel Black (`#171717`)
@@ -297,14 +297,14 @@ What distinguishes Vercel from other monochrome design systems is its shadow-as-
 - Link: Link Blue (`#0072f5`)
 - Focus ring: Focus Blue (`hsla(212, 100%, 48%, 1)`)
 
-### Example Component Prompts
+### 组件提示示例
 - "Create a hero section on white background. Headline at 48px Geist weight 600, line-height 1.00, letter-spacing -2.4px, color #171717. Subtitle at 20px Geist weight 400, line-height 1.80, color #4d4d4d. Dark CTA button (#171717, 6px radius, 8px 16px padding) and ghost button (white, shadow-border rgba(0,0,0,0.08) 0px 0px 0px 1px, 6px radius)."
 - "Design a card: white background, no CSS border. Use shadow stack: rgba(0,0,0,0.08) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 2px 2px, #fafafa 0px 0px 0px 1px. Radius 8px. Title at 24px Geist weight 600, letter-spacing -0.96px. Body at 16px weight 400, #4d4d4d."
 - "Build a pill badge: #ebf5ff background, #0068d6 text, 9999px radius, 0px 10px padding, 12px Geist weight 500."
 - "Create navigation: white sticky header. Geist 14px weight 500 for links, #171717 text. Dark pill CTA 'Start Deploying' right-aligned. Shadow-border on bottom: rgba(0,0,0,0.08) 0px 0px 0px 1px."
 - "Design a workflow section showing three steps: Develop (text color #0a72ef), Preview (#de1d8d), Ship (#ff5b4f). Each step: 14px Geist Mono uppercase label + 24px Geist weight 600 title + 16px weight 400 description in #4d4d4d."
 
-### Iteration Guide
+### 迭代指南
 1. Always use shadow-as-border instead of CSS border — `0px 0px 0px 1px rgba(0,0,0,0.08)` is the foundation
 2. Letter-spacing scales with font size: -2.4px at 48px, -1.28px at 32px, -0.96px at 24px, normal at 14px
 3. Three weights only: 400 (read), 500 (interact), 600 (announce)

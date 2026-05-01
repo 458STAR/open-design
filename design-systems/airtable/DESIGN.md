@@ -1,13 +1,13 @@
-# Design System Inspired by Airtable
+# Airtable
 
-> Category: Design & Creative
+> Category: 设计与创意
 > Spreadsheet-database hybrid. Colorful, friendly, structured data aesthetic.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 Airtable's website is a clean, enterprise-friendly platform that communicates "sophisticated simplicity" through a white canvas with deep navy text (`#181d26`) and Airtable Blue (`#1b61c9`) as the primary interactive accent. The Haas font family (display + text variants) creates a Swiss-precision typography system with positive letter-spacing throughout.
 
-**Key Characteristics:**
+**核心特征：**
 - White canvas with deep navy text (`#181d26`)
 - Airtable Blue (`#1b61c9`) as primary CTA and link color
 - Haas + Haas Groot Disp dual font system
@@ -16,9 +16,9 @@ Airtable's website is a clean, enterprise-friendly platform that communicates "s
 - Multi-layer blue-tinted shadow: `rgba(45,127,249,0.28) 0px 1px 3px`
 - Semantic theme tokens: `--theme_*` CSS variable naming
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
-### Primary
+### 主色
 - **Deep Navy** (`#181d26`): Primary text
 - **Airtable Blue** (`#1b61c9`): CTA buttons, links
 - **White** (`#ffffff`): Primary surface
@@ -32,20 +32,20 @@ Airtable's website is a clean, enterprise-friendly platform that communicates "s
 ### Neutral
 - **Dark Gray** (`#333333`): Secondary text
 - **Mid Blue** (`#254fad`): Link/accent blue variant
-- **Border** (`#e0e2e6`): Card borders
+- **边框色** (`#e0e2e6`): Card borders
 - **Light Surface** (`#f8fafc`): Subtle surface
 
 ### Shadows
 - **Blue-tinted** (`rgba(0,0,0,0.32) 0px 0px 1px, rgba(0,0,0,0.08) 0px 0px 2px, rgba(45,127,249,0.28) 0px 1px 3px, rgba(0,0,0,0.06) 0px 0px 0px 0.5px inset`)
 - **Soft** (`rgba(15,48,106,0.05) 0px 0px 20px`)
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Families
+### 字体家族
 - **Primary**: `Haas`, fallbacks: `-apple-system, system-ui, Segoe UI, Roboto`
 - **Display**: `Haas Groot Disp`, fallback: `Haas`
 
-### Hierarchy
+### 字体层级
 
 | Role | Font | Size | Weight | Line Height | Letter Spacing |
 |------|------|------|--------|-------------|----------------|
@@ -60,9 +60,9 @@ Airtable's website is a clean, enterprise-friendly platform that communicates "s
 | Button | Haas | 16px | 500 | 1.25–1.30 | 0.08px |
 | Caption | Haas | 14px | 400–500 | 1.25–1.35 | 0.07–0.28px |
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 - **Primary Blue**: `#1b61c9`, white text, 16px 24px padding, 12px radius
 - **White**: white bg, `#181d26` text, 12px radius, 1px border white
 - **Cookie Consent**: `#1b61c9` bg, 2px radius (sharp)
@@ -70,22 +70,22 @@ Airtable's website is a clean, enterprise-friendly platform that communicates "s
 ### Cards: `1px solid #e0e2e6`, 16px–24px radius
 ### Inputs: Standard Haas styling
 
-## 5. Layout
+## 5. 布局原则
 - Spacing: 1–48px (8px base)
 - Radius: 2px (small), 12px (buttons), 16px (cards), 24px (sections), 32px (large), 50% (circles)
 
-## 6. Depth
+## 6. 层深与阴影
 - Blue-tinted multi-layer shadow system
 - Soft ambient: `rgba(15,48,106,0.05) 0px 0px 20px`
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 ### Do: Use Airtable Blue for CTAs, Haas with positive tracking, 12px radius buttons
 ### Don't: Skip positive letter-spacing, use heavy shadows
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 Breakpoints: 425–1664px (23 breakpoints)
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 - Text: Deep Navy (`#181d26`)
 - CTA: Airtable Blue (`#1b61c9`)
 - Background: White (`#ffffff`)

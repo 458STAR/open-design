@@ -1,9 +1,9 @@
-# Design System Inspired by Runway
+# Runway
 
-> Category: AI & LLM
+> Category: AI 与大模型
 > AI video generation. Cinematic dark UI, media-rich layout.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 Runway's interface is a cinematic reel brought to life as a website — a dark, editorial, film-production-grade design where full-bleed photography and video ARE the primary UI elements. This is not a typical tech product page; it's a visual manifesto for AI-powered creativity. Every section feels like a frame from a film: dramatic lighting, sweeping landscapes, and intimate human moments captured in high-quality imagery that dominates the viewport.
 
@@ -11,7 +11,7 @@ The design language is built on a single typeface — abcNormal — a clean, geo
 
 What makes Runway distinctive is its complete commitment to visual content as design. Rather than illustrating features with icons or diagrams, Runway shows actual AI-generated and AI-enhanced imagery — cars driving through cinematic landscapes, artistic portraits, architectural renders. The interface itself retreats into near-invisibility: minimal borders, zero shadows, subtle cool-gray text, and a dark palette that puts maximum focus on the photography.
 
-**Key Characteristics:**
+**核心特征：**
 - Cinematic full-bleed photography and video as primary UI elements
 - Single typeface system: abcNormal for everything from display to micro labels
 - Dark-dominant palette with cool-toned neutrals (#767d88, #7d848e)
@@ -21,20 +21,20 @@ What makes Runway distinctive is its complete commitment to visual content as de
 - Weight 450 (unusual intermediate) for small uppercase text — precision craft
 - Editorial magazine layout with mixed-size image grids
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
-### Primary
+### 主色
 - **Runway Black** (`#000000`): The primary page background and maximum-emphasis text.
 - **Deep Black** (`#030303`): A near-imperceptible variant for layered dark surfaces.
 - **Dark Surface** (`#1a1a1a`): Card backgrounds and elevated dark containers.
 - **Pure White** (`#ffffff`): Primary text on dark surfaces and light-section backgrounds.
 
-### Surface & Background
+### 表面与背景色
 - **Near White** (`#fefefe`): The lightest surface — barely distinguishable from pure white.
 - **Cool Cloud** (`#e9ecf2`): Light section backgrounds with a cool blue-gray tint.
 - **Border Dark** (`#27272a`): The single dark-mode border color — barely visible containment.
 
-### Neutrals & Text
+### 中性色与文字色
 - **Charcoal** (`#404040`): Primary body text on light surfaces and secondary text.
 - **Near Charcoal** (`#3f3f3f`): Slightly lighter variant for dark-section secondary text.
 - **Cool Slate** (`#767d88`): Secondary body text — a distinctly blue-gray cool neutral.
@@ -46,17 +46,17 @@ What makes Runway distinctive is its complete commitment to visual content as de
 - **Dark Link** (`#0c0c0c`): Darkest link text — nearly black.
 - **Footer Gray** (`#999999`): Footer links and deeply muted content.
 
-### Gradient System
+### 渐变体系
 - **None in the interface.** Visual richness comes entirely from photographic content — AI-generated and enhanced imagery provides all the color and gradient the design needs. The interface itself is intentionally colorless.
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Family
+### 字体家族
 - **Universal**: `abcNormal`, with fallback: `abcNormal Fallback`
 
 *Note: abcNormal is a custom geometric sans-serif. For external implementations, Inter or DM Sans serve as close substitutes.*
 
-### Hierarchy
+### 字体层级
 
 | Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
 |------|------|------|--------|-------------|----------------|-------|
@@ -70,44 +70,44 @@ What makes Runway distinctive is its complete commitment to visual content as de
 | Small | abcNormal | 13px (0.81rem) | 400 | 1.30 (tight) | -0.16px to -0.26px | Compact descriptions |
 | Micro / Tag | abcNormal | 11px (0.69rem) | 450 | 1.30 (tight) | normal | Uppercase tags, tiny labels |
 
-### Principles
+### 原则
 - **One typeface, complete expression**: abcNormal handles every text role. The design achieves variety through size, weight, case, and letter-spacing rather than font-family switching.
 - **Tight everywhere**: Nearly every size uses line-height 1.0–1.30 — even body text is relatively compressed. This creates a dense, editorial feel.
 - **Weight 450 — the precision detail**: Some small uppercase labels use weight 450, an uncommon intermediate between regular (400) and medium (500). This micro-craft signals typographic sophistication.
 - **Negative tracking as default**: Even body text uses -0.16px to -0.26px letter-spacing, keeping everything slightly tighter than default.
 - **Uppercase as structure**: Labels at 14px and 11px use `text-transform: uppercase` with positive letter-spacing (0.35px) to create navigational signposts that contrast with the tight lowercase text.
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 - Text: weight 600 at 14px abcNormal
 - Background: likely transparent or dark, with minimal border
 - Radius: small (4px) for button-like links
 - The button design is extremely restrained — no heavy fills or borders detected
 - Interactive elements blend into the editorial flow
 
-### Cards & Containers
+### 卡片与容器
 - Background: transparent or Dark Surface (`#1a1a1a`)
 - Border: `1px solid #27272a` (dark mode) — barely visible containment
 - Radius: small (4–8px) for functional elements; 16px for alert-style containers
 - Shadow: zero — no shadows on any element
 - Cards are primarily photographic — the image IS the card
 
-### Navigation
+### 导航
 - Minimal horizontal nav — transparent over hero content
 - Logo: Runway wordmark in white/black
 - Links: abcNormal at 16px, weight 400–600
 - Hover: text shifts to white or higher opacity
 - Extremely subtle — designed to not compete with visual content
 
-### Image Treatment
+### 图片处理
 - Full-bleed cinematic photography and video dominate
 - AI-generated content shown at large scale as primary visual elements
 - Mixed-size image grids creating editorial magazine layouts
 - Dark overlays on hero images for text readability
 - Product screenshots with subtle rounded corners (8px)
 
-### Distinctive Components
+### 特色组件
 
 **Cinematic Hero**
 - Full-viewport image or video with text overlay
@@ -129,33 +129,33 @@ What makes Runway distinctive is its complete commitment to visual content as de
 - On a dark background with white text
 - The emotional close — artistic and philosophical
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
+### 间距体系
 - Base unit: 8px
 - Scale: 4px, 6px, 8px, 12px, 16px, 20px, 24px, 28px, 32px, 48px, 64px, 78px
 - Section vertical spacing: generous (48–78px)
 - Component gaps: 16–24px
 
-### Grid & Container
+### 栅格与容器
 - Max container width: up to 1600px (cinema-wide)
 - Hero: full-viewport, edge-to-edge
 - Content sections: centered with generous margins
 - Image grids: asymmetric, magazine-style mixed sizes
 - Footer: full-width dark section
 
-### Whitespace Philosophy
+### 留白哲学
 - **Cinema-grade breathing**: Large vertical gaps between sections create a scrolling experience that feels like watching scenes change.
 - **Images replace whitespace**: Where other sites use empty space, Runway fills it with photography. The visual content IS the breathing room.
 - **Editorial grid asymmetry**: The image grid uses intentionally varied sizes — large hero images paired with smaller supporting images, creating visual rhythm.
 
-### Border Radius Scale
+### 圆角尺度
 - Sharp (4px): Buttons, small interactive elements
 - Subtle (6px): Links, small containers
 - Comfortable (8px): Standard containers, image cards
 - Generous (16px): Alert-style containers, featured elements
 
-## 6. Depth & Elevation
+## 6. 层深与阴影
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
@@ -166,9 +166,9 @@ What makes Runway distinctive is its complete commitment to visual content as de
 
 **Shadow Philosophy**: Runway uses **zero shadows**. This is a film-production design decision — in cinema, depth comes from lighting, focus, and composition, not drop shadows. The interface mirrors this philosophy: depth is communicated through dark/light section alternation, photographic depth-of-field, and overlay transparency — never through CSS box-shadow.
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 
-### Do
+### 推荐
 - Use full-bleed cinematic photography as the primary visual element
 - Use abcNormal for all text — maintain the single-typeface commitment
 - Keep display line-heights at 1.0 with negative letter-spacing for film-title density
@@ -179,7 +179,7 @@ What makes Runway distinctive is its complete commitment to visual content as de
 - Let visual content (photos, videos) dominate — the UI should be invisible
 - Use weight 450 for micro labels — the precision matters
 
-### Don't
+### 禁忌
 - Don't add decorative colors to the interface — the only color comes from photography
 - Don't use heavy borders or shadows — the interface must be nearly invisible
 - Don't use pill-shaped radius — Runway's geometry is subtly rounded, not circular
@@ -190,9 +190,9 @@ What makes Runway distinctive is its complete commitment to visual content as de
 - Don't use body line-height above 1.50 — the tight, editorial feel is core
 - Don't reduce image quality — cinematic photography IS the design
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
+### 断点
 | Name | Width | Key Changes |
 |------|-------|-------------|
 | Mobile | <640px | Single column, stacked images, reduced hero text |
@@ -201,27 +201,27 @@ What makes Runway distinctive is its complete commitment to visual content as de
 | Desktop | 1024–1280px | Full layout, expanded hero |
 | Large Desktop | 1280–1600px | Maximum cinema-width container |
 
-### Touch Targets
+### 触摸目标
 - Navigation links at comfortable 16px
 - Article cards serve as large touch targets
 - Buttons at 14px weight 600 with adequate padding
 
-### Collapsing Strategy
+### 折叠策略
 - **Navigation**: Collapses to hamburger on mobile
 - **Hero**: Full-bleed maintained, text scales down
 - **Image grids**: Multi-column → 2-column → single column
 - **Research articles**: Feature-size cards → stacked full-width
 - **Trust logos**: Horizontal scroll or reduced grid
 
-### Image Behavior
+### 图片行为
 - Cinematic images scale proportionally
 - Full-bleed hero maintained across all sizes
 - Image grids reflow to fewer columns
 - Video content maintains aspect ratio
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
+### 色彩速查表
 - Background Dark: "Runway Black (#000000)"
 - Background Light: "Pure White (#ffffff)"
 - Primary Text Dark: "Charcoal (#404040)"
@@ -231,14 +231,14 @@ What makes Runway distinctive is its complete commitment to visual content as de
 - Dark Border: "Border Dark (#27272a)"
 - Card Surface: "Dark Surface (#1a1a1a)"
 
-### Example Component Prompts
+### 组件提示示例
 - "Create a cinematic hero section: full-bleed dark background with a cinematic image overlay. Headline at 48px abcNormal weight 400, line-height 1.0, letter-spacing -1.2px in white. Minimal text below in Cool Slate (#767d88) at 16px."
 - "Design a research article grid: one large card (50% width) with a cinematic image and 24px title, next to two smaller cards stacked. All images with 8px border-radius. Titles in white (dark bg) or Charcoal (#404040, light bg)."
 - "Build a section label: 14px abcNormal weight 500, uppercase, letter-spacing 0.35px in Cool Slate (#767d88). No border, no background."
 - "Create a trust bar: company logos in monochrome, horizontal layout with generous spacing. On dark background with white/gray logo treatments."
 - "Design a mission statement section: Runway Black background, white text at 36px abcNormal, line-height 1.0, letter-spacing -0.9px. Centered, with generous vertical padding."
 
-### Iteration Guide
+### 迭代指南
 1. Visual content first — always include cinematic photography
 2. Use abcNormal for everything — specify size and weight, never change the font
 3. Keep the interface invisible — no heavy borders, no shadows, no bright colors

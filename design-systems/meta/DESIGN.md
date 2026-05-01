@@ -1,9 +1,9 @@
-# Design System Inspired by Meta (Store)
+# Meta (Store)
 
-> Category: E-Commerce & Retail
+> Category: 电商与零售
 > Tech retail store. Photography-first, binary light/dark surfaces, Meta Blue CTAs.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 The Meta Store is a product-forward retail experience built to sell hardware — Quest VR headsets, Ray-Ban Meta smart glasses, and accessories. The design walks a tightrope between consumer electronics showroom and lifestyle editorial, deploying cinematic product photography against expansive white canvas to create a gallery-like sense of aspiration. Every design decision serves the merchandise: generous negative space frames hero product shots like museum pieces, while alternating light and dark surface sections create a visual rhythm that mimics the experience of walking through a physical retail space.
 
@@ -11,7 +11,7 @@ The "Dolly" design system (Meta's internal name for the store layer) sits atop t
 
 The store's visual hierarchy is ruthlessly simple. Photography does the heavy lifting, supported by short, punchy headlines in Optimistic Medium and body text that stays brief and scannable. Calls to action are pill-shaped, unmistakable, and always Meta Blue. There is no visual noise, no decoration for decoration's sake — every element either sells or navigates.
 
-**Key Characteristics:**
+**核心特征：**
 - Photography-first retail design where products are the visual heroes, not UI
 - Binary surface strategy: pure white for information, deep dark for immersive product moments
 - Pill-shaped CTAs in saturated blue create unmistakable action points
@@ -20,9 +20,9 @@ The store's visual hierarchy is ruthlessly simple. Photography does the heavy li
 - 8px spacing grid with disciplined vertical rhythm
 - Alternating light/dark sections create a "walkthrough" retail cadence
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
-### Primary
+### 主色
 
 - **Meta Blue** (`#0064E0`): Primary CTA background, interactive links, action-driving elements throughout the store
 - **Meta Blue Hover** (`#0143B5`): Darkened blue for hover states on primary buttons
@@ -30,7 +30,7 @@ The store's visual hierarchy is ruthlessly simple. Photography does the heavy li
 - **Meta Blue Light** (`#47A5FA`): Lighter blue variant used on dark backgrounds for CTAs
 - **Facebook Blue** (`#1877F2`): Legacy accent inherited from FDS, used for deemphasized button text and badges
 
-### Secondary & Accent
+### 辅助色与强调色
 
 - **Ray-Ban Red** (`#D6311F`): Product-specific accent for Ray-Ban Meta smart glasses sections
 - **Oculus Purple** (`#A121CE`): Quest/Oculus product accent for VR content
@@ -39,7 +39,7 @@ The store's visual hierarchy is ruthlessly simple. Photography does the heavy li
 - **Portal Hero Blue** (`#C8E4E8`): Soft teal-blue for Portal hero backgrounds
 - **Portal Light Blue** (`#ADD4E0`): Secondary Portal surface tint
 
-### Surface & Background
+### 表面与背景色
 
 - **White** (`#FFFFFF`): Primary page canvas, nav bar background, card surfaces
 - **Soft Gray** (`#F1F4F7`): Secondary background for content sections (--dolly-bg-grey)
@@ -52,7 +52,7 @@ The store's visual hierarchy is ruthlessly simple. Photography does the heavy li
 - **Oculus Dark** (`#000000`): Pure black for maximum contrast product displays
 - **Overlay** (`rgba(0, 0, 0, 0.6)`): Modal/lightbox backdrop
 
-### Neutrals & Text
+### 中性色与文字色
 
 - **Primary Text** (`#050505`): Main body and heading text on light surfaces
 - **Dark Charcoal** (`#1C2B33`): Dolly system primary text, slightly warmer than pure black (--dolly-text-primary)
@@ -68,7 +68,7 @@ The store's visual hierarchy is ruthlessly simple. Photography does the heavy li
 - **CTA Gray Border** (`#CBD2D9`): Outline button borders
 - **Dark Gray Border** (`#909396`): Stronger outline for emphasis
 
-### Semantic & Accent
+### 语义色与强调色
 
 - **Success Green** (`#31A24C`): Badge success background, positive indicators
 - **Store Success** (`#007D1E`): Darker success green for Dolly store confirmations
@@ -90,15 +90,15 @@ The store's visual hierarchy is ruthlessly simple. Photography does the heavy li
 - **Tomato** (`#FB724B`): Orange accent
 - **Pink** (`#FF66BF`): Pink accent
 
-### Gradient System
+### 渐变体系
 
 - **Dark Overlay Gradient**: `linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.6))` — applied over dark product photography for text legibility
 - **Blue Infinity Gradient**: The Meta symbol uses a blue-to-teal gradient on brand materials, though the store uses flat blue
 - **Shadow Alpha Scale**: 0.05, 0.10, 0.15, 0.20, 0.30, 0.40, 0.50, 0.60, 0.80 — both black and white alpha ramps for layered transparency
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Family
+### 字体家族
 
 **Primary:** Optimistic VF (variable font by Dalton Maag, commissioned by Meta)
 - Fallbacks: Montserrat, Helvetica, Arial, Noto Sans
@@ -109,9 +109,9 @@ The store's visual hierarchy is ruthlessly simple. Photography does the heavy li
 - Fallbacks: Arial
 - Used for small utility text (12px footer links, legal copy)
 
-### Hierarchy
+### 字体层级
 
-| Role | Size | Weight | Line Height | Letter Spacing | Notes |
+| 角色 | 尺寸 | 字重 | 行高 | 字间距 | 备注 |
 |------|------|--------|-------------|----------------|-------|
 | Display 1 | 64px | 500 (Medium) | 1.16 | — | Hero headlines on desktop, ss01+ss02 |
 | Display 2 | 48px | 500 (Medium) | 1.17 | — | Section heroes, product titles |
@@ -125,13 +125,13 @@ The store's visual hierarchy is ruthlessly simple. Photography does the heavy li
 | Small | 12px | 400 (Regular) | 1.33 | — | Footer links, legal text, timestamps |
 | Button | 14px | 400 (Regular) | 1.43 | -0.14px | Button label text |
 
-### Principles
+### 原则
 
 Optimistic VF is the cornerstone of Meta's typographic identity — a humanist sans-serif with geometric underpinnings that strikes a balance between Silicon Valley precision and consumer warmth. The "ss01" and "ss02" stylistic sets introduce alternate glyphs that give headlines a distinctive Meta character. Weight 500 (Medium) dominates headlines, creating a presence that commands without shouting, while the unexpected use of weight 300 (Light) at 28px adds an airy, editorial quality to subheadings. Negative letter-spacing at smaller sizes (-0.14px to -0.16px) tightens the optical rhythm for UI elements, keeping the reading experience crisp and efficient.
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
 **Primary (Pill)**
 - Background: Meta Blue (`#0064E0`)
@@ -164,7 +164,7 @@ Optimistic VF is the cornerstone of Meta's typographic identity — a humanist s
 - Text: `#8595A4` (--dolly-cta-disabled-text)
 - Cursor: not-allowed, no hover effects
 
-### Cards & Containers
+### 卡片与容器
 
 - Background: White (`#FFFFFF`) or Flat Gray (`#F7F8FA`)
 - Corner radius: 20px (--card-corner-radius) for standard cards, 24px for product feature cards
@@ -174,7 +174,7 @@ Optimistic VF is the cornerstone of Meta's typographic identity — a humanist s
 - Transition: transform 300ms ease, box-shadow 300ms ease
 - Product cards use full-bleed imagery with text overlay on dark gradient
 
-### Inputs & Forms
+### 输入框与表单
 
 - Background: White (`#FFFFFF`)
 - Border: 1px solid `#CED0D4` (--input-border-color)
@@ -185,7 +185,7 @@ Optimistic VF is the cornerstone of Meta's typographic identity — a humanist s
 - Placeholder: `#65676B` (--secondary-text)
 - Transition: border-color 200ms ease, box-shadow 200ms ease
 
-### Navigation
+### 导航
 
 - Background: White (`#FFFFFF`), sticky at top
 - Frosted glass effect: `rgba(241, 244, 247, 0.8)` with backdrop-filter blur
@@ -197,7 +197,7 @@ Optimistic VF is the cornerstone of Meta's typographic identity — a humanist s
 - Height: approximately 56px desktop, 48px mobile
 - Border-bottom: subtle `rgba(0,0,0,0.1)` separator
 
-### Image Treatment
+### 图片处理
 
 - Product hero: full-width, cinematic aspect ratio (~21:9 on desktop, ~4:3 on mobile)
 - Product cards: 1:1 or 4:3, edge-to-edge within card radius
@@ -212,9 +212,9 @@ Optimistic VF is the cornerstone of Meta's typographic identity — a humanist s
 - **Ray-Ban sections**: Warm lifestyle photography, red accents (`#D6311F`), linen tones (`#F2F0E6`)
 - **Portal sections**: Teal-blue palette (`#C8E4E8`, `#ADD4E0`), navy accents (`#1B365D`)
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
+### 间距体系
 
 Base unit: 8px
 
@@ -235,7 +235,7 @@ Base unit: 8px
 | space-13 | 64px | Section vertical padding (standard) |
 | space-14 | 80px | Hero section padding, large section gaps |
 
-### Grid & Container
+### 栅格与容器
 
 - Max container width: ~1440px, centered with auto margins
 - Product grid: 3-column on desktop, 2-column on tablet, 1-column on mobile
@@ -243,11 +243,11 @@ Base unit: 8px
 - Grid gap: 24px between cards, 16px on mobile
 - Page horizontal padding: 24-40px depending on breakpoint
 
-### Whitespace Philosophy
+### 留白哲学
 
 Whitespace is the store's primary luxury signifier. Sections breathe with 64-80px vertical padding, creating a sense of unhurried browsing. Product images float in generous negative space rather than being crammed edge-to-edge. This restrained spacing communicates premium positioning — the visual equivalent of wide aisles in a high-end retail store.
 
-### Border Radius Scale
+### 圆角尺度
 
 | Value | Context |
 |-------|---------|
@@ -256,7 +256,7 @@ Whitespace is the store's primary luxury signifier. Sections breathe with 64-80p
 | 24px | Feature cards, product highlight areas, ghost buttons |
 | 100px | Pill buttons, tags, badges (fully rounded) |
 
-## 6. Depth & Elevation
+## 6. 层深与阴影
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
@@ -268,15 +268,15 @@ Whitespace is the store's primary luxury signifier. Sections breathe with 64-80p
 
 The Meta Store favors a primarily flat elevation model. Most surface differentiation comes from background color shifts (white → soft gray → dark) rather than shadows. When shadows appear, they are soft, diffused, and use the dual-shadow pattern (a large blurred shadow for ambient light + a small sharp shadow for direct light). This creates a physically plausible depth feel without heavy visual weight.
 
-### Decorative Depth
+### 装饰性层深
 
 - **Frosted glass nav**: `rgba(241, 244, 247, 0.8)` background with backdrop-filter blur, creating a translucent navigation bar
 - **Dark section gradient**: `linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.6))` overlay on product photography for text legibility
 - **Glimmer loading states**: Pulsating opacity animation (0.25 → 1.0) on `#979A9F` base color with 8px radius, 1000ms steps timing — used for skeleton screens during product image loading
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 
-### Do
+### 推荐
 
 - Use pill-shaped (100px radius) buttons for all primary and secondary CTAs
 - Let product photography dominate — make images the visual hero of every section
@@ -289,7 +289,7 @@ The Meta Store favors a primarily flat elevation model. Most surface differentia
 - Apply gradient overlays on dark photography when placing text over images
 - Use the semantic color tokens (success, error, warning) consistently for status communication
 
-### Don't
+### 禁忌
 
 - Don't use sharp corners (< 8px radius) — the Meta Store is all smooth curves
 - Don't mix product-specific accents (Ray-Ban Red with Quest Purple in the same section)
@@ -302,9 +302,9 @@ The Meta Store favors a primarily flat elevation model. Most surface differentia
 - Don't add drop shadows to cards in dark sections — rely on border and color separation
 - Don't use long paragraphs — limit to 2-3 lines of body copy per block
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
+### 断点
 
 | Name | Width | Key Changes |
 |------|-------|-------------|
@@ -313,14 +313,14 @@ The Meta Store favors a primarily flat elevation model. Most surface differentia
 | Desktop | 1024-1440px | 3-column product grid, full horizontal nav, hero text at 64px, 80px section padding |
 | Large Desktop | >1440px | Max-width container (1440px) centered, increased horizontal margins |
 
-### Touch Targets
+### 触摸目标
 
 - Minimum touch target: 44x44px (WCAG AAA compliant)
 - Mobile button height: minimum 44px with 10px vertical padding
 - Nav hamburger icon: 48x48px touch area
 - Product card tappable area: full card surface
 
-### Collapsing Strategy
+### 折叠策略
 
 - **Navigation**: Horizontal links collapse to hamburger menu below 768px; CTA button remains visible
 - **Product grids**: 3-col → 2-col at 1024px → 1-col at 768px
@@ -329,7 +329,7 @@ The Meta Store favors a primarily flat elevation model. Most surface differentia
 - **Section padding**: 80px → 64px → 48px → 32px as viewport narrows
 - **Card radius**: Remains consistent at 20-24px across all breakpoints
 
-### Image Behavior
+### 图片行为
 
 - Responsive images via srcset with multiple resolutions
 - WebP format with progressive JPEG fallback
@@ -338,9 +338,9 @@ The Meta Store favors a primarily flat elevation model. Most surface differentia
 - Art direction: hero crop changes between desktop (wide cinematic) and mobile (tighter product focus)
 - Lazy loading with glimmer skeleton (pulsating gray placeholder) during load
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
+### 色彩速查表
 
 - Primary CTA: Meta Blue (`#0064E0`)
 - Background: White (`#FFFFFF`)
@@ -350,7 +350,7 @@ The Meta Store favors a primarily flat elevation model. Most surface differentia
 - Secondary surface: Soft Gray (`#F1F4F7`)
 - Dark sections: Near Black (`#1C1E21`)
 
-### Example Component Prompts
+### 组件提示示例
 
 - "Create a product hero section with a full-width cinematic image, `linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.6))` text overlay, Optimistic-style 64px/500 white headline, and a Meta Blue (`#0064E0`) pill button (100px radius, 10px 22px padding)"
 - "Design a 3-column product card grid with 20px rounded corners, white backgrounds, edge-to-edge product images at top, 18px/400 body text in Slate Gray (`#5D6C7B`), and 24px grid gap"
@@ -358,7 +358,7 @@ The Meta Store favors a primarily flat elevation model. Most surface differentia
 - "Create a dark product showcase section with `#1C1E21` background, white 48px/500 headline, `#5D6C7B` body text, and a secondary outlined pill button with `rgba(10, 19, 23, 0.12)` border"
 - "Design a feature comparison grid with Soft Gray (`#F1F4F7`) background, 24px rounded cards, Meta Blue checkmark icons, and 14px/700 bold labels"
 
-### Iteration Guide
+### 迭代指南
 
 When refining existing screens generated with this design system:
 1. Focus on ONE component at a time

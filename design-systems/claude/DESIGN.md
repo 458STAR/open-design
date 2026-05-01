@@ -1,9 +1,9 @@
-# Design System Inspired by Claude (Anthropic)
+# Claude (Anthropic)
 
-> Category: AI & LLM
+> Category: AI 与大模型
 > Anthropic's AI assistant. Warm terracotta accent, clean editorial layout.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 Claude's interface is a literary salon reimagined as a product page — warm, unhurried, and quietly intellectual. The entire experience is built on a parchment-toned canvas (`#f5f4ed`) that deliberately evokes the feeling of high-quality paper rather than a digital surface. Where most AI product pages lean into cold, futuristic aesthetics, Claude's design radiates human warmth, as if the AI itself has good taste in interior design.
 
@@ -11,7 +11,7 @@ The signature move is the custom Anthropic Serif typeface — a medium-weight se
 
 What makes Claude's design truly distinctive is its warm neutral palette. Every gray has a yellow-brown undertone (`#5e5d59`, `#87867f`, `#4d4c48`) — there are no cool blue-grays anywhere. Borders are cream-tinted (`#f0eee6`, `#e8e6dc`), shadows use warm transparent blacks, and even the darkest surfaces (`#141413`, `#30302e`) carry a barely perceptible olive warmth. This chromatic consistency creates a space that feels lived-in and trustworthy.
 
-**Key Characteristics:**
+**核心特征：**
 - Warm parchment canvas (`#f5f4ed`) evoking premium paper, not screens
 - Custom Anthropic type family: Serif for headlines, Sans for UI, Mono for code
 - Terracotta brand accent (`#c96442`) — warm, earthy, deliberately un-tech
@@ -20,18 +20,18 @@ What makes Claude's design truly distinctive is its warm neutral palette. Every 
 - Ring-based shadow system (`0px 0px 0px 1px`) creating border-like depth without visible borders
 - Magazine-like pacing with generous section spacing and serif-driven hierarchy
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
-### Primary
+### 主色
 - **Anthropic Near Black** (`#141413`): The primary text color and dark-theme surface — not pure black but a warm, almost olive-tinted dark that's gentler on the eyes. The warmest "black" in any major tech brand.
 - **Terracotta Brand** (`#c96442`): The core brand color — a burnt orange-brown used for primary CTA buttons, brand moments, and the signature accent. Deliberately earthy and un-tech.
 - **Coral Accent** (`#d97757`): A lighter, warmer variant of the brand color used for text accents, links on dark surfaces, and secondary emphasis.
 
-### Secondary & Accent
+### 辅助色与强调色
 - **Error Crimson** (`#b53333`): A deep, warm red for error states — serious without being alarming.
 - **Focus Blue** (`#3898ec`): Standard blue for input focus rings — the only cool color in the entire system, used purely for accessibility.
 
-### Surface & Background
+### 表面与背景色
 - **Parchment** (`#f5f4ed`): The primary page background — a warm cream with a yellow-green tint that feels like aged paper. The emotional foundation of the entire design.
 - **Ivory** (`#faf9f5`): The lightest surface — used for cards and elevated containers on the Parchment background. Barely distinguishable but creates subtle layering.
 - **Pure White** (`#ffffff`): Reserved for specific button surfaces and maximum-contrast elements.
@@ -39,14 +39,14 @@ What makes Claude's design truly distinctive is its warm neutral palette. Every 
 - **Dark Surface** (`#30302e`): Dark-theme containers, nav borders, and elevated dark elements — warm charcoal.
 - **Deep Dark** (`#141413`): Dark-theme page background and primary dark surface.
 
-### Neutrals & Text
+### 中性色与文字色
 - **Charcoal Warm** (`#4d4c48`): Button text on light warm surfaces — the go-to dark-on-light text.
 - **Olive Gray** (`#5e5d59`): Secondary body text — a distinctly warm medium-dark gray.
 - **Stone Gray** (`#87867f`): Tertiary text, footnotes, and de-emphasized metadata.
 - **Dark Warm** (`#3d3d3a`): Dark text links and emphasized secondary text.
 - **Warm Silver** (`#b0aea5`): Text on dark surfaces — a warm, parchment-tinted light gray.
 
-### Semantic & Accent
+### 语义色与强调色
 - **Border Cream** (`#f0eee6`): Standard light-theme border — barely visible warm cream, creating the gentlest possible containment.
 - **Border Warm** (`#e8e6dc`): Prominent borders, section dividers, and emphasized containment on light surfaces.
 - **Border Dark** (`#30302e`): Standard border on dark surfaces — maintains the warm tone.
@@ -54,19 +54,19 @@ What makes Claude's design truly distinctive is its warm neutral palette. Every 
 - **Ring Subtle** (`#dedc01`): Secondary ring variant for lighter interactive surfaces.
 - **Ring Deep** (`#c2c0b6`): Deeper ring for active/pressed states.
 
-### Gradient System
+### 渐变体系
 - Claude's design is **gradient-free** in the traditional sense. Depth and visual richness come from the interplay of warm surface tones, organic illustrations, and light/dark section alternation. The warm palette itself creates a "gradient" effect as the eye moves through cream → sand → stone → charcoal → black sections.
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Family
+### 字体家族
 - **Headline**: `Anthropic Serif`, with fallback: `Georgia`
 - **Body / UI**: `Anthropic Sans`, with fallback: `Arial`
 - **Code**: `Anthropic Mono`, with fallback: `Arial`
 
 *Note: These are custom typefaces. For external implementations, Georgia serves as the serif substitute and system-ui/Inter as the sans substitute.*
 
-### Hierarchy
+### 字体层级
 
 | Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
 |------|------|------|--------|-------------|----------------|-------|
@@ -87,16 +87,16 @@ What makes Claude's design truly distinctive is its warm neutral palette. Every 
 | Micro | Anthropic Sans | 9.6px (0.6rem) | 400 | 1.60 | 0.096px | Smallest text |
 | Code | Anthropic Mono | 15px (0.94rem) | 400 | 1.60 | -0.32px | Inline code, terminal |
 
-### Principles
+### 原则
 - **Serif for authority, sans for utility**: Anthropic Serif carries all headline content with medium weight (500), giving every heading the gravitas of a published title. Anthropic Sans handles all functional UI text — buttons, labels, navigation — with quiet efficiency.
 - **Single weight for serifs**: All Anthropic Serif headings use weight 500 — no bold, no light. This creates a consistent "voice" across all headline sizes, as if the same author wrote every heading.
 - **Relaxed body line-height**: Most body text uses 1.60 line-height — significantly more generous than typical tech sites (1.4–1.5). This creates a reading experience closer to a book than a dashboard.
 - **Tight-but-not-compressed headings**: Line-heights of 1.10–1.30 for headings are tight but never claustrophobic. The serif letterforms need breathing room that sans-serif fonts don't.
 - **Micro letter-spacing on labels**: Small sans text (12px and below) uses deliberate letter-spacing (0.12px–0.5px) to maintain readability at tiny sizes.
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
 **Warm Sand (Secondary)**
 - Background: Warm Sand (`#e8e6dc`)
@@ -137,7 +137,7 @@ What makes Claude's design truly distinctive is its warm neutral palette. Every 
 - Border: thin solid Dark Surface (`1px solid #30302e`)
 - Used on dark theme surfaces
 
-### Cards & Containers
+### 卡片与容器
 - Background: Ivory (`#faf9f5`) or Pure White (`#ffffff`) on light surfaces; Dark Surface (`#30302e`) on dark
 - Border: thin solid Border Cream (`1px solid #f0eee6`) on light; `1px solid #30302e` on dark
 - Radius: comfortably rounded (8px) for standard cards; generously rounded (16px) for featured; very rounded (32px) for hero containers and embedded media
@@ -145,14 +145,14 @@ What makes Claude's design truly distinctive is its warm neutral palette. Every 
 - Ring shadow: `0px 0px 0px 1px` patterns for interactive card states
 - Section borders: `1px 0px 0px` (top-only) for list item separators
 
-### Inputs & Forms
+### 输入框与表单
 - Text: Anthropic Near Black (`#141413`)
 - Padding: 1.6px 12px (very compact vertical)
 - Border: standard warm borders
 - Focus: ring with Focus Blue (`#3898ec`) border-color — the only cool color moment
 - Radius: generously rounded (12px)
 
-### Navigation
+### 导航
 - Sticky top nav with warm background
 - Logo: Claude wordmark in Anthropic Near Black
 - Links: mix of Near Black (`#141413`), Olive Gray (`#5e5d59`), and Dark Warm (`#3d3d3a`)
@@ -160,14 +160,14 @@ What makes Claude's design truly distinctive is its warm neutral palette. Every 
 - CTA: Terracotta Brand button or White Surface button
 - Hover: text shifts to foreground-primary, no decoration
 
-### Image Treatment
+### 图片处理
 - Product screenshots showing the Claude chat interface
 - Generous border-radius on media (16–32px)
 - Embedded video players with rounded corners
 - Dark UI screenshots provide contrast against warm light canvas
 - Organic, hand-drawn illustrations for conceptual sections
 
-### Distinctive Components
+### 特色组件
 
 **Model Comparison Cards**
 - Opus 4.5, Sonnet 4.5, Haiku 4.5 presented in a clean card grid
@@ -184,28 +184,28 @@ What makes Claude's design truly distinctive is its warm neutral palette. Every 
 - Creates a reading rhythm like chapters in a book
 - Each section feels like a distinct environment
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
+### 间距体系
 - Base unit: 8px
 - Scale: 3px, 4px, 6px, 8px, 10px, 12px, 16px, 20px, 24px, 30px
 - Button padding: asymmetric (0px 12px 0px 8px) or balanced (8px 16px)
 - Card internal padding: approximately 24–32px
 - Section vertical spacing: generous (estimated 80–120px between major sections)
 
-### Grid & Container
+### 栅格与容器
 - Max container width: approximately 1200px, centered
 - Hero: centered with editorial layout
 - Feature sections: single-column or 2–3 column card grids
 - Model comparison: clean 3-column grid
 - Full-width dark sections breaking the container for emphasis
 
-### Whitespace Philosophy
+### 留白哲学
 - **Editorial pacing**: Each section breathes like a magazine spread — generous top/bottom margins create natural reading pauses.
 - **Serif-driven rhythm**: The serif headings establish a literary cadence that demands more whitespace than sans-serif designs.
 - **Content island approach**: Sections alternate between light and dark environments, creating distinct "rooms" for each message.
 
-### Border Radius Scale
+### 圆角尺度
 - Sharp (4px): Minimal inline elements
 - Subtly rounded (6–7.5px): Small buttons, secondary interactive elements
 - Comfortably rounded (8–8.5px): Standard buttons, cards, containers
@@ -214,7 +214,7 @@ What makes Claude's design truly distinctive is its warm neutral palette. Every 
 - Highly rounded (24px): Tag-like elements, highlighted containers
 - Maximum rounded (32px): Hero containers, embedded media, large cards
 
-## 6. Depth & Elevation
+## 6. 层深与阴影
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
@@ -226,13 +226,13 @@ What makes Claude's design truly distinctive is its warm neutral palette. Every 
 
 **Shadow Philosophy**: Claude communicates depth through **warm-toned ring shadows** rather than traditional drop shadows. The signature `0px 0px 0px 1px` pattern creates a border-like halo that's softer than an actual border — it's a shadow pretending to be a border, or a border that's technically a shadow. When drop shadows do appear, they're extremely soft (0.05 opacity, 24px blur) — barely visible lifts that suggest floating rather than casting.
 
-### Decorative Depth
+### 装饰性层深
 - **Light/Dark alternation**: The most dramatic depth effect comes from alternating between Parchment (`#f5f4ed`) and Near Black (`#141413`) sections — entire sections shift elevation by changing the ambient light level.
 - **Warm ring halos**: Button and card interactions use ring shadows that match the warm palette — never cool-toned or generic gray.
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 
-### Do
+### 推荐
 - Use Parchment (`#f5f4ed`) as the primary light background — the warm cream tone IS the Claude personality
 - Use Anthropic Serif at weight 500 for all headlines — the single-weight consistency is intentional
 - Use Terracotta Brand (`#c96442`) only for primary CTAs and the highest-signal brand moments
@@ -243,7 +243,7 @@ What makes Claude's design truly distinctive is its warm neutral palette. Every 
 - Alternate between light and dark sections to create chapter-like page rhythm
 - Apply generous border-radius (12–32px) for a soft, approachable feel
 
-### Don't
+### 禁忌
 - Don't use cool blue-grays anywhere — the palette is exclusively warm-toned
 - Don't use bold (700+) weight on Anthropic Serif — weight 500 is the ceiling for serifs
 - Don't introduce saturated colors beyond Terracotta — the palette is deliberately muted
@@ -255,9 +255,9 @@ What makes Claude's design truly distinctive is its warm neutral palette. Every 
 - Don't use monospace fonts for non-code content — Anthropic Mono is strictly for code
 - Don't mix in sans-serif for headlines — the serif/sans split is the typographic identity
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
+### 断点
 | Name | Width | Key Changes |
 |------|-------|-------------|
 | Small Mobile | <479px | Minimum layout, stacked everything, compact typography |
@@ -266,13 +266,13 @@ What makes Claude's design truly distinctive is its warm neutral palette. Every 
 | Tablet | 768–991px | 2-column grids begin, condensed nav |
 | Desktop | 992px+ | Full multi-column layout, expanded nav, maximum hero typography (64px) |
 
-### Touch Targets
+### 触摸目标
 - Buttons use generous padding (8–16px vertical minimum)
 - Navigation links adequately spaced for thumb navigation
 - Card surfaces serve as large touch targets
 - Minimum recommended: 44x44px
 
-### Collapsing Strategy
+### 折叠策略
 - **Navigation**: Full horizontal nav collapses to hamburger on mobile
 - **Feature sections**: Multi-column → stacked single column
 - **Hero text**: 64px → 36px → ~25px progressive scaling
@@ -280,15 +280,15 @@ What makes Claude's design truly distinctive is its warm neutral palette. Every 
 - **Section padding**: Reduces proportionally but maintains editorial rhythm
 - **Illustrations**: Scale proportionally, maintain aspect ratios
 
-### Image Behavior
+### 图片行为
 - Product screenshots scale proportionally within rounded containers
 - Illustrations maintain quality at all sizes
 - Video embeds maintain 16:9 aspect ratio with rounded corners
 - No art direction changes between breakpoints
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
+### 色彩速查表
 - Brand CTA: "Terracotta Brand (#c96442)"
 - Page Background: "Parchment (#f5f4ed)"
 - Card Surface: "Ivory (#faf9f5)"
@@ -298,14 +298,14 @@ What makes Claude's design truly distinctive is its warm neutral palette. Every 
 - Borders (light): "Border Cream (#f0eee6)"
 - Dark Surface: "Dark Surface (#30302e)"
 
-### Example Component Prompts
+### 组件提示示例
 - "Create a hero section on Parchment (#f5f4ed) with a headline at 64px Anthropic Serif weight 500, line-height 1.10. Use Anthropic Near Black (#141413) text. Add a subtitle in Olive Gray (#5e5d59) at 20px Anthropic Sans with 1.60 line-height. Place a Terracotta Brand (#c96442) CTA button with Ivory text, 12px radius."
 - "Design a feature card on Ivory (#faf9f5) with a 1px solid Border Cream (#f0eee6) border and comfortably rounded corners (8px). Title in Anthropic Serif at 25px weight 500, description in Olive Gray (#5e5d59) at 16px Anthropic Sans. Add a whisper shadow (rgba(0,0,0,0.05) 0px 4px 24px)."
 - "Build a dark section on Anthropic Near Black (#141413) with Ivory (#faf9f5) headline text in Anthropic Serif at 52px weight 500. Use Warm Silver (#b0aea5) for body text. Borders in Dark Surface (#30302e)."
 - "Create a button in Warm Sand (#e8e6dc) with Charcoal Warm (#4d4c48) text, 8px radius, and a ring shadow (0px 0px 0px 1px #d1cfc5). Padding: 0px 12px 0px 8px."
 - "Design a model comparison grid with three cards on Ivory surfaces. Each card gets a Border Warm (#e8e6dc) top border, model name in Anthropic Serif at 25px, and description in Olive Gray at 15px Anthropic Sans."
 
-### Iteration Guide
+### 迭代指南
 1. Focus on ONE component at a time
 2. Reference specific color names — "use Olive Gray (#5e5d59)" not "make it gray"
 3. Always specify warm-toned variants — no cool grays

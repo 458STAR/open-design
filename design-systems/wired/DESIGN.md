@@ -1,9 +1,9 @@
-# Design System Inspired by WIRED
+# WIRED
 
-> Category: Media & Consumer
+> Category: 媒体与消费
 > Tech magazine. Paper-white broadsheet density, custom serif display, mono kickers, ink-blue links.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 WIRED's homepage feels like a printed broadsheet that someone has plugged into a wall socket. The grid is dense, the rules are thin, the type is loud, and almost every surface is paper-white or pure black with no rounded corners and no decoration that doesn't earn its place. Image rectangles butt directly against headlines, hairline dividers separate stories the way pica rules separate columns in a real magazine, and the only colors that aren't grayscale come from the photography itself. There is no "card with shadow" anywhere — the entire layout is held together by typographic weight and the discipline of rules and whitespace, the same way a Condé Nast print page would be assembled in a paste-up room.
 
@@ -11,7 +11,7 @@ The signature move is the **typographic stack**: a brutally large custom serif (
 
 There is exactly one accent color that matters: a saturated link blue (`#057dbc`) that lights up underlined hover states like a CRT scanline. Everything else is black, paper white, and two grays — the design's confidence comes from refusing to invent more.
 
-**Key Characteristics:**
+**核心特征：**
 - Newsstand-density editorial grid: rules and whitespace, never cards or shadows
 - Custom serif display + technical mono kickers — the Condé-Nast-meets-engineering-lab voice
 - Strictly square corners on every image, container, and ribbon (only icon buttons are circular)
@@ -20,7 +20,7 @@ There is exactly one accent color that matters: a saturated link blue (`#057dbc`
 - Single ink-blue accent for links; everything else lives in pure grayscale
 - Dark theme = the *footer*, not the page; the page itself is committed paper-white
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
 ### Primary (Editorial Ink)
 - **WIRED Black** (`#000000`): Pure ink for ribbons, section dividers, button borders, headline rules — the strongest hand on the page.
@@ -30,28 +30,28 @@ There is exactly one accent color that matters: a saturated link blue (`#057dbc`
 ### Secondary (Editorial Voice)
 - **Link Blue** (`#057dbc`): The single brand accent. Used for inline link hovers, breadcrumbs, and the rare button — never for backgrounds, never decorated. Think of it as the only color allowed in a black-and-white film.
 
-### Surface & Background
+### 表面与背景色
 - **Newsprint** (`#ffffff`): Editorial pages, story grids, hero zones.
 - **Footer Ink** (`#1a1a1a`): The only inverted region on the homepage. Paper white type sits on top.
 - **Hairline Tint** (`#e2e8f0`): Reserved for `<hr>` elements between sections — barely visible, like a margin rule.
 
-### Neutrals & Text
+### 中性色与文字色
 - **Headline Black** (`#1a1a1a`): All H1/H2 display type.
 - **Body Gray** (`#1a1a1a`): Long-form body text — same ink as headlines for unity.
 - **Caption Gray** (`#757575`): Secondary metadata: bylines, timestamps, photo credits.
 - **Disabled Gray** (`#999999`): Inactive links, low-priority labels.
 - **Hairline Border** (`#e2e8f0`): Subtle separators only.
 
-### Semantic & Accent
+### 语义色与强调色
 - **Brand Hover Blue** (`#057dbc`): Link rollover state — also serves as the only "interactive" cue.
 - *(WIRED's homepage intentionally omits semantic success/error/warning palettes — this is editorial, not a SaaS dashboard.)*
 
-### Gradient System
+### 渐变体系
 None. WIRED uses zero gradients. The closest thing to a gradient on the page is the tonal range inside a photograph — gradients live *in the imagery*, not in the chrome.
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Family
+### 字体家族
 - **WiredDisplay** (custom serif, fallback `helvetica`) — Display headlines and feature titles.
 - **BreveText** (humanist serif, fallback `helvetica`) — Article body, decks, longer captions.
 - **Apercu** (geometric sans, fallback `helvetica`) — UI labels, buttons, navigation, mid-weight headings.
@@ -60,7 +60,7 @@ None. WIRED uses zero gradients. The closest thing to a gradient on the page is 
 - **ProximaNova** (sans, fallback `helvetica`) — Legacy UI surfaces.
 - **WIRED Mono** (custom mono, fallback `Monaco, Courier New, Courier`) — Article-page eyebrows.
 
-### Hierarchy
+### 字体层级
 
 | Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
 |---|---|---|---|---|---|---|
@@ -82,7 +82,7 @@ None. WIRED uses zero gradients. The closest thing to a gradient on the page is 
 | Inter UI Heading | Inter | 16px / 1.00rem | 600 | 1.23 | 0.108px | Newer module headers |
 | Inter UI Caption | Inter | 14px / 0.88rem | 600 | 1.40 | — | Compact UI metadata |
 
-### Principles
+### 原则
 - **Four faces, four jobs.** WiredDisplay is for shouting, BreveText is for reading, Apercu is for clicking, WiredMono is for labeling. They never trade roles. This separation is what keeps the page from feeling like a typography sample.
 - **Tight headlines, generous body.** Display type runs as low as 0.93 line-height (nearly touching), while body BreveText opens out to 1.47–1.50. The contrast is the editorial fingerprint.
 - **Mono is always uppercase.** Every WiredMono usage carries `text-transform: uppercase` and 0.9–1.2px letter-spacing. Treat lowercase mono as broken — it should not appear on a WIRED page.
@@ -92,9 +92,9 @@ None. WIRED uses zero gradients. The closest thing to a gradient on the page is 
 ### Note on Font Substitutes
 The line-height values in the hierarchy table (especially the 0.93 on the 64px hero) assume the **proprietary WiredDisplay and BreveText faces**, which have tight metrics with short ascenders/descenders. If you substitute these with wide-metric open-source fonts like **Playfair Display** or **Libre Caslon**, loosen display line-heights by approximately **+0.10 to +0.12** to prevent ascender/descender collisions on wrapping lines (e.g., 0.93 → 1.05, 1.08 → 1.18). Apercu substitutes (Inter, Work Sans, Manrope) work at the token values without adjustment. BreveText body substitutes (Lora, Source Serif 4) also work without adjustment because body leading is already generous.
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
 **Primary CTA — Black Outline ("Subscribe")**
 - Background: `#ffffff` (Paper White)
@@ -126,26 +126,26 @@ The line-height values in the hierarchy table (especially the 0.93 on the 64px h
 - Background: solid black or red accent depending on context
 - Text: white, mono 11–12px caps
 
-### Cards & Containers
+### 卡片与容器
 - **Cards do not exist.** WIRED's homepage has no rounded boxes, no shadows, no surface elevation.
 - A "story tile" is just an image rectangle stacked above a kicker + headline + deck, separated from neighbors by **1px hairline rules** (`#000000` or `#4a5568`) or by raw whitespace.
 - The closest thing to a "container" is the black ribbon section header (e.g., "MOST POPULAR") — a full-bleed black bar with white WiredMono caps, no padding refinement, no rounded ends.
 - Hover behavior on a story tile: the headline link text shifts from `#1a1a1a` to `#057dbc` and the underline appears. The image itself does not zoom, lift, or shadow.
 
-### Inputs & Forms
+### 输入框与表单
 - **Newsletter input**: rectangular, `2px solid #000000` border, `0` radius, white background, Apercu 16px placeholder.
 - **Focus**: border stays 2px black, no glow ring, no color change — focus is signaled by the blinking caret only. (Add a 2px outset for accessibility if you ship this — WIRED's own implementation under-serves keyboard users here.)
-- **Error**: text label below in `#e53e3e` (Fides cookie overlay borrows this red — use sparingly).
+- **错误**: text label below in `#e53e3e` (Fides cookie overlay borrows this red — use sparingly).
 - **Disabled**: text drops to `#a0aec0`, border softens to `#757575`.
 
-### Navigation
+### 导航
 - **Top utility bar**: black (`#000000`) full-bleed strip, ~32–40px tall, mono caps links separated by hairline dividers, `#ffffff` text, hover → `#057dbc`.
 - **Main nav**: paper-white (`#ffffff`) row beneath the bug logo, Apercu 14–16px / regular, hover → `#057dbc` underline.
 - **Logo**: WIRED bug, ~209×42px, centered or left-aligned, never recolored, always pure black on white.
 - **Mobile**: nav collapses to a hamburger left of the bug logo. Section nav becomes a slide-down drawer of mono caps links.
 - **Transition**: hover color swaps are instant or ~120ms; no bouncy easing — editorial restraint.
 
-### Image Treatment
+### 图片处理
 - **Aspect ratios**: predominantly 16:9 for hero images, 4:3 for grid story tiles, 1:1 for smaller "Most Popular" thumbnails.
 - **Corners**: ALWAYS 0 radius. Square. The only rounded image is a circular author avatar (50%).
 - **Full-bleed**: hero photographs run edge-to-edge of the column they occupy; no inset, no border.
@@ -162,31 +162,31 @@ The line-height values in the hierarchy table (especially the 0.93 on the 64px h
 - A vertical list of stories prefixed with WiredDisplay numerals (01, 02, 03…) at ~40–48px, sitting tight against the headline they label.
 - Hairline rule between each item, no other decoration.
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
+### 间距体系
 - **Base unit**: 8px.
 - **Scale**: 1px (hairline), 4px, 8px, 12px, 14.11px, 15px, 16px, 24px, 25.46px, 29.66px, 32px, 40px, 48px, 64px.
 - **Section padding**: typically 32–48px vertical between major editorial blocks.
 - **Card padding**: there are no cards; the gutter between story tiles is 24–32px horizontally and 16–24px vertically.
 - **Inline spacing**: kickers sit ~4–8px above headlines; decks sit ~8–12px below headlines; bylines/timestamps another 8–12px below the deck.
 
-### Grid & Container
+### 栅格与容器
 - **Max width**: ~1280–1600px on desktop (the dembrandt sweep detected breakpoints up to 1600px), centered with generous outer margins.
 - **Column patterns**: 12-column grid that resolves into 2/3/4 column story arrangements depending on module — feature blocks often run a "1 large + 2 small" pattern with hairline rules between each.
 - **Column gutters**: ~24–32px, separated by hairline `#000000` or `#4a5568` 1px rules where the editorial logic demands a "page-fold" feel.
 
-### Whitespace Philosophy
+### 留白哲学
 WIRED treats whitespace the way a magazine art director treats margin: it's the silence around the type, not a styling choice. The page never breathes excessively (this is not Stripe or Apple); it breathes *editorially* — enough room to keep adjacent stories from arguing, never enough to suggest there's nothing on the page. If an empty area looks like it could fit another headline, that empty area is doing its job.
 
-### Border Radius Scale
+### 圆角尺度
 - `0` — every container, every image, every button, every input. The default.
 - `1920px` — only inside text spans that need to look like a full pill ("BREAKING", "LIVE").
 - `50%` — only on round icon buttons and circular author avatars.
 
 There are exactly three radii on the entire site, and two of them are reserved for non-rectangular shapes. This is the **strictest** corner discipline of any major editorial property.
 
-## 6. Depth & Elevation
+## 6. 层深与阴影
 
 | Level | Treatment | Use |
 |---|---|---|
@@ -199,12 +199,12 @@ There are exactly three radii on the entire site, and two of them are reserved f
 
 WIRED's depth philosophy is **flat by religion**. There is exactly one shadow token in the entire site (a default `0 0 0 transparent` placeholder) and no `box-shadow` is applied to story tiles, headers, modals, or cards. Depth is communicated by **rule weight** (1px hairline → 2px hard rule → solid black ribbon), not by simulated lighting.
 
-### Decorative Depth
+### 装饰性层深
 None. No gradients, no glow, no halos, no scrim overlays beyond the standard photo caption gradient. WIRED earns its visual interest from photography and typographic contrast, not from chrome.
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 
-### Do
+### 推荐
 - **Do** use 2px hard black borders on every primary button — no 1px softness, no rounded edges.
 - **Do** put a WiredMono ALL-CAPS kicker above every story headline (4–8px above, 0.9–1.2px tracking).
 - **Do** use BreveText for any paragraph longer than two lines — Apercu is for UI, not reading.
@@ -214,7 +214,7 @@ None. No gradients, no glow, no halos, no scrim overlays beyond the standard pho
 - **Do** use `#057dbc` link blue exclusively for hover states — never as a background or button fill.
 - **Do** scale headlines aggressively: 64px on hero, 26px on grid blocks, never 32px "safe middle ground".
 
-### Don't
+### 禁忌
 - **Don't** add `box-shadow` to anything. Ever. WIRED doesn't ship shadows.
 - **Don't** round corners on rectangular containers — `border-radius: 0` is law.
 - **Don't** mix typefaces inside one role: WiredDisplay never sets body, BreveText never sets buttons.
@@ -224,9 +224,9 @@ None. No gradients, no glow, no halos, no scrim overlays beyond the standard pho
 - **Don't** rely on hover lift effects. WIRED's hover is a color swap on text, nothing more.
 - **Don't** invent new pill shapes. Round = icons only. Pill = inline text spans only. Everything else is square.
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
+### 断点
 
 | Name | Width | Key Changes |
 |---|---|---|
@@ -238,25 +238,25 @@ None. No gradients, no glow, no halos, no scrim overlays beyond the standard pho
 
 The dembrandt sweep detected an unusual range of intermediate breakpoints (1280, 1025, 1024, 1023, 768, 767, 667, 599, 570, 569, 480, 425, 375, 320, 319) — Wired's grid micro-tunes at almost every common viewport, especially around the iPad portrait/landscape boundary.
 
-### Touch Targets
+### 触摸目标
 - Primary button: ~44x44px minimum (16px text + 12–14px vertical padding satisfies WCAG AAA).
 - Mono caps links in the utility bar are smaller (~32px tall) — WIRED's own implementation undershoots WCAG here. **For derivative work, pad mono nav links to 44px.**
 - Round icon buttons in the header are ~40px circles, comfortably touch-friendly.
 
-### Collapsing Strategy
+### 折叠策略
 - **Nav**: utility bar drops below 768px; main nav collapses into hamburger drawer. Bug logo recenters on mobile.
 - **Grid**: 4-col → 3-col → 2-col → 1-col as viewport tightens. Hairline rules persist between every column count, so the printerly feel survives the collapse.
 - **Spacing**: vertical rhythm tightens from 48px → 32px → 24px between modules on mobile. Horizontal page padding shrinks from 64px → 24px → 16px.
 - **Type**: WiredDisplay hero scales from 64px to ~36–42px on mobile, headlines from 26px to ~22px, kickers stay locked at 12–13px (mono caps don't scale down further or they become unreadable).
 
-### Image Behavior
+### 图片行为
 - All images are responsive raster (`srcset`-driven), aspect ratios preserved: 16:9 hero, 4:3 mid, 1:1 thumbnails.
 - No art-direction swaps — the same crop scales across breakpoints.
 - `loading="lazy"` on all below-the-fold imagery, `eager` on the hero only.
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
+### 色彩速查表
 - **Primary Ink (text + ribbons)**: "WIRED Black (`#000000`)"
 - **Page Canvas**: "Paper White (`#ffffff`)"
 - **Headline / Body Text**: "Page Ink (`#1a1a1a`)"
@@ -264,14 +264,14 @@ The dembrandt sweep detected an unusual range of intermediate breakpoints (1280,
 - **Hairline / Quiet Border**: "Hairline Tint (`#e2e8f0`)"
 - **Link Hover Accent (the only color)**: "Link Blue (`#057dbc`)"
 
-### Example Component Prompts
+### 组件提示示例
 1. *"Create an editorial story tile with a 16:9 image (square corners), an UPPERCASE WiredMono kicker in `#1a1a1a` above a 26px WiredDisplay headline. Separate the tile from its neighbor with a 1px black hairline rule. No card, no shadow, no border-radius."*
 2. *"Design a primary subscribe button with a 2px solid `#000000` border, square corners, `#ffffff` background, Apercu 16px / 700 / 0.3px tracking text in `#000000`. Hover state inverts to black background with white text in 150ms."*
 3. *"Build a 'Most Popular' module: full-bleed black ribbon header with WiredMono uppercase label in white, followed by a numbered list (01–05) using 40px WiredDisplay numerals and 17px Apercu 700 headlines, separated by hairline rules."*
 4. *"Create a newsletter signup form with a 2px solid black input border, no radius, Apercu 16px placeholder in `#757575`, and an inverted black submit button beside it."*
 5. *"Design a footer in `#1a1a1a` with paper-white tertiary navigation in ProximaNova 11px, hover color `#057dbc`, and a centered WIRED bug logo at the top of the block."*
 
-### Iteration Guide
+### 迭代指南
 When refining existing screens generated with this design system:
 1. **Audit corners first.** If you see any `border-radius` other than `0`, `50%` (icons/avatars), or `1920px` (text pills), flatten it. Round corners are the single most common mistake.
 2. **Audit shadows.** Strip every `box-shadow`. If a tile needs to feel "lifted", use a 2px black border or a hairline rule instead.

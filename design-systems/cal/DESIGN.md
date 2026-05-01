@@ -1,9 +1,9 @@
-# Design System Inspired by Cal.com
+# Cal.com
 
-> Category: Productivity & SaaS
+> Category: 效率工具与 SaaS
 > Open-source scheduling. Clean neutral UI, developer-oriented simplicity.
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
 Cal.com's website is a masterclass in monochromatic restraint — a grayscale world where boldness comes not from color but from the sheer confidence of black text on white space. Inspired by Uber's minimal aesthetic, the palette is deliberately stripped of hue: near-black headings (`#242424`), mid-gray secondary text (`#898989`), and pure white surfaces. Color is treated as a foreign substance — when it appears (a rare blue link, a green trust badge), it feels like a controlled accent in an otherwise black-and-white photograph.
 
@@ -11,7 +11,7 @@ Cal Sans, the brand's custom geometric display typeface designed by Mark Davis, 
 
 The elevation system is notably sophisticated for a minimal site — 11 shadow definitions create a nuanced depth hierarchy using multi-layered shadows that combine ring borders (`0px 0px 0px 1px`), soft diffused shadows, and inset highlights. This shadow-first approach to depth (rather than border-first) gives surfaces a subtle three-dimensionality that feels modern and polished. Built on Framer with a border-radius scale from 2px to 9999px (pill), Cal.com balances geometric precision with soft, rounded interactive elements.
 
-**Key Characteristics:**
+**核心特征：**
 - Purely grayscale brand palette — no brand colors, boldness through monochrome
 - Cal Sans custom geometric display font with extremely tight default letter-spacing
 - Multi-layered shadow system (11 definitions) with ring borders + diffused shadows + inset highlights
@@ -21,42 +21,42 @@ The elevation system is notably sophisticated for a minimal site — 11 shadow d
 - Product screenshots as primary visual content — the scheduling UI sells itself
 - Built on Framer platform
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
-### Primary
+### 主色
 - **Charcoal** (`#242424`): Primary heading and button text — Cal.com's signature near-black, warmer than pure black
 - **Midnight** (`#111111`): Deepest text/overlay color — used at 50% opacity for subtle overlays
 - **White** (`#ffffff`): Primary background and surface — the dominant canvas
 
-### Secondary & Accent
+### 辅助色与强调色
 - **Link Blue** (`#0099ff`): In-text links with underline decoration — the only blue in the system, reserved strictly for hyperlinks
 - **Focus Ring** (`#3b82f6` at 50% opacity): Keyboard focus indicator — accessibility-only, invisible in normal interaction
 - **Default Link** (`#0000ee`): Browser-default link color on some elements — unmodified, signaling openness
 
-### Surface & Background
+### 表面与背景色
 - **Pure White** (`#ffffff`): Primary page background and card surfaces
 - **Light Gray** (approx `#f5f5f5`): Subtle section differentiation — barely visible tint
 - **Mid Gray** (`#898989`): Secondary text, descriptions, and muted labels
 
-### Neutrals & Text
+### 中性色与文字色
 - **Charcoal** (`#242424`): Headlines, buttons, primary UI text
 - **Midnight** (`#111111`): Deep black for high-contrast links and nav text
 - **Mid Gray** (`#898989`): Descriptions, secondary labels, muted content
 - **Pure Black** (`#000000`): Certain link text elements
 - **Border Gray** (approx `rgba(34, 42, 53, 0.08–0.10)`): Shadow-based borders using ring shadows instead of CSS borders
 
-### Semantic & Accent
+### 语义色与强调色
 - Cal.com is deliberately colorless for brand elements — "a grayscale brand to emphasise on boldness and professionalism"
 - Product UI screenshots show color (blues, greens in the scheduling interface), but the marketing site itself stays monochrome
 - The philosophy mirrors Uber's approach: let the content carry color, the frame stays neutral
 
-### Gradient System
+### 渐变体系
 - No gradients on the marketing site — the design is fully flat and monochrome
 - Depth is achieved entirely through shadows, not color transitions
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Family
+### 字体家族
 - **Display**: `Cal Sans` — custom geometric sans-serif by Mark Davis. Open-source, available on Google Fonts and GitHub. Extremely tight default letter-spacing designed for large headlines. Has 6 character variants (Cc, j, t, u, 0, 1)
 - **Body**: `Inter` — "rock-solid" standard body font. Fallback: `Inter Placeholder`
 - **UI Light**: `Cal Sans UI Variable Light` — light-weight variant (300) for softer UI text with -0.2px letter-spacing
@@ -64,7 +64,7 @@ The elevation system is notably sophisticated for a minimal site — 11 shadow d
 - **Mono**: `Roboto Mono` — for code blocks and technical content
 - **Tertiary**: `Matter Regular` / `Matter SemiBold` / `Matter Medium` — additional body fonts for specific contexts
 
-### Hierarchy
+### 字体层级
 
 | Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
 |------|------|------|--------|-------------|----------------|-------|
@@ -84,50 +84,50 @@ The elevation system is notably sophisticated for a minimal site — 11 shadow d
 | Code | Roboto Mono | 14px | 600 | 1.00 | 0px | Code snippets, technical text |
 | Body Matter | Matter Regular | 14px | 400 | 1.14 | 0px | Alternate body text (product UI) |
 
-### Principles
+### 原则
 - **Cal Sans at large, Inter at small**: Cal Sans is exclusively for headings and display — never for body text. The system enforces this division strictly
 - **Tight by default, space when small**: Cal Sans letters are "intentionally spaced to be extremely close" at large sizes. At 20px and below, positive letter-spacing (+0.2px) must be applied to prevent cramming
 - **Weight 300 body variant**: Cal Sans UI Variable Light at 300 weight creates an elegant, airy body text that contrasts with the dense 600-weight headlines
 - **Weight 600 dominance**: Nearly all Cal Sans usage is at weight 600 (semi-bold) — the font was designed to perform at this weight
 - **Negative tracking on light text**: Cal Sans UI Light uses -0.2px to -0.28px letter-spacing, subtly tightening the already-compact letterforms
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 - **Dark Primary**: `#242424` (or `#1e1f23`) background, white text, 6–8px radius. Hover: opacity reduction to 0.7. The signature CTA — maximally dark on white
 - **White/Ghost**: White background with shadow-ring border, dark text. Uses the multi-layered shadow system for subtle elevation
 - **Pill**: 9999px radius for rounded pill-shaped actions and badges
 - **Compact**: 4px padding, small text — utility actions within product UI
 - **Inset highlight**: Some buttons feature `rgba(255, 255, 255, 0.15) 0px 2px 0px inset` — a subtle inner-top highlight creating a 3D pressed effect
 
-### Cards & Containers
+### 卡片与容器
 - **Shadow Card**: White background, multi-layered shadow — `rgba(19, 19, 22, 0.7) 0px 1px 5px -4px, rgba(34, 42, 53, 0.08) 0px 0px 0px 1px, rgba(34, 42, 53, 0.05) 0px 4px 8px 0px`. The ring shadow (0px 0px 0px 1px) acts as a shadow-border
 - **Product UI Cards**: Screenshots of the scheduling interface displayed in card containers with shadow elevation
 - **Radius**: 8px for standard cards, 12px for larger containers, 16px for prominent sections
 - **Hover**: Likely subtle shadow deepening or scale transform
 
-### Inputs & Forms
+### 输入框与表单
 - **Select dropdown**: White background, `#000000` text, 1px solid `rgb(118, 118, 118)` border
 - **Focus**: Uses Framer's focus outline system (`--framer-focus-outline`)
 - **Text input**: 8px radius, standard border treatment
 - **Minimal form presence**: The marketing site prioritizes CTA buttons over complex forms
 
-### Navigation
+### 导航
 - **Top nav**: White/transparent background, Cal Sans links at near-black
 - **Nav text**: `#111111` (Midnight) for primary links, `#000000` for emphasis
 - **CTA button**: Dark Primary in the nav — high contrast call-to-action
 - **Mobile**: Collapses to hamburger with simplified navigation
 - **Sticky**: Fixed on scroll
 
-### Image Treatment
+### 图片处理
 - **Product screenshots**: Large scheduling UI screenshots — the product is the primary visual
 - **Trust logos**: Grayscale company logos in a horizontal trust bar
 - **Aspect ratios**: Wide landscape for product UI screenshots
 - **No decorative imagery**: No illustrations, photos, or abstract graphics — pure product + typography
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
+### 间距体系
 - **Base unit**: 8px
 - **Scale**: 1px, 2px, 3px, 4px, 6px, 8px, 12px, 16px, 20px, 24px, 28px, 80px, 96px
 - **Section padding**: 80px–96px vertical between major sections (generous)
@@ -135,18 +135,18 @@ The elevation system is notably sophisticated for a minimal site — 11 shadow d
 - **Component gaps**: 4px–8px between related elements
 - **Notable jump**: From 28px to 80px — a deliberate gap emphasizing the section-level spacing tier
 
-### Grid & Container
+### 栅格与容器
 - **Max width**: ~1200px content container, centered
 - **Column patterns**: Full-width hero, centered text blocks, 2-3 column feature grids
 - **Feature showcase**: Product screenshots flanked by description text
 - **Breakpoints**: 98px, 640px, 768px, 810px, 1024px, 1199px — Framer-generated
 
-### Whitespace Philosophy
+### 留白哲学
 - **Lavish section spacing**: 80px–96px between sections creates a breathable, premium feel
 - **Product-first content**: Screenshots dominate the visual space — minimal surrounding decoration
 - **Centered headlines**: Cal Sans headings centered with generous margins above and below
 
-### Border Radius Scale
+### 圆角尺度
 - **2px**: Subtle rounding on inline elements
 - **4px**: Small UI components
 - **6px–7px**: Buttons, small cards, images
@@ -158,7 +158,7 @@ The elevation system is notably sophisticated for a minimal site — 11 shadow d
 - **1000px**: Very large rounding
 - **9999px**: Full pill shape — badges, links
 
-## 6. Depth & Elevation
+## 6. 层深与阴影
 
 | Level | Treatment | Use |
 |-------|-----------|-----|
@@ -177,14 +177,14 @@ Cal.com's shadow system is the most sophisticated element of the design — 11 s
 - **Inset highlights**: White inset shadows at the top of buttons create a subtle 3D bevel
 - Shadows are composed in comma-separated stacks — each surface gets 2-3 layered shadow definitions working together
 
-### Decorative Depth
+### 装饰性层深
 - No gradients or glow effects
 - All depth comes from the sophisticated shadow compositing system
 - The overall effect is subtle but precise — surfaces feel like physical cards sitting on a table
 
-## 7. Do's and Don'ts
+## 7. 设计规范：推荐与禁忌
 
-### Do
+### 推荐
 - Use Cal Sans exclusively for headings (24px+) and never for body text — it's a display font with tight default spacing
 - Apply positive letter-spacing (+0.2px) when using Cal Sans below 24px — the font cramps at small sizes without it
 - Maintain the grayscale palette — boldness comes from contrast, not color
@@ -194,7 +194,7 @@ Cal.com's shadow system is the most sophisticated element of the design — 11 s
 - Let product screenshots be the visual content — no illustrations, no decorative graphics
 - Apply generous section spacing (80px–96px) — the breathing room is essential to the premium feel
 
-### Don't
+### 禁忌
 - Use Cal Sans for body text or text below 16px — it wasn't designed for extended reading
 - Add brand colors — Cal.com is intentionally grayscale, color is reserved for links and UI states only
 - Use CSS borders when shadows can achieve the same containment — the ring-shadow technique is the system's approach
@@ -204,9 +204,9 @@ Cal.com's shadow system is the most sophisticated element of the design — 11 s
 - Mix Cal Sans weights — the font is designed for weight 600, other weights break the intended character
 - Reduce section spacing below 48px — the generous whitespace is core to the premium monochrome aesthetic
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
+### 断点
 | Name | Width | Key Changes |
 |------|-------|-------------|
 | Mobile | <640px | Single column, hero text ~36px, stacked features, hamburger nav |
@@ -216,28 +216,28 @@ Cal.com's shadow system is the most sophisticated element of the design — 11 s
 | Desktop | 1024px–1199px | Full layout, expanded navigation |
 | Large Desktop | >1199px | Max-width container, centered content |
 
-### Touch Targets
+### 触摸目标
 - Buttons: 8px radius with comfortable padding (10px+ vertical)
 - Nav links: Dark text with adequate spacing
 - Mobile CTAs: Full-width dark buttons for easy thumb access
 - Pill badges: 9999px radius creates large, tappable targets
 
-### Collapsing Strategy
+### 折叠策略
 - **Navigation**: Full horizontal nav → hamburger on mobile
 - **Hero**: 64px Cal Sans display → ~36px on mobile
 - **Feature grids**: Multi-column → 2-column → single stacked column
 - **Product screenshots**: Scale within containers, maintaining aspect ratios
 - **Section spacing**: Reduces from 80px–96px to ~48px on mobile
 
-### Image Behavior
+### 图片行为
 - Product screenshots scale responsively
 - Trust logos reflow to multi-row grid on mobile
 - No art direction changes — same compositions at all sizes
 - Images use 7px–12px border-radius for consistent rounded corners
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
+### 色彩速查表
 - Primary Text: Charcoal (`#242424`)
 - Deep Text: Midnight (`#111111`)
 - Secondary Text: Mid Gray (`#898989`)
@@ -246,14 +246,14 @@ Cal.com's shadow system is the most sophisticated element of the design — 11 s
 - CTA Button: Charcoal (`#242424`) bg, white text
 - Shadow Border: `rgba(34, 42, 53, 0.08)` ring
 
-### Example Component Prompts
+### 组件提示示例
 - "Create a hero section with white background, 64px Cal Sans heading at weight 600, line-height 1.10, #242424 text, centered layout with a dark CTA button (#242424, 8px radius, white text)"
 - "Design a scheduling card with white background, multi-layered shadow (0px 1px 5px -4px rgba(19,19,22,0.7), 0px 0px 0px 1px rgba(34,42,53,0.08), 0px 4px 8px rgba(34,42,53,0.05)), 12px radius"
 - "Build a navigation bar with white background, Inter links at 14px weight 500 in #111111, a dark CTA button (#242424), sticky positioning"
 - "Create a trust bar with grayscale company logos, horizontally centered, 16px gap between logos, on white background"
 - "Design a feature section with 48px Cal Sans heading (weight 600, #242424), 16px Inter body text (weight 300, #898989, line-height 1.50), and a product screenshot with 12px radius and the card shadow"
 
-### Iteration Guide
+### 迭代指南
 When refining existing screens generated with this design system:
 1. Verify headings use Cal Sans at weight 600, body uses Inter — never mix them
 2. Check that the palette is purely grayscale — if you see brand colors, remove them
